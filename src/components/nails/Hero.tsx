@@ -40,15 +40,16 @@ const Hero = ({ content }: Props) => {
                     src={slide.image}
                     alt={slide.name}
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 
                   {/* Text */}
                   <div className="absolute bottom-16 sm:bottom-20 left-4 sm:left-8 right-4 sm:right-8 text-white">
-                    <h3 className="text-2xl sm:text-4xl font-medium mb-3 sm:mb-4">
+                    <p className="text-2xl sm:text-4xl font-medium mb-3 sm:mb-4">
                       {slide.name}
-                    </h3>
+                    </p>
                     <p className="text-sm sm:text-lg opacity-90 leading-relaxed max-w-2xl">
                       {slide.description}
                     </p>
@@ -59,7 +60,7 @@ const Hero = ({ content }: Props) => {
           </div>
         </div>
 
-        {/* Dots – mutați mai jos + mai mult spațiu pe mobile */}
+        {/* Slide indicator dots */}
         <div
           className="
             absolute 

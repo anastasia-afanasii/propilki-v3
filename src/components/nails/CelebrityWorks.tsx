@@ -2,7 +2,17 @@ import { useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type Props = {
-  content: any;
+  content: {
+    id?: string;
+    title?: string;
+    subtitle?: string;
+    pill?: string;
+    rightTitle?: string;
+    rightDescription?: string;
+    note?: string;
+    images?: string[];
+    bullets?: Array<{ title?: string; description?: string }>;
+  };
 };
 
 const isAbsoluteUrl = (v: string) => /^https?:\/\//i.test(v);
@@ -11,7 +21,7 @@ const CelebrityWorks = ({ content }: Props) => {
   const [index, setIndex] = useState(0);
 
   const images = useMemo(() => {
-    const raw = (content?.images ?? []) as string[];
+    const raw = content?.images ?? [];
     return raw.map((p) =>
       !p ? p : isAbsoluteUrl(p) ? p : `${import.meta.env.BASE_URL}${p}`
     );
@@ -24,10 +34,7 @@ const CelebrityWorks = ({ content }: Props) => {
 
   const active = images[index] ?? `${import.meta.env.BASE_URL}placeholder.svg`;
 
-  const bullets = (content?.bullets ?? []) as Array<{
-    title?: string;
-    description?: string;
-  }>;
+  const bullets = content?.bullets ?? [];
 
   return (
     <section
@@ -52,6 +59,7 @@ const CelebrityWorks = ({ content }: Props) => {
                 src={active}
                 alt={`Catalina Cara nail art ${index + 1}`}
                 className="w-full h-full object-contain"
+                loading="lazy"
               />
             </div>
 

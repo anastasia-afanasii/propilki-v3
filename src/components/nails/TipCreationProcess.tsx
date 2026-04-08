@@ -8,7 +8,7 @@ type Props = {
     title: string;
     subtitle: string;
     steps: {
-      icon: IconKey;
+      icon: string;
       title: string;
       description: string;
     }[];
@@ -51,7 +51,7 @@ const TipCreationProcess = ({ content }: Props) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-10 sm:mb-12 md:mb-16">
           {content.steps.map((step, index) => {
-            const Icon = ICONS[step.icon];
+            const Icon = ICONS[step.icon as IconKey] ?? Sparkles;
             return (
               <div key={index} className="text-center">
                 <div className="mb-5 sm:mb-6">
@@ -103,6 +103,7 @@ const TipCreationProcess = ({ content }: Props) => {
                 src={imgSrc}
                 alt={content.highlight.image.alt}
                 className="w-full h-full object-cover object-bottom"
+                loading="lazy"
               />
             </div>
           </div>

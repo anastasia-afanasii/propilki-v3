@@ -69,7 +69,7 @@ const HeroSection = ({ hero, stats }: Props) => {
               src={imageSrc}
               alt={hero.imageAlt ?? "Hero"}
               className="w-full h-full object-cover"
-              loading="lazy"
+              loading="eager"
             />
           </div>
         </div>

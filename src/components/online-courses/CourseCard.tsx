@@ -1,4 +1,3 @@
-// src/components/online-courses/CourseCard.tsx
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import CourseFeatures from "./CourseFeatures";

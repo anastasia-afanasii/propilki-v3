@@ -1,4 +1,6 @@
-import * as Icons from "lucide-react";
+import { Users, Star, Award, Clock, type LucideIcon } from "lucide-react";
+
+const ICONS: Record<string, LucideIcon> = { Users, Star, Award, Clock };
 
 type StatItem = {
   icon: string;
@@ -14,7 +16,7 @@ const StatsGrid = ({ stats }: Props) => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 md:gap-8 mt-10 sm:mt-12 md:mt-14">
       {stats.map((stat, index) => {
-        const Icon = (Icons as any)[stat.icon];
+        const Icon = ICONS[stat.icon];
 
         return (
           <div key={index} className="text-center">

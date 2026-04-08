@@ -1,12 +1,24 @@
 import { Trophy } from "lucide-react";
 
 type Props = {
-  content: any;
+  content: {
+    id?: string;
+    title?: string;
+    subtitle?: string;
+    award?: {
+      name?: string;
+      label?: string;
+      image?: string;
+      imageAlt?: string;
+      badge?: string;
+      items?: string[];
+    };
+  };
 };
 
 const Championships = ({ content }: Props) => {
   const award = content?.award ?? {};
-  const items = (award?.items ?? []) as string[];
+  const items = award?.items ?? [];
 
   const imgSrc = award?.image
     ? award.image.startsWith("http")
@@ -62,6 +74,7 @@ const Championships = ({ content }: Props) => {
                 src={imgSrc}
                 alt={award?.imageAlt ?? "Award ceremony"}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
 
               <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 bg-white/90 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium text-neutral-900">

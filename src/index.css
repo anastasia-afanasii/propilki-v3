@@ -1,6 +1,183 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(.dark *));
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  @media (width >= --theme(--breakpoint-sm)) {
+    max-width: none;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-sidebar: hsl(var(--sidebar-background));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-fade-in: fadeIn 0.6s ease-out forwards;
+  --animate-slide-up: slideUp 0.8s ease-out forwards;
+  --animate-scale-in: scaleIn 0.5s ease-out forwards;
+  --animate-pulse-glow: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-bounce-soft: bounce 1s ease-in-out infinite;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+
+  button,
+  [role="button"],
+  a,
+  summary,
+  select,
+  [type="button"],
+  [type="submit"],
+  [type="reset"] {
+    cursor: pointer;
+  }
+}
+
+/* Enhanced Visual Effects */
+@utility gallery-dots {
+  @apply flex justify-center gap-2 mt-4;
+}
+@utility gallery-dot {
+  @apply w-2 h-2 rounded-full bg-muted transition-all duration-300 cursor-pointer hover:bg-primary/50;
+
+  &.active {
+    @apply bg-primary scale-125;
+  }
+}
+@utility active {
+  &.gallery-dot {
+    @apply bg-primary scale-125;
+  }
+}
+@utility gallery-nav-btn {
+  @apply absolute top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white border border-border rounded-full flex items-center justify-center shadow-md transition-all duration-300 opacity-0 group-hover:opacity-100 hover:scale-110 z-10;
+
+  &.prev {
+    @apply left-2;
+  }
+
+  &.next {
+    @apply right-2;
+  }
+}
+@utility prev {
+  &.gallery-nav-btn {
+    @apply left-2;
+  }
+}
+@utility next {
+  &.gallery-nav-btn {
+    @apply right-2;
+  }
+}
+@utility hover-lift {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+}
+@utility hover-glow {
+  @apply transition-all duration-300 hover:shadow-(--shadow-glow);
+}
+@utility smooth-transition {
+  transition: var(--transition-smooth);
+}
+@utility bounce-transition {
+  transition: var(--transition-bounce);
+}
+@utility gradient-bg {
+  background: var(--gradient-primary);
+}
+@utility gradient-accent-bg {
+  background: var(--gradient-accent);
+}
+@utility elegant-shadow {
+  box-shadow: var(--shadow-elegant);
+}
+@utility fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+@utility slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+@utility scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
 
 @layer base {
   :root {
@@ -111,73 +288,6 @@
 
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-/* Enhanced Visual Effects */
-@layer components {
-  .gallery-dots {
-    @apply flex justify-center gap-2 mt-4;
-  }
-  
-  .gallery-dot {
-    @apply w-2 h-2 rounded-full bg-muted transition-all duration-300 cursor-pointer hover:bg-primary/50;
-  }
-  
-  .gallery-dot.active {
-    @apply bg-primary scale-125;
-  }
-
-  .gallery-nav-btn {
-    @apply absolute top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white border border-border rounded-full flex items-center justify-center shadow-md transition-all duration-300 opacity-0 group-hover:opacity-100 hover:scale-110 z-10;
-  }
-
-  .gallery-nav-btn.prev {
-    @apply left-2;
-  }
-
-  .gallery-nav-btn.next {
-    @apply right-2;
-  }
-
-  .hover-lift {
-    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
-  }
-
-  .hover-glow {
-    @apply transition-all duration-300 hover:shadow-[var(--shadow-glow)];
-  }
-
-  .smooth-transition {
-    transition: var(--transition-smooth);
-  }
-
-  .bounce-transition {
-    transition: var(--transition-bounce);
-  }
-
-  .gradient-bg {
-    background: var(--gradient-primary);
-  }
-
-  .gradient-accent-bg {
-    background: var(--gradient-accent);
-  }
-
-  .elegant-shadow {
-    box-shadow: var(--shadow-elegant);
-  }
-
-  .fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
-  }
-
-  .slide-up {
-    animation: slideUp 0.8s ease-out forwards;
-  }
-
-  .scale-in {
-    animation: scaleIn 0.5s ease-out forwards;
   }
 }
 

@@ -1,12 +1,20 @@
 type Props = {
-  content: any;
+  content: {
+    id?: string;
+    title?: string;
+    image?: string;
+    imageAlt?: string;
+    paragraphs?: string[];
+    quote?: string;
+    badge?: { line1: string; line2: string };
+  };
 };
 
 const normalize = (src: string) => (src.startsWith("/") ? src.slice(1) : src);
 
 const Biography = ({ content }: Props) => {
   const id = content?.id ?? "biography";
-  const paragraphs = (content?.paragraphs ?? []) as string[];
+  const paragraphs = content?.paragraphs ?? [];
 
   const imgSrc = `${import.meta.env.BASE_URL}${normalize(
     content?.image ?? ""

@@ -6,7 +6,17 @@ type Props = {
     pill: string;
     title: string;
   };
-  courses: any[];
+  courses: Array<{
+    id: number | string;
+    title: string;
+    description: string;
+    image: string;
+    features: string[];
+    additionalLectures?: string[];
+    price?: string;
+    cta: string;
+    link?: string;
+  }>;
 };
 
 const CoursesSection = ({ section, courses }: Props) => {

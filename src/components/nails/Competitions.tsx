@@ -42,6 +42,7 @@ const Competitions = ({ content }: Props) => {
                     src={`${import.meta.env.BASE_URL}${img}`}
                     alt={`Competition image ${i + 1}`}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               ))}

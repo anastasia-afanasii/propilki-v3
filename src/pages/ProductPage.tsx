@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -10,10 +11,8 @@ import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import Header from "@/components/nails/Header";
 import Footer from "@/components/nails/Footer";
 
-import rawContent from "@/data/solo.json";
+import content from "@/data/solo.json";
 import catalog from "@/data/nailCatalog.json";
-
-const content = rawContent as any;
 
 type NailProduct = {
   id: number;
@@ -41,6 +40,8 @@ const ProductPage = () => {
     const pid = Number(id);
     return products.find((p) => p.id === pid);
   }, [id, products]);
+
+  useDocumentTitle(product?.name ?? "Product");
 
   useEffect(() => {
     setSelectedImageIndex(0);
@@ -129,9 +130,8 @@ const ProductPage = () => {
     <div className="min-h-screen bg-white">
       <Header content={content.header} />
 
-      <div className="pt-20 sm:pt-24 pb-12 sm:pb-14 md:pb-16 px-4 sm:px-6">
+      <main className="pt-20 sm:pt-24 pb-12 sm:pb-14 md:pb-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          {/* ✅ Back -> /solo */}
           <Button
             variant="ghost"
             onClick={() => navigate("/solo#catalog")}
@@ -213,6 +213,7 @@ const ProductPage = () => {
                         src={image}
                         alt={`${product.name} view ${index + 1}`}
                         className="w-full h-full object-cover"
+                        loading="lazy"
                       />
                     </button>
                   ))}
@@ -249,9 +250,9 @@ const ProductPage = () => {
                 <div className="space-y-4 sm:space-y-5">
                   {product.description && (
                     <div>
-                      <h3 className="text-base sm:text-lg font-medium text-neutral-900 mb-2">
+                      <h2 className="text-base sm:text-lg font-medium text-neutral-900 mb-2">
                         Description
-                      </h3>
+                      </h2>
                       <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
                         {product.description}
                       </p>
@@ -259,9 +260,9 @@ const ProductPage = () => {
                   )}
 
                   <div>
-                    <h3 className="text-base sm:text-lg font-medium text-neutral-900 mb-3">
+                    <h2 className="text-base sm:text-lg font-medium text-neutral-900 mb-3">
                       Details
-                    </h3>
+                    </h2>
 
                     <div className="space-y-2 text-sm sm:text-base">
                       <div className="flex justify-between gap-6">
@@ -317,7 +318,7 @@ const ProductPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
       <Footer content={content.footer} />
     </div>
