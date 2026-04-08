@@ -37,6 +37,8 @@ const CourseCard = ({ course, reverse }: Props) => {
                 src={imageSrc}
                 alt={course.title}
                 className="w-full h-full object-cover"
+                width={2048}
+                height={1152}
                 loading="lazy"
               />
             </div>

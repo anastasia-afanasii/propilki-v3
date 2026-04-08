@@ -3,14 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PROPILKI</title>
+    <title>Page Not Found | PROPILKI</title>
+    <style>
+      body { font-family: system-ui, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #fafafa; color: #171717; }
+      .c { text-align: center; max-width: 400px; padding: 2rem; }
+      h1 { font-size: 3rem; font-weight: 300; margin: 0 0 0.5rem; }
+      p { color: #525252; margin: 0 0 2rem; }
+      a { display: inline-block; padding: 0.75rem 1.5rem; background: #171717; color: #fff; text-decoration: none; font-size: 0.875rem; margin: 0 0.5rem; }
+      a.o { background: transparent; border: 1px solid #d4d4d4; color: #525252; }
+    </style>
   </head>
   <body>
+    <div class="c">
+      <h1>404</h1>
+      <p>The page you're looking for doesn't exist.</p>
+      <a href="/">Online Courses</a>
+      <a href="/solo" class="o">Press-On Nails</a>
+    </div>
     <script>
       (function () {
         var l = window.location;
         var path = l.pathname + l.search + l.hash;
-        l.replace(l.origin + "/?p=" + encodeURIComponent(path));
+        if (path !== '/404.html' && path !== '/') {
+          l.replace(l.origin + "/?p=" + encodeURIComponent(path));
+        }
       })();
     </script>
   </body>

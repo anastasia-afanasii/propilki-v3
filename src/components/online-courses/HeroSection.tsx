@@ -69,6 +69,8 @@ const HeroSection = ({ hero, stats }: Props) => {
               src={imageSrc}
               alt={hero.imageAlt ?? "Hero"}
               className="w-full h-full object-cover"
+              width={958}
+              height={1280}
               loading="eager"
             />
           </div>

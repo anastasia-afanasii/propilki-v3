@@ -58,6 +58,8 @@ const PackagingVisual = ({ content }: Props) => {
                 src={imgSrc}
                 alt={content.image.alt}
                 className="w-full h-full object-cover"
+                width={4032}
+                height={6048}
                 loading="lazy"
               />
             </div>

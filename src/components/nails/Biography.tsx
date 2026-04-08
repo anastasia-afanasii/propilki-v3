@@ -47,6 +47,8 @@ const Biography = ({ content }: Props) => {
                 src={imgSrc}
                 alt={content?.imageAlt ?? "Artist portrait"}
                 className="w-full h-full object-cover object-bottom"
+                width={3341}
+                height={5011}
                 loading="lazy"
               />
             </div>

@@ -39,6 +39,8 @@ const AboutSection = ({ about }: Props) => {
                 src={imgSrc}
                 alt={about.imageAlt}
                 className="w-full h-full object-cover object-bottom"
+                width={3341}
+                height={5011}
                 loading="lazy"
               />
             </div>

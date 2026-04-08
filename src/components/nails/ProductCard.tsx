@@ -34,6 +34,8 @@ const ProductCard = ({ product, badgeLabel }: Props) => {
           src={coverImage}
           alt={product.name}
           className="w-full h-56 sm:h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700"
+          width={800}
+          height={800}
           loading="lazy"
         />
 
