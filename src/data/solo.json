@@ -34,7 +34,7 @@
             "Honored as a winner of the prestigious Golden Brush Sofia competition, my work has graced the runway at Kiki Ball London, appeared in leading fashion editorials, and adorned the hands of celebrities and style icons worldwide. Each set is meticulously hand-crafted, blending precision, luxury, and durability to set a new standard in the industry."
         ],
         "quote": "“I believe that beauty should be as effortless as it is extraordinary. Through press-on technology, I deliver salon-perfected results that seamlessly complement any lifestyle — wherever in the world you may be.”",
-        "image": "images/biography.jpg",
+        "image": "images/biography.webp",
         "imageAlt": "Artist portrait",
         "badge": {
             "line1": "10+ Years",
@@ -324,7 +324,7 @@
                 }
             ],
             "image": {
-                "src": "images/artistry-meets-technology.jpg",
+                "src": "images/artistry-meets-technology.webp",
                 "alt": "Artistry Meets Technology"
             }
         }

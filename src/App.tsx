@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 
 import ScrollToHash from "@/components/nails/ScrollToHash";
 import FaviconSwitcher from "@/components/FaviconSwitcher";
+import useCanonical from "@/hooks/useCanonical";
 
 (() => {
   const params = new URLSearchParams(window.location.search);
@@ -28,11 +29,17 @@ import FaviconSwitcher from "@/components/FaviconSwitcher";
 
 const queryClient = new QueryClient();
 
+const CanonicalUpdater = () => {
+  useCanonical();
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <CanonicalUpdater />
         <FaviconSwitcher />
         <ScrollToHash />
         <Routes>

@@ -26,9 +26,9 @@ const SiteHeader = ({ logoText, logoTo, links, mobileAriaLabel = "Open menu" }: 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14 sm:h-16">
           <Link to={logoTo} className="flex-shrink-0" onClick={closeMenu}>
-            <h1 className="text-xl sm:text-2xl font-light tracking-wide text-neutral-900">
+            <span className="text-xl sm:text-2xl font-light tracking-wide text-neutral-900">
               {logoText}
-            </h1>
+            </span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
