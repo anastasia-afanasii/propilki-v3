@@ -30,10 +30,10 @@
         "title": "Meet the Artist",
         "paragraphs": [
             "With over a decade of expertise in the nail art industry, I have devoted my career to elevating the craft of press-on nail design and application into a true art form.",
-            "My journey began as a traditional nail technician, but I soon discovered an irresistible passion for creating intricate, statement-making designs that transcend borders and trends. This vision inspired the creation of my signature press-on nail collection — where artistry meets innovation.",
+            "My journey began as a traditional nail technician, but I soon discovered an irresistible passion for creating intricate, statement-making designs that transcend borders and trends. This vision inspired the creation of my signature press-on nail collection - where artistry meets innovation.",
             "Honored as a winner of the prestigious Golden Brush Sofia competition, my work has graced the runway at Kiki Ball London, appeared in leading fashion editorials, and adorned the hands of celebrities and style icons worldwide. Each set is meticulously hand-crafted, blending precision, luxury, and durability to set a new standard in the industry."
         ],
-        "quote": "“I believe that beauty should be as effortless as it is extraordinary. Through press-on technology, I deliver salon-perfected results that seamlessly complement any lifestyle — wherever in the world you may be.”",
+        "quote": "“I believe that beauty should be as effortless as it is extraordinary. Through press-on technology, I deliver salon-perfected results that seamlessly complement any lifestyle - wherever in the world you may be.”",
         "image": "images/biography.webp",
         "imageAlt": "Artist portrait",
         "badge": {
@@ -54,8 +54,8 @@
             "images/celebrity/catalina-cara-6.webp"
         ],
         "pill": "Collaborations with Celebrities",
-        "rightTitle": "Catalina Cara — Album Cover Shoot",
-        "rightDescription": "For Catalina Cara’s album cover, I designed custom crystal daisies — each meticulously handcrafted from transparent gel. These sculptural details were mounted on nude press-ons, balancing subtle sophistication with striking precision.",
+        "rightTitle": "Catalina Cara - Album Cover Shoot",
+        "rightDescription": "For Catalina Cara’s album cover, I designed custom crystal daisies - each meticulously handcrafted from transparent gel. These sculptural details were mounted on nude press-ons, balancing subtle sophistication with striking precision.",
         "bullets": [
             {
                 "title": "Classic French Nails",
@@ -87,7 +87,7 @@
     },
     "competitions": {
         "sectionTitle": "Competition Highlights",
-        "sectionSubtitle": "KIKI BALL LONDON — March 2024",
+        "sectionSubtitle": "KIKI BALL LONDON - March 2024",
         "images": [
             "images/kiki-ball/kiki-ball-1.webp",
             "images/kiki-ball/kiki-ball-2.webp"
@@ -104,7 +104,7 @@
                 "text": "This category honored the memory of Zahara Brown, a talented transgender nail artist from @dahouseofphalanges, celebrated for her vibrant artistic legacy within London’s ballroom scene."
             },
             {
-                "text": "The winning design was crafted in a luxurious baroque style — a stunning display of elegance and splendor."
+                "text": "The winning design was crafted in a luxurious baroque style - a stunning display of elegance and splendor."
             }
         ],
         "closing": "Creating this piece was an absolute joy and privilege."
@@ -115,11 +115,11 @@
         "items": [
             {
                 "question": "How long do press-on nails last?",
-                "answer": "Our kit includes 48 adhesive tabs that are gentle on your nails and water-resistant. Using our application method, our acrylic press-ons typically last 3–5 days and can extend up to 7 days depending on your lifestyle.\n\nKeep in mind, your nails may not adhere perfectly the first few times, but with practice, application becomes effortless and durable."
+                "answer": "Our kit includes 48 adhesive tabs that are gentle on your nails and water-resistant. Using our application method, our acrylic press-ons typically last 3-5 days and can extend up to 7 days depending on your lifestyle.\n\nKeep in mind, your nails may not adhere perfectly the first few times, but with practice, application becomes effortless and durable."
             },
             {
                 "question": "Can I reuse press-on nails?",
-                "answer": "Yes! When removed carefully and undamaged, our press-ons can be reused 2–3 times. For reapplication, we recommend using nail adhesive tabs for optimal hold."
+                "answer": "Yes! When removed carefully and undamaged, our press-ons can be reused 2-3 times. For reapplication, we recommend using nail adhesive tabs for optimal hold."
             },
             {
                 "question": "What if the sizes doesn't fit perfectly?",
@@ -244,7 +244,7 @@
     },
     "footer": {
         "brandTitle": "SOLO",
-        "brandDescription": "Premium press-on nails, crafted with precision and designed to elevate your elegance. Enjoy salon-quality results — effortlessly, anytime, anywhere.",
+        "brandDescription": "Premium press-on nails, crafted with precision and designed to elevate your elegance. Enjoy salon-quality results - effortlessly, anytime, anywhere.",
         "copyright": "© 2026 SOLO. All rights reserved."
     },
     "testimonials": {
@@ -283,7 +283,7 @@
     },
     "tipCreationProcess": {
         "title": "Tip Creation Process",
-        "subtitle": "Every set begins long before the first brushstroke — it starts with a vision. A spark of inspiration that evolves into a piece of wearable art.",
+        "subtitle": "Every set begins long before the first brushstroke - it starts with a vision. A spark of inspiration that evolves into a piece of wearable art.",
         "steps": [
             {
                 "icon": "palette",

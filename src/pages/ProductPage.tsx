@@ -310,7 +310,7 @@ const ProductPage = () => {
                       }
                       type="button"
                     >
-                      Order now — {fromPrice}
+                      Order now - {fromPrice}
                     </Button>
                   </div>
                 </div>

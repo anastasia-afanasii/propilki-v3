@@ -5,7 +5,7 @@ const useDocumentTitle = (title: string) => {
     const prev = document.title;
     document.title = title
       ? `${title} | PROPILKI`
-      : "PROPILKI — Nail Design, Press-On Nails & Manicure Courses";
+      : "PROPILKI - Nail Design, Press-On Nails & Manicure Courses";
     return () => {
       document.title = prev;
     };

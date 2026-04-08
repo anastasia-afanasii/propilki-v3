@@ -22,7 +22,7 @@ const Solo = () => {
     <div className="min-h-screen bg-white">
       <Header content={content.header} />
       <main>
-        <h1 className="sr-only">SOLO — Handcrafted Press-On Nails</h1>
+        <h1 className="sr-only">SOLO - Handcrafted Press-On Nails</h1>
         <Hero content={content.heroCarousel} />
         <NailCatalog content={content.catalog} />
         <TipCreationProcess content={content.tipCreationProcess} />
@@ -31,6 +31,7 @@ const Solo = () => {
         <Championships content={content.championships} />
         <Competitions content={content.competitions} />
         <CelebrityWorks content={content.celebrityWorks} />
+        <Biography content={content.biography} />
         <Testimonials content={content.testimonials} />
         <FAQ content={content.faq} />
       </main>
