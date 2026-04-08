@@ -46,12 +46,12 @@
         "title": "Collaborations with Celebrities",
         "subtitle": "Proudly featuring exclusive designs created for Catalina Cara’s albums alongside high-profile collaborations with renowned artists and influencers.",
         "images": [
-            "images/celebrity/catalina-cara-1.jpeg",
-            "images/celebrity/catalina-cara-2.jpeg",
-            "images/celebrity/catalina-cara-3.jpeg",
-            "images/celebrity/catalina-cara-4.jpeg",
-            "images/celebrity/catalina-cara-5.jpeg",
-            "images/celebrity/catalina-cara-6.jpeg"
+            "images/celebrity/catalina-cara-1.webp",
+            "images/celebrity/catalina-cara-2.webp",
+            "images/celebrity/catalina-cara-3.webp",
+            "images/celebrity/catalina-cara-4.webp",
+            "images/celebrity/catalina-cara-5.webp",
+            "images/celebrity/catalina-cara-6.webp"
         ],
         "pill": "Collaborations with Celebrities",
         "rightTitle": "Catalina Cara — Album Cover Shoot",
@@ -80,7 +80,7 @@
                 "Golden Brush Sofia",
                 "2018 Champion, XI International Championships in Decorating and Nail Design"
             ],
-            "image": "images/golden-brash/golden-brash.jpeg",
+            "image": "images/golden-brash/golden-brash.webp",
             "imageAlt": "Golden Brush Sofia award ceremony",
             "badge": "2018 Champion"
         }
@@ -89,8 +89,8 @@
         "sectionTitle": "Competition Highlights",
         "sectionSubtitle": "KIKI BALL LONDON — March 2024",
         "images": [
-            "images/kiki-ball/kiki-ball-1.jpeg",
-            "images/kiki-ball/kiki-ball-2.jpeg"
+            "images/kiki-ball/kiki-ball-1.webp",
+            "images/kiki-ball/kiki-ball-2.webp"
         ],
         "eventTitle": "KIKI BALL LONDON",
         "eventDate": "March 2024",

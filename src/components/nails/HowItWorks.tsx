@@ -27,7 +27,7 @@ const HowItWorks = ({ content }: Props) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12">
           <div className="aspect-[4/3] bg-neutral-800 rounded-lg overflow-hidden">
             <img
-              src={`${import.meta.env.BASE_URL}images/press_on_nails_guide1.jpg`}
+              src={`${import.meta.env.BASE_URL}images/press_on_nails_guide1.webp`}
               alt="Press-on nails guide step 1"
               className="w-full h-full object-contain"
               loading="lazy"
