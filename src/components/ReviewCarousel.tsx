@@ -120,7 +120,7 @@ const ReviewCarousel = ({
             <>
               <button
                 onClick={prev}
-                className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${btnClass}`}
+                className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 lg:-translate-x-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${btnClass}`}
                 type="button"
                 aria-label="Previous review"
               >
@@ -128,7 +128,7 @@ const ReviewCarousel = ({
               </button>
               <button
                 onClick={next}
-                className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${btnClass}`}
+                className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 lg:translate-x-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${btnClass}`}
                 type="button"
                 aria-label="Next review"
               >
