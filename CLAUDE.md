@@ -30,7 +30,7 @@ public/images/        # All product and content images
 docs/                 # ARCHITECTURE.md, CHANGELOG.md
 .claude/
   agents/             # reviewer, deployer, designer, architect, optimizer, seo, docs
-  skills/             # /review, /build, /dev, /deploy-check, /optimize, /seo, /docs, etc.
+  skills/             # /orchestrate (coordinator), /review, /build, /dev, /deploy-check, /optimize, /seo, /docs, etc.
   settings.local.json # Hooks and permissions (gitignored)
 ```
 
