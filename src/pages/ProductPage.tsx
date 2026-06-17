@@ -182,16 +182,16 @@ const ProductPage = () => {
             Back to catalog
           </Button>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-14 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-14 lg:gap-16 lg:items-start">
             {/* Images */}
             <div className="space-y-4 sm:space-y-5 md:space-y-6">
               <div className="relative group" {...swipeHandlers}>
-                <div className="aspect-square overflow-hidden bg-neutral-50 rounded-lg flex items-center justify-center">
+                <div className="aspect-square overflow-hidden rounded-lg bg-white flex items-center justify-center">
                   <img
                     src={activeImage}
                     alt={product.name}
                     fetchPriority="high"
-                    className="w-full h-full object-contain transition-all duration-500"
+                    className="w-full h-full object-cover transition-all duration-500"
                   />
                 </div>
 

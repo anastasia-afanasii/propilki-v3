@@ -1,977 +1,396 @@
 {
-  "products": [
-    {
-      "id": 117,
-      "name": "Pastel Pressed Flower Floral",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Pastel Multicolor"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/pastel_pressed_flower_floral_1.webp",
-        "images/nails/nails-art/pastel_pressed_flower_floral_2.webp",
-        "images/nails/nails-art/pastel_pressed_flower_floral_3.webp",
-        "images/nails/nails-art/pastel_pressed_flower_floral_4.webp",
-        "images/nails/nails-art/pastel_pressed_flower_floral_5.webp"
-      ],
-      "createdAt": "2026-06-17",
-      "description": "Short tips in soft pastels embedded with pressed-flower style florals, the petals captured under a smooth finish. The muted multicolor palette feels airy and delicate, like blooms preserved in resin. A gentle, springlike set for everyday romance. Handcrafted to order."
-    },
-    {
-      "id": 130,
-      "name": "Red, Teal & Beige Marble",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Red & White"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "createdAt": "2026-06-17",
-      "images": [
-        "images/nails/nails-art/red_teal_beige_marble_1.webp",
-        "images/nails/nails-art/red_teal_beige_marble_2.webp",
-        "images/nails/nails-art/red_teal_beige_marble_3.webp",
-        "images/nails/nails-art/red_teal_beige_marble_4.webp",
-        "images/nails/nails-art/red_teal_beige_marble_5.webp"
-      ],
-      "description": "Short tips swirled in red, teal and warm beige marble, an unexpected color trio that pools together softly. The mix feels artistic and lively while staying compact and wearable. A playful take on stone marbling for everyday color. Handcrafted to order."
-    },
-    {
-      "id": 131,
-      "name": "Red Berry & Fruit Art",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Red & White"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "createdAt": "2026-06-17",
-      "images": [
-        "images/nails/nails-art/red_berry_fruit_art_1.webp",
-        "images/nails/nails-art/red_berry_fruit_art_2.webp",
-        "images/nails/nails-art/red_berry_fruit_art_3.webp",
-        "images/nails/nails-art/red_berry_fruit_art_4.webp",
-        "images/nails/nails-art/red_berry_fruit_art_5.webp"
-      ],
-      "description": "Hand-painted red berry and fruit motifs scatter across these short tips, ripe little accents over a fresh base. The fruity illustration feels charming and summery without tipping into kitsch. A sweet, character-filled set for a cheerful everyday look. Handcrafted to order."
-    },
-    {
-      "id": 116,
-      "name": "Multicolor Abstract Painted Art",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Multicolor"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/multicolor_abstract_painted_art_1.webp",
-        "images/nails/nails-art/multicolor_abstract_painted_art_2.webp",
-        "images/nails/nails-art/multicolor_abstract_painted_art_3.webp",
-        "images/nails/nails-art/multicolor_abstract_painted_art_4.webp",
-        "images/nails/nails-art/multicolor_abstract_painted_art_5.webp"
-      ],
-      "createdAt": "2026-06-15",
-      "description": "Bold long coffin tips covered in multicolor abstract painting, layered brushwork and imagery flowing edge to edge. The extended length gives the artwork room to breathe and read like a full composition. Maximal, expressive and unapologetically artistic. Handcrafted to order."
-    },
-    {
-      "id": 303,
-      "name": "Clear Jelly Chrome Droplet",
-      "price": "€50",
-      "category": "Korean-Inspired Trends",
-      "colors": [
-        "Clear"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-korean/clear_jelly_chrome_droplet_1.webp",
-        "images/nails/nails-korean/clear_jelly_chrome_droplet_2.webp",
-        "images/nails/nails-korean/clear_jelly_chrome_droplet_3.webp",
-        "images/nails/nails-korean/clear_jelly_chrome_droplet_4.webp",
-        "images/nails/nails-korean/clear_jelly_chrome_droplet_5.webp"
-      ],
-      "createdAt": "2026-06-14",
-      "description": "Barely-there jelly tips in a short almond shape, each crowned with a liquid silver chrome droplet that pools and melts down the center like quicksilver. The translucent base keeps the look airy while the mirrored accent adds quiet drama. A clean, futuristic set, handcrafted to order for those who want minimal length with a single striking detail."
-    },
-    {
-      "id": 214,
-      "name": "White Nude Almond Set",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "White"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/white_nude_almond_set_1.webp",
-        "images/nails/nails-3d/white_nude_almond_set_2.webp",
-        "images/nails/nails-3d/white_nude_almond_set_3.webp"
-      ],
-      "createdAt": "2026-06-13",
-      "description": "A complete set of almond press-ons in clean milky white, paired with a single statement accent nail layered in a dark, iridescent abalone-style floral. The soft satin finish keeps it quiet and wearable while the lone accent adds a flicker of drama. Presented ready-to-wear in its case. Handcrafted to order in a short, everyday-flattering length."
-    },
-    {
-      "id": 115,
-      "name": "Cream Portrait Hand-Painted",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Cream Multicolor"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/cream_portrait_hand_painted_1.webp",
-        "images/nails/nails-art/cream_portrait_hand_painted_2.webp",
-        "images/nails/nails-art/cream_portrait_hand_painted_3.webp",
-        "images/nails/nails-art/cream_portrait_hand_painted_4.webp",
-        "images/nails/nails-art/cream_portrait_hand_painted_5.webp"
-      ],
-      "createdAt": "2026-06-12",
-      "description": "Long almond tips carrying a fully hand-painted portrait, finished in cream multicolor tones beside the artist's reference photos. The miniature painting turns each nail into a tiny canvas, detailed down to the face. A true bespoke, collector-level piece for lovers of wearable art. Handcrafted to order."
-    },
-    {
-      "id": 114,
-      "name": "Lilac & Periwinkle Floral Speckle Mix",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Lilac"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_1.webp",
-        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_2.webp",
-        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_3.webp",
-        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_4.webp",
-        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_5.webp"
-      ],
-      "createdAt": "2026-06-10",
-      "description": "Shown on the hand, these medium tips bloom in lilac and periwinkle florals, soft petals layered over a gentle cool-toned base. The dreamy palette flatters and softens, ideal for spring or a romantic occasion. Delicate and feminine without ever feeling fussy. Handcrafted to order."
-    },
-    {
-      "id": 112,
-      "name": "Earthy Brown Ornamental Art",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Brown"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/earthy_brown_ornamental_art_1.webp",
-        "images/nails/nails-art/earthy_brown_ornamental_art_2.webp",
-        "images/nails/nails-art/earthy_brown_ornamental_art_3.webp",
-        "images/nails/nails-art/earthy_brown_ornamental_art_4.webp"
-      ],
-      "createdAt": "2026-06-07",
-      "description": "Earthy browns and soft greys swirl into an ornamental, stone-like finish on these short tips. The muted, organic palette feels grounded and natural, like weathered marble or river rock. A calm, neutral set for understated everyday wear with quiet texture. Handcrafted to order."
-    },
-    {
-      "id": 111,
-      "name": "Navy & Orange Abstract Floral",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Multicolor"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/navy_orange_abstract_floral_1.webp",
-        "images/nails/nails-art/navy_orange_abstract_floral_2.webp",
-        "images/nails/nails-art/navy_orange_abstract_floral_3.webp",
-        "images/nails/nails-art/navy_orange_abstract_floral_4.webp",
-        "images/nails/nails-art/navy_orange_abstract_floral_5.webp"
-      ],
-      "createdAt": "2026-06-06",
-      "description": "Jewel-toned abstract marble in navy, red and warm orange spreads across a short set, each tip a different slice of the same stormy palette. The colors pool and overlap like polished agate. Rich and moody, it suits anyone who likes depth and contrast in a compact shape. Handcrafted to order."
-    },
-    {
-      "id": 110,
-      "name": "Red & White Marble Swirl",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Red & White"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/red_white_marble_swirl_1.webp",
-        "images/nails/nails-art/red_white_marble_swirl_2.webp",
-        "images/nails/nails-art/red_white_marble_swirl_3.webp",
-        "images/nails/nails-art/red_white_marble_swirl_4.webp",
-        "images/nails/nails-art/red_white_marble_swirl_5.webp"
-      ],
-      "createdAt": "2026-06-04",
-      "description": "Red and white swirl together in a flowing marble across these short tips displayed on a stand. The two tones fold into each other for a soft, candied effect that stays fresh and clean. Compact and easy to wear, it brings warmth without going loud. Handcrafted to order."
-    },
-    {
-      "id": 411,
-      "name": "Nude Glossy Solid",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Nude"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/nude_glossy_solid_1.webp",
-        "images/nails/nails-monochrome/nude_glossy_solid_2.webp",
-        "images/nails/nails-monochrome/nude_glossy_solid_3.webp",
-        "images/nails/nails-monochrome/nude_glossy_solid_4.webp",
-        "images/nails/nails-monochrome/nude_glossy_solid_5.webp"
-      ],
-      "createdAt": "2026-06-02",
-      "description": "A solid nude in a smooth glossy coat, lined up short and uniform for a clean, classic look. The warm neutral flatters most skin tones and suits anything, the definition of a wardrobe staple. Reliable polish for work, events or daily wear with zero fuss. Each set handcrafted to order."
-    },
-    {
-      "id": 409,
-      "name": "Slate Gray Matte",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Gray"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/slate_gray_matte_1.webp"
-      ],
-      "createdAt": "2026-05-30",
-      "description": "A cool slate gray in a soft matte finish, kept short for an understated, architectural feel. The flat, velvety surface gives the neutral a modern edge, quiet but far from boring. An easy minimalist pick for everyday wear or anyone tired of the usual nudes. Handcrafted to order."
-    },
-    {
-      "id": 213,
-      "name": "Black Red Charm",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Black"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/black_red_charm_1.webp",
-        "images/nails/nails-3d/black_red_charm_2.webp"
-      ],
-      "createdAt": "2026-05-29",
-      "description": "Long almond nails that mix glossy crimson, ivory and black across a hand-painted set. Ornate silver 3D filigree charms sit raised on several tips, with loose black brushstrokes sweeping the rest for a rock-and-roll edge. Bold, glossy and unapologetically loud. Each tip is sculpted and assembled by hand for a striking long-length look."
-    },
-    {
-      "id": 212,
-      "name": "Gold Foil Mirror",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Silver"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/gold_foil_mirror_1.webp",
-        "images/nails/nails-3d/gold_foil_mirror_2.webp"
-      ],
-      "createdAt": "2026-05-28",
-      "description": "Maximalism in long form: high-shine mirror-chrome and gold-foil tips encrusted with scattered crystals and raised 3D embellishment. The reflective surface catches light from every angle, built for nights that demand attention. A true showpiece set. Handcrafted to order, with each crystal placed by hand across the silver-toned finish."
-    },
-    {
-      "id": 211,
-      "name": "Nude Pearl Accent",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Nude"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/nude_pearl_accent_1.webp"
-      ],
-      "createdAt": "2026-05-27",
-      "description": "Short, natural-nude tips kept deliberately understated, lifted by a soft pearl-and-mother-of-pearl shimmer. Fine accents read like jewelry up close: a whisper of silver-grey iridescence, a tiny gold fleck, a delicate dark outline. Effortless for daily wear yet quietly refined. Sculpted by hand in a clean, short length."
-    },
-    {
-      "id": 123,
-      "name": "Multicolor Stone Marble",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/multicolor_stone_marble_1.webp",
-        "images/nails/nails-art/multicolor_stone_marble_2.webp"
-      ],
-      "createdAt": "2026-05-26",
-      "description": "Multicolor stone marbling on a short, practical shape, swirled tones layered into a polished agate-like finish. The compact length keeps the rich coloring grounded and wearable. A versatile artful neutral-meets-color option for daily life. Handcrafted to order."
-    },
-    {
-      "id": 401,
-      "name": "Nude Glossy",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Nude"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/nude_glossy_1.webp",
-        "images/nails/nails-monochrome/nude_glossy_2.webp"
-      ],
-      "createdAt": "2026-05-25",
-      "description": "A barely-there nude in a clean glossy finish, cut to a neat short length that reads polished without effort. The warm beige tone sits close to skin, lengthening the fingers while keeping the whole hand quiet and refined. An everyday set for work, weddings or anyone who wants their nails to whisper. Handcrafted to order."
-    },
-    {
-      "id": 109,
-      "name": "Lilac Sketch Opal",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Lilac"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/lilac_sketch_opal_1.webp"
-      ],
-      "createdAt": "2026-05-24",
-      "description": "Pale lilac opal tones carry fine sketch-style line work across these soft medium tips, like a pencil study drawn straight onto the nail. The hazy, milky base gives an opal-like glow beneath the delicate drawing. Romantic yet contemporary, it reads as wearable art. Handcrafted to order."
-    },
-    {
-      "id": 210,
-      "name": "White Gold-Leaf Stiletto",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "White"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/white_gold_leaf_stiletto_1.webp",
-        "images/nails/nails-3d/white_gold_leaf_stiletto_2.webp"
-      ],
-      "createdAt": "2026-05-23",
-      "description": "Long stilettos in marbled white and grey, veined with gold leaf and framed in molten gold detailing. Raised blue evil-eye gem accents give the set a talisman-like, protective feel. Artful and a little mystical, equal parts elegant and bold. Every tip is hand-sculpted to order with individually set gold and gemstone work."
-    },
-    {
-      "id": 402,
-      "name": "Silver Chrome",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Silver"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/silver_chrome_1.webp",
-        "images/nails/nails-monochrome/silver_chrome_2.webp",
-        "images/nails/nails-monochrome/silver_chrome_3.webp",
-        "images/nails/nails-monochrome/silver_chrome_4.webp",
-        "images/nails/nails-monochrome/silver_chrome_5.webp"
-      ],
-      "createdAt": "2026-05-22",
-      "description": "Liquid silver chrome with a true mirror finish that catches light and bends the room around it. The medium length keeps the metallic drama wearable, balancing shine with a clean, modern shape. Strikingly futuristic for parties, shoots or a night that asks for something bold. Each set is handcrafted to order."
-    },
-    {
-      "id": 209,
-      "name": "Navy Gold Fleck",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Navy"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/navy_gold_fleck_1.webp",
-        "images/nails/nails-3d/navy_gold_fleck_2.webp"
-      ],
-      "createdAt": "2026-05-21",
-      "description": "Medium squoval nails in deep navy scattered with gold foil flecks that drift across the surface like flecks of light. One tip carries an ornate raised gold charm for an unexpected focal point. Dark, polished and luxe without shouting. Handcrafted to order in a versatile medium length."
-    },
-    {
-      "id": 120,
-      "name": "White Marble",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "White"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/white_marble_1.webp",
-        "images/nails/nails-art/white_marble_2.webp"
-      ],
-      "createdAt": "2026-05-20",
-      "description": "Classic white marble runs across a medium tip, cool grey veining tracing through a bright base, shown against a sharp black geometric backdrop. The effect is clean, sculptural and timeless. A polished neutral that pairs with absolutely everything. Handcrafted to order."
-    },
-    {
-      "id": 208,
-      "name": "Gold Baroque Sculptural",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Gold"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/gold_baroque_sculptural_1.webp",
-        "images/nails/nails-3d/gold_baroque_sculptural_2.webp",
-        "images/nails/nails-3d/gold_baroque_sculptural_3.webp",
-        "images/nails/nails-3d/gold_baroque_sculptural_4.webp"
-      ],
-      "createdAt": "2026-05-19",
-      "description": "A full set sculpted entirely in molten gold, built up with baroque, organic relief and set with clear crystal gems. The long tips read more like cast jewelry than nails, dense with texture and shine. Opulent, three-dimensional and made for occasions. Each piece is hand-sculpted to order."
-    },
-    {
-      "id": 119,
-      "name": "Beige Stone Marble",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Beige"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/beige_stone_marble_1.webp"
-      ],
-      "createdAt": "2026-05-17",
-      "description": "Warm beige stone marbling drifts across these medium tips, soft veining over a sandy neutral base. The look is calm and refined, echoing natural travertine or limestone. An elegant nude alternative with quiet texture for any occasion. Handcrafted to order."
-    },
-    {
-      "id": 118,
-      "name": "Multicolor Marble Stone",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/multicolor_marble_stone_1.webp"
-      ],
-      "createdAt": "2026-05-16",
-      "description": "Loose medium tips in a mix of jewel-toned marbled stone, ruby reds, deep greens and smoky greys all polished to a glossy shine. Each piece looks like a different gemstone, rich and tactile. A luxe, mismatched-by-design set for a maximal mood. Handcrafted to order."
-    },
-    {
-      "id": 128,
-      "name": "Black White Mix",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/black_white_mix_1.webp",
-        "images/nails/nails-art/black_white_mix_2.webp",
-        "images/nails/nails-art/black_white_mix_3.webp",
-        "images/nails/nails-art/black_white_mix_4.webp",
-        "images/nails/nails-art/black_white_mix_5.webp"
-      ],
-      "createdAt": "2026-05-15",
-      "description": "A glossy black-and-white mix shown on a stand, jet-dark tips alternating with crisp pale ones for a sharp graphic contrast. The high-shine finish keeps it clean and modern. A bold monochrome set for anyone who likes edge without color. Handcrafted to order."
-    },
-    {
-      "id": 302,
-      "name": "Mixed Jelly Capsule",
-      "price": "€50",
-      "category": "Korean-Inspired Trends",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-korean/mixed_jelly_capsule_1.webp",
-        "images/nails/nails-korean/mixed_jelly_capsule_2.webp",
-        "images/nails/nails-korean/mixed_jelly_capsule_3.webp",
-        "images/nails/nails-korean/mixed_jelly_capsule_4.webp",
-        "images/nails/nails-korean/mixed_jelly_capsule_5.webp"
-      ],
-      "createdAt": "2026-05-14",
-      "description": "A clear display capsule cradles a full spectrum of short square jelly tips, from forest green and inky navy to terracotta, lilac, peach and deep cherry red. Each tip glows with a glossy, candy-like translucency, and extra stands show off pastel and brighter jelly shades. A playful, made-to-order collection for mixing tones across every finger."
-    },
-    {
-      "id": 126,
-      "name": "Silver Pearl Foil",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Silver"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/silver_pearl_foil_1.webp",
-        "images/nails/nails-art/silver_pearl_foil_2.webp",
-        "images/nails/nails-art/silver_pearl_foil_3.webp",
-        "images/nails/nails-art/silver_pearl_foil_4.webp",
-        "images/nails/nails-art/silver_pearl_foil_5.webp"
-      ],
-      "createdAt": "2026-05-10",
-      "description": "Frosted pearl-silver square tips catch a soft sheen against black, their foiled surface shimmering like brushed metal. The cool metallic glow feels futuristic yet refined on a clean medium shape. A sleek, light-reflecting choice for evening or a modern minimal look. Handcrafted to order."
-    },
-    {
-      "id": 408,
-      "name": "Wine Red Almond",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Burgundy"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/wine_red_almond_1.webp",
-        "images/nails/nails-monochrome/wine_red_almond_2.webp",
-        "images/nails/nails-monochrome/wine_red_almond_3.webp",
-        "images/nails/nails-monochrome/wine_red_almond_4.webp",
-        "images/nails/nails-monochrome/wine_red_almond_5.webp"
-      ],
-      "createdAt": "2026-05-08",
-      "description": "A deep wine burgundy on a long almond shape, the rounded point softening the richness of the colour. The darker red feels sultry and grown-up, glossy enough to look luxe without tipping into loud. Perfect for autumn, evenings and anyone who loves a moody red. Handcrafted to order."
-    },
-    {
-      "id": 407,
-      "name": "Red Glossy",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Red"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/red_glossy_1.webp",
-        "images/nails/nails-monochrome/red_glossy_2.webp",
-        "images/nails/nails-monochrome/red_glossy_3.webp",
-        "images/nails/nails-monochrome/red_glossy_4.webp",
-        "images/nails/nails-monochrome/red_glossy_5.webp"
-      ],
-      "createdAt": "2026-05-07",
-      "description": "Vivid true-red in a wet-look gloss, fanned across white so the colour reads bright and unapologetic. The long shape stretches the finish into something sleek and confident, the ultimate statement red. Made for dates, holidays and moments that deserve a little drama. Each set handcrafted to order."
-    },
-    {
-      "id": 125,
-      "name": "Orange Black Glossy",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/orange_black_glossy_1.webp",
-        "images/nails/nails-art/orange_black_glossy_2.webp",
-        "images/nails/nails-art/orange_black_glossy_3.webp",
-        "images/nails/nails-art/orange_black_glossy_4.webp"
-      ],
-      "createdAt": "2026-05-06",
-      "description": "Glossy tangerine tips paired with sleek black, presented in a clear case against a dark surface. The high-shine orange reads playful while the black keeps it grounded and chic. A punchy, color-forward set with editorial energy. Handcrafted to order."
-    },
-    {
-      "id": 406,
-      "name": "Nude Glossy 2",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Nude"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/nude_glossy_2_1.webp",
-        "images/nails/nails-monochrome/nude_glossy_2_2.webp",
-        "images/nails/nails-monochrome/nude_glossy_2_3.webp",
-        "images/nails/nails-monochrome/nude_glossy_2_4.webp",
-        "images/nails/nails-monochrome/nude_glossy_2_5.webp"
-      ],
-      "createdAt": "2026-05-05",
-      "description": "Soft pink-nude tips in a smooth glossy finish, displayed standing so you can read the clean curve of each nail. The short length and gentle tone feel fresh and natural, a slightly warmer take on the nude classic. Effortless for daily wear, brunches or a low-key polished look. Handcrafted to order."
-    },
-    {
-      "id": 124,
-      "name": "Orange Abstract",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Orange"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/orange_abstract_1.webp"
-      ],
-      "createdAt": "2026-05-04",
-      "description": "A single medium tip in vivid orange with a slice of deep navy, abstract color blocking set against stark black. The bold warm-cool contrast feels modern and confident. A bright, graphic accent for anyone who wants their nails to pop. Handcrafted to order."
-    },
-    {
-      "id": 405,
-      "name": "Navy Blue Glossy",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Navy"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/navy_blue_glossy_1.webp",
-        "images/nails/nails-monochrome/navy_blue_glossy_2.webp",
-        "images/nails/nails-monochrome/navy_blue_glossy_3.webp"
-      ],
-      "createdAt": "2026-05-02",
-      "description": "A rich navy blue with a deep glossy shine, shown against dark glitter so the colour reads almost like polished midnight. The medium length keeps it elegant and versatile, dressier than black yet just as refined. A moody alternative to the classics for evenings out or cooler-season looks. Handcrafted to order."
-    },
-    {
-      "id": 404,
-      "name": "Black Glossy Coffin",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Black"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/black_glossy_coffin_1.webp",
-        "images/nails/nails-monochrome/black_glossy_coffin_2.webp"
-      ],
-      "createdAt": "2026-05-01",
-      "description": "Deep glossy black sculpted into a long coffin shape, tapered and squared at the tip for full dramatic length. The high-shine finish keeps the silhouette sleek rather than heavy, all attitude and elegance. Made for statement evenings and anyone who loves a bold, fashion-forward hand. Handcrafted to order."
-    },
-    {
-      "id": 403,
-      "name": "Black Glossy",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Black"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/black_glossy_1.webp",
-        "images/nails/nails-monochrome/black_glossy_2.webp",
-        "images/nails/nails-monochrome/black_glossy_3.webp"
-      ],
-      "createdAt": "2026-04-30",
-      "description": "Glossy jet black at a short, tidy length, photographed against dark sparkle so the lacquer-like shine does all the talking. The result is sharp, minimal and quietly powerful, easy to wear yet undeniably striking. A confident everyday choice for anyone drawn to clean monochrome edge. Handcrafted to order."
-    },
-    {
-      "id": 122,
-      "name": "Multicolor Glitter Dots",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/multicolor_glitter_dots_1.webp",
-        "images/nails/nails-art/multicolor_glitter_dots_2.webp"
-      ],
-      "createdAt": "2026-04-27",
-      "description": "Worn on the hand, these medium tips wear a soft pastel base scattered with multicolor glitter dots like floating confetti. The look is light, dreamy and a little whimsical, sparkle without heaviness. Easy, joyful color for everyday or celebration. Handcrafted to order."
-    },
-    {
-      "id": 121,
-      "name": "Blue Crushed Glass",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Blue"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/blue_crushed_glass_1.webp",
-        "images/nails/nails-art/blue_crushed_glass_2.webp",
-        "images/nails/nails-art/blue_crushed_glass_3.webp",
-        "images/nails/nails-art/blue_crushed_glass_4.webp",
-        "images/nails/nails-art/blue_crushed_glass_5.webp"
-      ],
-      "createdAt": "2026-04-26",
-      "description": "One medium tip saturated in electric blue crushed-glass texture, the surface catching light in glittering facets against black. The intensity of the color is the whole story, vivid and almost liquid. A jewel-bright accent piece for those who want real impact. Handcrafted to order."
-    },
-    {
-      "id": 207,
-      "name": "White Floral Relief",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "White"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/white_floral_relief_1.webp",
-        "images/nails/nails-3d/white_floral_relief_2.webp",
-        "images/nails/nails-3d/white_floral_relief_3.webp",
-        "images/nails/nails-3d/white_floral_relief_4.webp",
-        "images/nails/nails-3d/white_floral_relief_5.webp"
-      ],
-      "createdAt": "2026-04-24",
-      "description": "Soft matte-white squoval nails crowned with sculpted, tone-on-tone 3D floral relief. The all-white palette keeps it serene and bridal while the raised blooms add quiet dimension. Romantic, minimal and elegant. Handcrafted to order in a flattering medium length."
-    },
-    {
-      "id": 206,
-      "name": "Silver Crumpled Foil",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Silver"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/silver_crumpled_foil_1.webp",
-        "images/nails/nails-3d/silver_crumpled_foil_2.webp",
-        "images/nails/nails-3d/silver_crumpled_foil_3.webp",
-        "images/nails/nails-3d/silver_crumpled_foil_4.webp",
-        "images/nails/nails-3d/silver_crumpled_foil_5.webp"
-      ],
-      "createdAt": "2026-04-23",
-      "description": "Short squoval tips in pale silver-grey, each topped with crumpled, sculptural foil that rises in graduated metallic relief. The effect is editorial and futuristic, like crushed chrome caught mid-motion. Cool-toned and architectural. Hand-sculpted to order in a compact short length."
-    },
-    {
-      "id": 205,
-      "name": "Pink Floral Sculptural",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Pink"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/pink_floral_sculptural_1.webp",
-        "images/nails/nails-3d/pink_floral_sculptural_2.webp",
-        "images/nails/nails-3d/pink_floral_sculptural_3.webp",
-        "images/nails/nails-3d/pink_floral_sculptural_4.webp",
-        "images/nails/nails-3d/pink_floral_sculptural_5.webp"
-      ],
-      "createdAt": "2026-04-22",
-      "description": "A long couture statement nail crowned with a sculpted 3D flower in translucent pink and white petals. The bloom centers on a cluster of iridescent crystals and beads that scatter light at its heart. Avant-garde, theatrical and unmistakably one-of-a-kind. Hand-sculpted to order as a true showpiece."
-    },
-    {
-      "id": 204,
-      "name": "Gold Sculptural Gem",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Gold"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/gold_sculptural_gem_1.webp",
-        "images/nails/nails-3d/gold_sculptural_gem_2.webp",
-        "images/nails/nails-3d/gold_sculptural_gem_3.webp"
-      ],
-      "createdAt": "2026-04-19",
-      "description": "A single sculptural statement nail where molten gold winds around a large, smooth blue-grey cabochon gem. Abstract and jewelry-like, it reads as wearable art rather than ordinary nail design. Glossy, organic and quietly dramatic against a deep ground. Hand-sculpted to order in a long length."
-    },
-    {
-      "id": 203,
-      "name": "Gold Sculptural Beetle",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Gold"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/gold_sculptural_beetle_1.webp",
-        "images/nails/nails-3d/gold_sculptural_beetle_2.webp",
-        "images/nails/nails-3d/gold_sculptural_beetle_3.webp",
-        "images/nails/nails-3d/gold_sculptural_beetle_4.webp",
-        "images/nails/nails-3d/gold_sculptural_beetle_5.webp"
-      ],
-      "createdAt": "2026-04-17",
-      "description": "A long, glossy black tip crowned with a sculptural gold beetle rendered in molten metal and finished with tiny dark beaded detailing. The high-shine base lets the gilded insect sit center stage. Dark, ornate and jewel-like, a piece with real character. Hand-sculpted to order."
-    },
-    {
-      "id": 107,
-      "name": "White & Black Polka Dot",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "White"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/white_black_polka_dot_1.webp",
-        "images/nails/nails-art/white_black_polka_dot_2.webp",
-        "images/nails/nails-art/white_black_polka_dot_3.webp",
-        "images/nails/nails-art/white_black_polka_dot_4.webp",
-        "images/nails/nails-art/white_black_polka_dot_5.webp"
-      ],
-      "createdAt": "2026-04-16",
-      "description": "Soft cream tips scattered with hand-placed black polka dots, the spacing loose and playful rather than rigid. The medium length keeps the look wearable while the spotted pattern adds retro charm. A light, graphic everyday set with personality. Handcrafted to order."
-    },
-    {
-      "id": 105,
-      "name": "White & Red Abstract Swirl",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Red"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/white_red_abstract_swirl_1.webp",
-        "images/nails/nails-art/white_red_abstract_swirl_2.webp",
-        "images/nails/nails-art/white_red_abstract_swirl_3.webp",
-        "images/nails/nails-art/white_red_abstract_swirl_4.webp",
-        "images/nails/nails-art/white_red_abstract_swirl_5.webp"
-      ],
-      "createdAt": "2026-04-14",
-      "description": "A crisp white canvas wrapped in one bold scarlet swirl that curls with calligraphic confidence across a medium tip. The minimal palette lets the single gesture do all the talking, dramatic against its dark backdrop. Striking and gallery-like, it is made for a standout accent nail. Handcrafted to order."
-    },
-    {
-      "id": 202,
-      "name": "Nude Gold Leaf",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Nude"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/nude_gold_leaf_1.webp",
-        "images/nails/nails-3d/nude_gold_leaf_2.webp",
-        "images/nails/nails-3d/nude_gold_leaf_3.webp"
-      ],
-      "createdAt": "2026-04-11",
-      "description": "A long, sheer nail with a milky-white sculpted cabochon center framed in delicate gold leaf, like a gilded stone set in glass. The translucent nude base keeps the focus on the raised 3D centerpiece. Refined, artful and softly luminous. Hand-sculpted to order in a long length."
-    },
-    {
-      "id": 201,
-      "name": "Multicolor Confetti Tips",
-      "price": "€60",
-      "category": "3D Designs",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-3d/multicolor_confetti_tips_1.webp",
-        "images/nails/nails-3d/multicolor_confetti_tips_2.webp",
-        "images/nails/nails-3d/multicolor_confetti_tips_3.webp",
-        "images/nails/nails-3d/multicolor_confetti_tips_4.webp",
-        "images/nails/nails-3d/multicolor_confetti_tips_5.webp"
-      ],
-      "createdAt": "2026-04-10",
-      "description": "Short, rounded nails in glossy white splashed with bold confetti swooshes of red, yellow, green, navy and orange. The abstract color-blocking feels playful and pop-art, energetic without being fussy. Fun, fresh and easy to wear short. Each tip is hand-painted to order in a mixed palette."
-    },
-    {
-      "id": 104,
-      "name": "Green Floral Millefiori",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Green"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/green_floral_millefiori_1.webp",
-        "images/nails/nails-art/green_floral_millefiori_2.webp"
-      ],
-      "createdAt": "2026-04-09",
-      "description": "A single short tip layered in mossy green with delicate floral millefiori detailing, like tiny glasswork blooms set into the surface. Photographed against black, the speckled depth and soft botanical motifs really glow. An artful, garden-inspired piece for those drawn to the miniature and intricate. Handcrafted to order."
-    },
-    {
-      "id": 103,
-      "name": "Blue & Red Abstract",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Blue"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/blue_red_abstract_1.webp",
-        "images/nails/nails-art/blue_red_abstract_2.webp",
-        "images/nails/nails-art/blue_red_abstract_3.webp",
-        "images/nails/nails-art/blue_red_abstract_4.webp",
-        "images/nails/nails-art/blue_red_abstract_5.webp"
-      ],
-      "createdAt": "2026-04-08",
-      "description": "Cool blue grounds these short tips while quick red abstract marks cut across for contrast and energy. The painterly accents land differently on every nail, so the set feels expressive rather than uniform. Compact length keeps it practical and bold at once. Handcrafted to order."
-    },
-    {
-      "id": 102,
-      "name": "Blue Abstract Marble",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Blue"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/blue_abstract_marble_1.webp",
-        "images/nails/nails-art/blue_abstract_marble_2.webp",
-        "images/nails/nails-art/blue_abstract_marble_3.webp",
-        "images/nails/nails-art/blue_abstract_marble_4.webp",
-        "images/nails/nails-art/blue_abstract_marble_5.webp"
-      ],
-      "createdAt": "2026-04-07",
-      "description": "Deep oceanic blue meets warm amber in a glassy abstract marble, the colors shifting under a high-gloss finish on a compact short shape. The veining drifts diagonally, giving each tip a sense of depth and movement. Polished and understated, it suits everyday wear that still wants a quiet touch of the unexpected. Handcrafted to order."
-    },
-    {
-      "id": 101,
-      "name": "Black & White Abstract",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Black"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/black_white_abstract_1.webp",
-        "images/nails/nails-art/black_white_abstract_2.webp",
-        "images/nails/nails-art/black_white_abstract_3.webp",
-        "images/nails/nails-art/black_white_abstract_4.webp",
-        "images/nails/nails-art/black_white_abstract_5.webp"
-      ],
-      "createdAt": "2026-04-06",
-      "description": "Inky black and white swirl across a clean short square set, where hand-painted abstract strokes pool and bleed like spilled ink frozen mid-motion. Each tip reads slightly differently, so the ten nails feel like a matched but never identical edition. A graphic, monochrome statement for anyone who loves art over sparkle. Handcrafted to order."
-    }
-  ]
+    "products": [
+        {
+            "id": 101,
+            "name": "Art Press-Ons 01",
+            "price": "€80",
+            "category": "Art Press-Ons",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-art/art-1-1.webp",
+                "images/nails/nails-art/art-1-2.webp"
+            ]
+        },
+        {
+            "id": 102,
+            "name": "Art Press-Ons 02",
+            "price": "€80",
+            "category": "Art Press-Ons",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-art/art-2-1.webp",
+                "images/nails/nails-art/art-2-2.webp"
+            ]
+        },
+        {
+            "id": 103,
+            "name": "Art Press-Ons 03",
+            "price": "€80",
+            "category": "Art Press-Ons",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Long",
+            "images": [
+                "images/nails/nails-art/art-3-1.webp",
+                "images/nails/nails-art/art-3-2.webp",
+                "images/nails/nails-art/art-3-3.webp",
+                "images/nails/nails-art/art-3-4.webp"
+            ]
+        },
+        {
+            "id": 104,
+            "name": "Art Press-Ons 04",
+            "price": "€80",
+            "category": "Art Press-Ons",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-art/art-4-1.webp",
+                "images/nails/nails-art/art-4-2.webp"
+            ]
+        },
+        {
+            "id": 105,
+            "name": "Art Press-Ons 05",
+            "price": "€80",
+            "category": "Art Press-Ons",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Short",
+            "images": [
+                "images/nails/nails-art/art-5-1.webp",
+                "images/nails/nails-art/art-5-2.webp"
+            ]
+        },
+        {
+            "id": 106,
+            "name": "Art Press-Ons 06",
+            "price": "€80",
+            "category": "Art Press-Ons",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-art/art-6-1.webp",
+                "images/nails/nails-art/art-6-2.webp"
+            ]
+        },
+        {
+            "id": 107,
+            "name": "Art Press-Ons 07",
+            "price": "€80",
+            "category": "Art Press-Ons",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-art/art-7-1.webp",
+                "images/nails/nails-art/art-7-2.webp"
+            ]
+        },
+        {
+            "id": 201,
+            "name": "3D Designs 01",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Long",
+            "images": [
+                "images/nails/nails-3d/3d-design-1-1.webp",
+                "images/nails/nails-3d/3d-design-1-2.webp"
+            ]
+        },
+        {
+            "id": 203,
+            "name": "3D Designs 03",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Long",
+            "images": [
+                "images/nails/nails-3d/3d-design-3-1.webp",
+                "images/nails/nails-3d/3d-design-3-2.webp",
+                "images/nails/nails-3d/3d-design-3-3.webp",
+                "images/nails/nails-3d/3d-design-3-4.webp",
+                "images/nails/nails-3d/3d-design-3-5.webp"
+            ]
+        },
+        {
+            "id": 204,
+            "name": "3D Designs 04",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-3d/3d-design-4-1.webp",
+                "images/nails/nails-3d/3d-design-4-2.webp"
+            ]
+        },
+        {
+            "id": 205,
+            "name": "3D Designs 05",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Long",
+            "images": [
+                "images/nails/nails-3d/3d-design-5-1.webp",
+                "images/nails/nails-3d/3d-design-5-2.webp",
+                "images/nails/nails-3d/3d-design-5-3.webp",
+                "images/nails/nails-3d/3d-design-5-4.webp"
+            ]
+        },
+        {
+            "id": 206,
+            "name": "3D Designs 06",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-3d/3d-design-6-1.webp",
+                "images/nails/nails-3d/3d-design-6-2.webp",
+                "images/nails/nails-3d/3d-design-6-3.webp"
+            ]
+        },
+        {
+            "id": 207,
+            "name": "3D Designs 07",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Long",
+            "images": [
+                "images/nails/nails-3d/3d-design-7-1.webp",
+                "images/nails/nails-3d/3d-design-7-2.webp",
+                "images/nails/nails-3d/3d-design-7-3.webp"
+            ]
+        },
+        {
+            "id": 208,
+            "name": "3D Designs 08",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-3d/3d-design-8-1.webp",
+                "images/nails/nails-3d/3d-design-8-2.webp",
+                "images/nails/nails-3d/3d-design-8-3.webp"
+            ]
+        },
+        {
+            "id": 209,
+            "name": "3D Designs 09",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-3d/3d-design-9-1.webp",
+                "images/nails/nails-3d/3d-design-9-2.webp"
+            ]
+        },
+        {
+            "id": 210,
+            "name": "3D Designs 10",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-3d/3d-design-10.webp"
+            ]
+        },
+        {
+            "id": 211,
+            "name": "3D Designs 11",
+            "price": "€60",
+            "category": "3D Designs",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-3d/3d-design-11.webp"
+            ]
+        },
+        {
+            "id": 301,
+            "name": "Korean-Inspired 01",
+            "price": "€50",
+            "category": "Korean-Inspired Trends",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Short",
+            "images": [
+                "images/nails/nails-korean/korean-design-1.webp"
+            ]
+        },
+        {
+            "id": 302,
+            "name": "Korean-Inspired 02",
+            "price": "€50",
+            "category": "Korean-Inspired Trends",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Short",
+            "images": [
+                "images/nails/nails-korean/korean-design-2.webp"
+            ]
+        },
+        {
+            "id": 303,
+            "name": "Korean-Inspired 03",
+            "price": "€50",
+            "category": "Korean-Inspired Trends",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-korean/korean-design-3.webp"
+            ]
+        },
+        {
+            "id": 304,
+            "name": "Korean-Inspired 04",
+            "price": "€50",
+            "category": "Korean-Inspired Trends",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-korean/korean-design-4-1.webp",
+                "images/nails/nails-korean/korean-design-4-2.webp"
+            ]
+        },
+        {
+            "id": 305,
+            "name": "Korean-Inspired 05",
+            "price": "€50",
+            "category": "Korean-Inspired Trends",
+            "colors": [
+                "Mixed"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-korean/korean-design-5-1.webp",
+                "images/nails/nails-korean/korean-design-5-2.webp"
+            ]
+        },
+        {
+            "id": 401,
+            "name": "Monochrome 01",
+            "price": "€30",
+            "category": "Monochrome Elegance",
+            "colors": [
+                "Monochrome"
+            ],
+            "length": "Short",
+            "images": [
+                "images/nails/nails-monochrome/monochrome-1.webp"
+            ]
+        },
+        {
+            "id": 402,
+            "name": "Monochrome 02",
+            "price": "€30",
+            "category": "Monochrome Elegance",
+            "colors": [
+                "Monochrome"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-monochrome/monochrome-2.webp"
+            ]
+        },
+        {
+            "id": 403,
+            "name": "Monochrome 03",
+            "price": "€30",
+            "category": "Monochrome Elegance",
+            "colors": [
+                "Monochrome"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-monochrome/monochrome-3.webp"
+            ]
+        },
+        {
+            "id": 404,
+            "name": "Monochrome 04",
+            "price": "€30",
+            "category": "Monochrome Elegance",
+            "colors": [
+                "Monochrome"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-monochrome/monochrome-4-1.webp",
+                "images/nails/nails-monochrome/monochrome-4-2.webp"
+            ]
+        },
+        {
+            "id": 405,
+            "name": "Monochrome 05",
+            "price": "€30",
+            "category": "Monochrome Elegance",
+            "colors": [
+                "Monochrome"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-monochrome/monochrome-5.webp"
+            ]
+        },
+        {
+            "id": 406,
+            "name": "Monochrome 06",
+            "price": "€30",
+            "category": "Monochrome Elegance",
+            "colors": [
+                "Monochrome"
+            ],
+            "length": "Medium",
+            "images": [
+                "images/nails/nails-monochrome/monochrome-6.webp"
+            ]
+        }
+    ]
 }
