@@ -235,26 +235,6 @@
       "createdAt": "2026-06-10"
     },
     {
-      "id": 113,
-      "name": "Blue & Amber Ornate Gold Art",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Blue & Amber"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/blue_amber_ornate_gold_art_1.webp",
-        "images/nails/nails-art/blue_amber_ornate_gold_art_2.webp",
-        "images/nails/nails-art/blue_amber_ornate_gold_art_3.webp",
-        "images/nails/nails-art/blue_amber_ornate_gold_art_4.webp",
-        "images/nails/nails-art/blue_amber_ornate_gold_art_5.webp",
-        "images/nails/nails-art/blue_amber_ornate_gold_art_6.webp"
-      ],
-      "createdAt": "2026-06-09"
-    },
-    {
       "id": 112,
       "name": "Earthy Brown Ornamental Art",
       "price": "€80",
@@ -398,21 +378,6 @@
       "createdAt": "2026-06-02"
     },
     {
-      "id": 410,
-      "name": "Peach Glossy",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Peach"
-      ],
-      "length": "Long",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/peach_glossy_1.webp"
-      ],
-      "createdAt": "2026-05-31"
-    },
-    {
       "id": 409,
       "name": "Slate Gray Matte",
       "price": "€30",
@@ -445,7 +410,7 @@
     },
     {
       "id": 212,
-      "name": "Silver Disco Mirror",
+      "name": "Gold Foil Mirror",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
@@ -454,8 +419,8 @@
       "length": "Long",
       "handcraftedOnDemand": true,
       "images": [
-        "images/nails/nails-3d/silver_disco_mirror_1.webp",
-        "images/nails/nails-3d/silver_disco_mirror_2.webp"
+        "images/nails/nails-3d/gold_foil_mirror_1.webp",
+        "images/nails/nails-3d/gold_foil_mirror_2.webp"
       ],
       "createdAt": "2026-05-28"
     },
@@ -502,7 +467,8 @@
       "handcraftedOnDemand": true,
       "images": [
         "images/nails/nails-monochrome/nude_glossy_1.webp",
-        "images/nails/nails-monochrome/nude_glossy_2.webp"
+        "images/nails/nails-monochrome/nude_glossy_2.webp",
+        "images/nails/nails-monochrome/nude_glossy_3.webp"
       ],
       "createdAt": "2026-05-25"
     },
@@ -1280,7 +1246,13 @@
         "images/nails/nails-art/blue_abstract_marble_23.webp",
         "images/nails/nails-art/blue_abstract_marble_24.webp",
         "images/nails/nails-art/blue_abstract_marble_25.webp",
-        "images/nails/nails-art/blue_abstract_marble_26.webp"
+        "images/nails/nails-art/blue_abstract_marble_26.webp",
+        "images/nails/nails-art/blue_abstract_marble_27.webp",
+        "images/nails/nails-art/blue_abstract_marble_28.webp",
+        "images/nails/nails-art/blue_abstract_marble_29.webp",
+        "images/nails/nails-art/blue_abstract_marble_30.webp",
+        "images/nails/nails-art/blue_abstract_marble_31.webp",
+        "images/nails/nails-art/blue_abstract_marble_32.webp"
       ],
       "createdAt": "2026-04-07"
     },
