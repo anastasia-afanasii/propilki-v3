@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+const isAbsoluteUrl = (v: string) => /^https?:\/\//i.test(v);
+
 type Props = {
   content: {
     autoPlayMs: number;
@@ -37,7 +39,11 @@ const Hero = ({ content }: Props) => {
               <div key={slide.id} className="w-full flex-shrink-0 h-full">
                 <div className="relative h-full">
                   <img
-                    src={slide.image}
+                    src={
+                      isAbsoluteUrl(slide.image)
+                        ? slide.image
+                        : `${import.meta.env.BASE_URL}${slide.image}`
+                    }
                     alt={slide.name}
                     className="w-full h-full object-cover"
                     loading="eager"

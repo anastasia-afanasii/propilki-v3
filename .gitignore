@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# local working folders (non-catalog images, review montages)
+_backlog/
+_review/

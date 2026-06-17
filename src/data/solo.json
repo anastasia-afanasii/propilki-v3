@@ -150,25 +150,25 @@
                 "id": 1,
                 "name": "Art Press-Ons",
                 "description": "Our exclusive Art Press-Ons are meticulously crafted as bespoke pieces, inspired by iconic works of art. Each set is custom-made to your individual size and preferences, ensuring a perfect and personalized fit.",
-                "image": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&h=600&fit=crop&crop=faces"
+                "image": "images/hero/art.webp"
             },
             {
                 "id": 2,
                 "name": "3D Designs",
                 "description": "Experience three-dimensional patterns sculpted to any shape and length, creating a truly unique tactile effect.",
-                "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop&crop=faces"
+                "image": "images/hero/3d.webp"
             },
             {
                 "id": 3,
                 "name": "Korean-Inspired Trends",
                 "description": "Drawing inspiration from the latest Korean manicure styles, our designs feature translucent bases, abstract motifs, and whimsical fantasy elements for a fresh, modern aesthetic.",
-                "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=800&h=600&fit=crop&crop=faces"
+                "image": "images/hero/korean.webp"
             },
             {
                 "id": 4,
                 "name": "Monochrome Elegance",
                 "description": "Discover sleek and sophisticated monochrome designs that embody timeless minimalism and effortless style.",
-                "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=600&fit=crop&crop=faces"
+                "image": "images/hero/monochrome.webp"
             }
         ]
     },
