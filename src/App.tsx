@@ -1,6 +1,4 @@
-import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import OnlineCourses from "./pages/Index";
@@ -27,30 +25,25 @@ import useCanonical from "@/hooks/useCanonical";
   );
 })();
 
-const queryClient = new QueryClient();
-
 const CanonicalUpdater = () => {
   useCanonical();
   return null;
 };
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
-        <CanonicalUpdater />
-        <FaviconSwitcher />
-        <ScrollToHash />
-        <Routes>
-          <Route path="/" element={<OnlineCourses />} />
-          <Route path="/solo" element={<Solo />} />
-          <Route path="/product/:id" element={<ProductPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <TooltipProvider>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <CanonicalUpdater />
+      <FaviconSwitcher />
+      <ScrollToHash />
+      <Routes>
+        <Route path="/" element={<OnlineCourses />} />
+        <Route path="/solo" element={<Solo />} />
+        <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </TooltipProvider>
 );
 
 export default App;

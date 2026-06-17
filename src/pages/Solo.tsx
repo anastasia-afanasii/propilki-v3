@@ -1,5 +1,7 @@
 import content from "@/data/solo.json";
 import useDocumentTitle from "@/hooks/useDocumentTitle";
+import useMetaDescription from "@/hooks/useMetaDescription";
+import useOpenGraph from "@/hooks/useOpenGraph";
 
 import Header from "@/components/nails/Header";
 import Hero from "@/components/nails/Hero";
@@ -16,7 +18,17 @@ import CelebrityWorks from "@/components/nails/CelebrityWorks";
 import Footer from "@/components/nails/Footer";
 
 const Solo = () => {
-  useDocumentTitle("SOLO Press-On Nails");
+  useDocumentTitle("SOLO - Handcrafted Press-On Nails");
+  useMetaDescription(
+    "SOLO by PROPILKI - handcrafted, made-to-order press-on nails. Browse our Art, 3D, Korean-inspired and Monochrome nail collections."
+  );
+  useOpenGraph({
+    title: "SOLO - Handcrafted Press-On Nails | PROPILKI",
+    description:
+      "Handcrafted, made-to-order press-on nails - Art, 3D, Korean-inspired and Monochrome collections.",
+    path: "/solo",
+    image: "og-image.png",
+  });
 
   return (
     <div className="min-h-screen bg-white">

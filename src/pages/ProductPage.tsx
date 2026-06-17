@@ -1,7 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
 import useDocumentTitle from "@/hooks/useDocumentTitle";
+import useMetaDescription from "@/hooks/useMetaDescription";
+import useOpenGraph from "@/hooks/useOpenGraph";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -13,35 +15,37 @@ import Footer from "@/components/nails/Footer";
 
 import content from "@/data/solo.json";
 import catalog from "@/data/nailCatalog.json";
+import type { NailProduct } from "@/types/catalog";
 
-type NailProduct = {
-  id: number;
-  name: string;
-  price: string;
-  category: string;
-  images: string[];
-  colors: string[];
-  length: string;
-  description?: string;
-  badge?: string;
-  originalPrice?: string;
-  inStock?: boolean;
-};
+const products = catalog.products as NailProduct[];
 
 const ProductPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
-  const products = (catalog.products as NailProduct[]) ?? [];
 
   const product = useMemo(() => {
     const pid = Number(id);
     return products.find((p) => p.id === pid);
-  }, [id, products]);
+  }, [id]);
 
-  useDocumentTitle(product?.name ?? "Product");
+  useDocumentTitle(
+    product ? `${product.name} - ${product.category}` : "Product"
+  );
+  useMetaDescription(
+    product
+      ? product.description ??
+          `${product.name} - handcrafted ${product.category} press-on nails by SOLO / PROPILKI.`
+      : undefined
+  );
+  useOpenGraph({
+    title: product ? `${product.name} | PROPILKI` : undefined,
+    description: product?.description,
+    path: product ? `/product/${product.id}` : "/solo",
+    image: product?.images?.[0],
+  });
 
   useEffect(() => {
     setSelectedImageIndex(0);
@@ -54,19 +58,19 @@ const ProductPage = () => {
 
   const hasGallery = gallery.length > 1;
 
-  const handlePreviousImage = () => {
+  const handlePreviousImage = useCallback(() => {
     if (!hasGallery) return;
     setSelectedImageIndex((prev) =>
       prev === 0 ? gallery.length - 1 : prev - 1
     );
-  };
+  }, [hasGallery, gallery.length]);
 
-  const handleNextImage = () => {
+  const handleNextImage = useCallback(() => {
     if (!hasGallery) return;
     setSelectedImageIndex((prev) =>
       prev === gallery.length - 1 ? 0 : prev + 1
     );
-  };
+  }, [hasGallery, gallery.length]);
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: handleNextImage,
@@ -76,13 +80,44 @@ const ProductPage = () => {
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
-      if (!hasGallery) return;
       if (e.key === "ArrowLeft") handlePreviousImage();
       if (e.key === "ArrowRight") handleNextImage();
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [hasGallery, gallery.length]);
+  }, [handlePreviousImage, handleNextImage]);
+
+  // JSON-LD Product structured data
+  useEffect(() => {
+    if (!product) return;
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    const priceValue = product.price.replace(/[^\d.]/g, "");
+    script.text = JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      name: product.name,
+      category: product.category,
+      image: product.images.map(
+        (img) => `https://propilki.online/${img.replace(/^\//, "")}`
+      ),
+      description:
+        product.description ??
+        `${product.name} - handcrafted ${product.category} press-on nails.`,
+      brand: { "@type": "Brand", name: "SOLO by PROPILKI" },
+      offers: {
+        "@type": "Offer",
+        url: `https://propilki.online/product/${product.id}`,
+        priceCurrency: "EUR",
+        price: priceValue,
+        availability: "https://schema.org/MadeToOrder",
+      },
+    });
+    document.head.appendChild(script);
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, [product]);
 
   if (!product) {
     return (
@@ -134,7 +169,11 @@ const ProductPage = () => {
         <div className="max-w-7xl mx-auto">
           <Button
             variant="ghost"
-            onClick={() => navigate("/solo#catalog")}
+            onClick={() =>
+              location.key !== "default"
+                ? navigate(-1)
+                : navigate("/solo#catalog")
+            }
             className="mb-5 sm:mb-6 text-neutral-600 hover:text-neutral-900"
             type="button"
           >
@@ -150,6 +189,9 @@ const ProductPage = () => {
                   <img
                     src={activeImage}
                     alt={product.name}
+                    width={800}
+                    height={800}
+                    fetchPriority="high"
                     className="w-full h-full object-cover transition-all duration-500"
                   />
                 </div>

@@ -35,7 +35,7 @@ const Hero = ({ content }: Props) => {
             className="flex transition-transform duration-500 ease-out h-full"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
-            {content.slides.map((slide) => (
+            {content.slides.map((slide, index) => (
               <div key={slide.id} className="w-full flex-shrink-0 h-full">
                 <div className="relative h-full">
                   <img
@@ -46,7 +46,8 @@ const Hero = ({ content }: Props) => {
                     }
                     alt={slide.name}
                     className="w-full h-full object-cover"
-                    loading="eager"
+                    loading={index === 0 ? "eager" : "lazy"}
+                    fetchPriority={index === 0 ? "high" : "auto"}
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

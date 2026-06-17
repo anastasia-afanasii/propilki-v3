@@ -1,19 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ProductCard from "./ProductCard";
 
 import catalog from "@/data/nailCatalog.json";
+import type { NailProduct } from "@/types/catalog";
 
-type NailProduct = {
-  id: number;
-  name: string;
-  price: string;
-  category: string;
-  images: string[];
-  colors: string[];
-  length: string;
-};
+const products = catalog.products as NailProduct[];
 
 type Props = {
   content: {
@@ -40,10 +34,28 @@ const NailCatalog = ({ content }: Props) => {
   const sectionRef = useRef<HTMLElement | null>(null);
   const categoryBarRef = useRef<HTMLDivElement | null>(null);
 
-  const [selectedCategory, setSelectedCategory] = useState<string>(
-    content.categoryOrder?.[0] ?? "All"
-  );
-  const [page, setPage] = useState(1);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const defaultCategory = content.categoryOrder?.[0] ?? "All";
+  const selectedCategory = searchParams.get("cat") ?? defaultCategory;
+  const page = Math.max(1, Number(searchParams.get("page")) || 1);
+
+  const updateParams = (next: { cat?: string; page?: number }) => {
+    setSearchParams(
+      (prev) => {
+        const params = new URLSearchParams(prev);
+        if (next.cat !== undefined) {
+          if (next.cat === defaultCategory) params.delete("cat");
+          else params.set("cat", next.cat);
+        }
+        if (next.page !== undefined) {
+          if (next.page <= 1) params.delete("page");
+          else params.set("page", String(next.page));
+        }
+        return params;
+      },
+      { replace: true }
+    );
+  };
 
   const [pageSize, setPageSize] = useState<number>(() => {
     if (typeof window === "undefined") return DESKTOP_PAGE_SIZE;
@@ -66,12 +78,10 @@ const NailCatalog = ({ content }: Props) => {
     return () => mql.removeEventListener("change", onChange);
   }, []);
 
-  const products = (catalog.products as NailProduct[]) ?? [];
-
   const filteredProducts = useMemo(() => {
     if (selectedCategory === "All") return products;
     return products.filter((p) => p.category === selectedCategory);
-  }, [products, selectedCategory]);
+  }, [selectedCategory]);
 
   const totalPages = useMemo(() => {
     return Math.max(1, Math.ceil(filteredProducts.length / pageSize));
@@ -83,12 +93,18 @@ const NailCatalog = ({ content }: Props) => {
   }, [filteredProducts, page, pageSize]);
 
   useEffect(() => {
-    setPage(1);
-  }, [selectedCategory, pageSize]);
-
-  useEffect(() => {
-    if (page > totalPages) setPage(totalPages);
-  }, [page, totalPages]);
+    if (page > totalPages) {
+      setSearchParams(
+        (prev) => {
+          const params = new URLSearchParams(prev);
+          if (totalPages <= 1) params.delete("page");
+          else params.set("page", String(totalPages));
+          return params;
+        },
+        { replace: true }
+      );
+    }
+  }, [page, totalPages, setSearchParams]);
 
   const scrollToCatalogTop = () => {
     const el = sectionRef.current;
@@ -122,12 +138,12 @@ const NailCatalog = ({ content }: Props) => {
 
   const selectCategory = (category: string) => {
     ensureActiveCategoryVisible(category);
-    setSelectedCategory(category);
+    updateParams({ cat: category, page: 1 });
   };
 
   const goToPage = (nextPage: number) => {
     const clamped = Math.min(totalPages, Math.max(1, nextPage));
-    setPage(clamped);
+    updateParams({ page: clamped });
     requestAnimationFrame(() => scrollToCatalogTop());
   };
 
@@ -163,6 +179,7 @@ const NailCatalog = ({ content }: Props) => {
                 <Button
                   key={category}
                   data-cat={category}
+                  aria-pressed={selectedCategory === category}
                   variant={selectedCategory === category ? "default" : "ghost"}
                   onClick={() => selectCategory(category)}
                   className={`px-5 sm:px-6 py-2 rounded-none font-medium tracking-wide transition-all duration-300 whitespace-nowrap ${
@@ -179,15 +196,21 @@ const NailCatalog = ({ content }: Props) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-          {pageItems.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              badgeLabel={content.badgeLabel}
-            />
-          ))}
-        </div>
+        {pageItems.length === 0 ? (
+          <p className="text-center text-neutral-500 font-light py-12">
+            No products in this category yet.
+          </p>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            {pageItems.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                badgeLabel={content.badgeLabel}
+              />
+            ))}
+          </div>
+        )}
 
         {totalPages > 1 && (
           <div className="mt-8 sm:mt-10 md:mt-12 flex items-center justify-center">
