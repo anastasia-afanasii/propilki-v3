@@ -139,6 +139,7 @@ const NailCatalog = ({ content }: Props) => {
   const selectCategory = (category: string) => {
     ensureActiveCategoryVisible(category);
     updateParams({ cat: category, page: 1 });
+    requestAnimationFrame(() => scrollToCatalogTop());
   };
 
   const goToPage = (nextPage: number) => {

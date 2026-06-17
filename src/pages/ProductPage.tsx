@@ -186,14 +186,12 @@ const ProductPage = () => {
             {/* Images */}
             <div className="space-y-4 sm:space-y-5 md:space-y-6">
               <div className="relative group" {...swipeHandlers}>
-                <div className="aspect-square overflow-hidden bg-neutral-50 rounded-lg">
+                <div className="aspect-square overflow-hidden bg-neutral-50 rounded-lg flex items-center justify-center">
                   <img
                     src={activeImage}
                     alt={product.name}
-                    width={800}
-                    height={800}
                     fetchPriority="high"
-                    className="w-full h-full object-cover transition-all duration-500"
+                    className="w-full h-full object-contain transition-all duration-500"
                   />
                 </div>
 

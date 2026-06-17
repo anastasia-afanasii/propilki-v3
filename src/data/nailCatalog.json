@@ -172,8 +172,7 @@
         "images/nails/nails-art/earthy_brown_ornamental_art_1.webp",
         "images/nails/nails-art/earthy_brown_ornamental_art_2.webp",
         "images/nails/nails-art/earthy_brown_ornamental_art_3.webp",
-        "images/nails/nails-art/earthy_brown_ornamental_art_4.webp",
-        "images/nails/nails-art/earthy_brown_ornamental_art_5.webp"
+        "images/nails/nails-art/earthy_brown_ornamental_art_4.webp"
       ],
       "createdAt": "2026-06-07",
       "description": "Earthy browns and soft greys swirl into an ornamental, stone-like finish on these short tips. The muted, organic palette feels grounded and natural, like weathered marble or river rock. A calm, neutral set for understated everyday wear with quiet texture. Handcrafted to order."
@@ -443,22 +442,6 @@
       ],
       "createdAt": "2026-05-19",
       "description": "A full set sculpted entirely in molten gold, built up with baroque, organic relief and set with clear crystal gems. The long tips read more like cast jewelry than nails, dense with texture and shine. Opulent, three-dimensional and made for occasions. Each piece is hand-sculpted to order."
-    },
-    {
-      "id": 301,
-      "name": "Clear Jelly",
-      "price": "€50",
-      "category": "Korean-Inspired Trends",
-      "colors": [
-        "Clear"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-korean/clear_jelly_1.webp"
-      ],
-      "createdAt": "2026-05-18",
-      "description": "Pure translucent jelly nails with a glassy, water-clear finish that looks dipped in glaze. Cut short in a soft rounded almond, they read as polished and effortless, the kind of bare manicure that flatters every skin tone. Handcrafted to order for an understated, just-out-of-the-salon glow with nothing to distract."
     },
     {
       "id": 119,
