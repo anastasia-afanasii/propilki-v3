@@ -34,7 +34,7 @@ You are an architecture analyst for the PROPILKI project — a React + Vite + Ty
 4. **Data flow**
    - Trace how JSON data flows from files → pages → components
    - Check for unnecessary re-renders (missing memoization)
-   - Verify React Query usage is appropriate
+   - Keep state simple — local React state only, JSON-driven content (no external state library)
 
 5. **File organization**
    - Check if files are in the right directories

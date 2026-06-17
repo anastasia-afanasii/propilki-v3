@@ -17,7 +17,7 @@ You are a performance optimization specialist for the PROPILKI project — a Rea
 
 ### 1. Bundle size
 - Run `npm run build` and check output sizes
-- Find large imports: `import *` from lucide-react, recharts, etc.
+- Find large imports: `import *` from lucide-react, etc.
 - Suggest tree-shaking: named imports only
 - Recommend code splitting: lazy load routes with `React.lazy()`
 - Check for duplicate dependencies

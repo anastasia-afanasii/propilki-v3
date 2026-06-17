@@ -46,12 +46,12 @@ You are a UI/UX design expert for the PROPILKI project — a React + Tailwind CS
 
 ## Design system reference for PROPILKI
 
-- Style: Clean, feminine, modern — nail/beauty industry aesthetic
-- Corners: Rounded (rounded-xl, rounded-2xl)
-- Shadows: Soft (shadow-sm, shadow-md)
+- Style: Minimalist, monochrome — clean and understated (NOT "girly"/decorative)
+- Corners: Sharp/minimal — the project uses `rounded-none` widely; avoid large radii
+- Shadows: Soft and sparing (shadow-sm, occasional shadow-md)
 - Spacing: Generous whitespace
-- Typography: Clear hierarchy with size contrast
-- Colors: Should feel elegant and cohesive
+- Typography: Single Inter font; clear hierarchy with size contrast
+- Colors: **Black / white / gray ONLY — never introduce other colours**
 - Animations: Subtle transitions (hover:scale-105, transition-all)
 
 ## Output format

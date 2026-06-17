@@ -6,10 +6,9 @@ React + Vite + TypeScript SPA for a nail design business (PROPILKI). Online cour
 ## Tech Stack
 - **Framework:** React 19 + TypeScript 6
 - **Build:** Vite 6 (SWC plugin + Tailwind v4 plugin)
-- **Styling:** Tailwind CSS 4 + shadcn/ui (accordion, button, badge, card, tooltip, sonner)
+- **Styling:** Tailwind CSS 4 + shadcn/ui (accordion, badge, button, card, tooltip)
 - **Routing:** react-router-dom v6 (BrowserRouter)
-- **State:** @tanstack/react-query
-- **Toast:** Sonner
+- **State:** local React state (JSON-driven content, no external state library)
 - **Data:** JSON-driven content (no backend)
 
 ## Project Structure
@@ -24,7 +23,7 @@ src/
     ScrollToHash.tsx
     nails/            # SOLO section: Header, Hero, NailCatalog, ProductCard, etc.
     online-courses/   # Courses section: Header, HeroSection, CourseCard, etc.
-    ui/               # shadcn/ui: accordion, button, badge, card, tooltip, sonner
+    ui/               # shadcn/ui: accordion, badge, button, card, tooltip
   data/               # propilki.json, solo.json, nailCatalog.json
   lib/utils.ts        # cn() helper
 public/images/        # All product and content images
