@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 150,
+      "id": 117,
       "name": "Pastel Pressed Flower Floral",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -29,44 +29,16 @@
         "images/nails/nails-art/pastel_pressed_flower_floral_16.webp",
         "images/nails/nails-art/pastel_pressed_flower_floral_17.webp",
         "images/nails/nails-art/pastel_pressed_flower_floral_18.webp",
-        "images/nails/nails-art/pastel_pressed_flower_floral_19.webp"
+        "images/nails/nails-art/pastel_pressed_flower_floral_19.webp",
+        "images/nails/nails-art/pastel_pressed_flower_floral_20.webp",
+        "images/nails/nails-art/pastel_pressed_flower_floral_21.webp",
+        "images/nails/nails-art/pastel_pressed_flower_floral_22.webp",
+        "images/nails/nails-art/pastel_pressed_flower_floral_23.webp"
       ],
       "createdAt": "2026-06-17"
     },
     {
-      "id": 430,
-      "name": "Solid Pale Pink",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Lilac"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "createdAt": "2026-06-17",
-      "images": [
-        "images/nails/nails-monochrome/solid_pale_pink_1.webp",
-        "images/nails/nails-monochrome/solid_pale_pink_2.webp",
-        "images/nails/nails-monochrome/solid_pale_pink_3.webp"
-      ]
-    },
-    {
-      "id": 423,
-      "name": "Portrait Graffiti Art on White Almond",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Brown"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "createdAt": "2026-06-17",
-      "images": [
-        "images/nails/nails-art/portrait_graffiti_art_on_white_almond_1.webp"
-      ]
-    },
-    {
-      "id": 424,
+      "id": 130,
       "name": "Red, Teal & Beige Marble",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -110,7 +82,7 @@
       ]
     },
     {
-      "id": 425,
+      "id": 131,
       "name": "Red Berry & Fruit Art",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -135,7 +107,7 @@
       ]
     },
     {
-      "id": 148,
+      "id": 116,
       "name": "Multicolor Abstract Painted Art",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -164,7 +136,7 @@
       "createdAt": "2026-06-15"
     },
     {
-      "id": 315,
+      "id": 303,
       "name": "Clear Jelly Chrome Droplet",
       "price": "€50",
       "category": "Korean-Inspired Trends",
@@ -175,12 +147,19 @@
       "handcraftedOnDemand": true,
       "images": [
         "images/nails/nails-korean/clear_jelly_chrome_droplet_1.webp",
-        "images/nails/nails-korean/clear_jelly_chrome_droplet_2.webp"
+        "images/nails/nails-korean/clear_jelly_chrome_droplet_2.webp",
+        "images/nails/nails-korean/clear_jelly_chrome_droplet_3.webp",
+        "images/nails/nails-korean/clear_jelly_chrome_droplet_4.webp",
+        "images/nails/nails-korean/clear_jelly_chrome_droplet_5.webp",
+        "images/nails/nails-korean/clear_jelly_chrome_droplet_6.webp",
+        "images/nails/nails-korean/clear_jelly_chrome_droplet_7.webp",
+        "images/nails/nails-korean/clear_jelly_chrome_droplet_8.webp",
+        "images/nails/nails-korean/clear_jelly_chrome_droplet_9.webp"
       ],
       "createdAt": "2026-06-14"
     },
     {
-      "id": 430,
+      "id": 214,
       "name": "White Nude Almond Set",
       "price": "€60",
       "category": "3D Designs",
@@ -201,7 +180,7 @@
       "createdAt": "2026-06-13"
     },
     {
-      "id": 141,
+      "id": 115,
       "name": "Cream Portrait Hand-Painted",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -217,12 +196,13 @@
         "images/nails/nails-art/cream_portrait_hand_painted_4.webp",
         "images/nails/nails-art/cream_portrait_hand_painted_5.webp",
         "images/nails/nails-art/cream_portrait_hand_painted_6.webp",
-        "images/nails/nails-art/cream_portrait_hand_painted_7.webp"
+        "images/nails/nails-art/cream_portrait_hand_painted_7.webp",
+        "images/nails/nails-art/cream_portrait_hand_painted_8.webp"
       ],
       "createdAt": "2026-06-12"
     },
     {
-      "id": 136,
+      "id": 114,
       "name": "Lilac & Periwinkle Floral Speckle Mix",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -247,12 +227,15 @@
         "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_13.webp",
         "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_14.webp",
         "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_15.webp",
-        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_16.webp"
+        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_16.webp",
+        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_17.webp",
+        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_18.webp",
+        "images/nails/nails-art/lilac_periwinkle_floral_speckle_mix_19.webp"
       ],
       "createdAt": "2026-06-10"
     },
     {
-      "id": 135,
+      "id": 113,
       "name": "Blue & Amber Ornate Gold Art",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -272,28 +255,7 @@
       "createdAt": "2026-06-09"
     },
     {
-      "id": 429,
-      "name": "Silver Chrome Metallic",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Silver"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-monochrome/silver_chrome_metallic_1.webp",
-        "images/nails/nails-monochrome/silver_chrome_metallic_2.webp",
-        "images/nails/nails-monochrome/silver_chrome_metallic_3.webp",
-        "images/nails/nails-monochrome/silver_chrome_metallic_4.webp",
-        "images/nails/nails-monochrome/silver_chrome_metallic_5.webp",
-        "images/nails/nails-monochrome/silver_chrome_metallic_6.webp",
-        "images/nails/nails-monochrome/silver_chrome_metallic_7.webp"
-      ],
-      "createdAt": "2026-06-08"
-    },
-    {
-      "id": 134,
+      "id": 112,
       "name": "Earthy Brown Ornamental Art",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -322,7 +284,7 @@
       "createdAt": "2026-06-07"
     },
     {
-      "id": 133,
+      "id": 111,
       "name": "Navy & Orange Abstract Floral",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -346,7 +308,7 @@
       "createdAt": "2026-06-06"
     },
     {
-      "id": 131,
+      "id": 110,
       "name": "Red & White Marble Swirl",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -397,7 +359,7 @@
       "createdAt": "2026-06-04"
     },
     {
-      "id": 428,
+      "id": 411,
       "name": "Nude Glossy Solid",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -436,7 +398,7 @@
       "createdAt": "2026-06-02"
     },
     {
-      "id": 427,
+      "id": 410,
       "name": "Peach Glossy",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -451,7 +413,7 @@
       "createdAt": "2026-05-31"
     },
     {
-      "id": 425,
+      "id": 409,
       "name": "Slate Gray Matte",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -466,7 +428,7 @@
       "createdAt": "2026-05-30"
     },
     {
-      "id": 314,
+      "id": 213,
       "name": "Black Red Charm",
       "price": "€60",
       "category": "3D Designs",
@@ -482,7 +444,7 @@
       "createdAt": "2026-05-29"
     },
     {
-      "id": 313,
+      "id": 212,
       "name": "Silver Disco Mirror",
       "price": "€60",
       "category": "3D Designs",
@@ -498,7 +460,7 @@
       "createdAt": "2026-05-28"
     },
     {
-      "id": 311,
+      "id": 211,
       "name": "Nude Pearl Accent",
       "price": "€60",
       "category": "3D Designs",
@@ -513,7 +475,7 @@
       "createdAt": "2026-05-27"
     },
     {
-      "id": 310,
+      "id": 123,
       "name": "Multicolor Stone Marble",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -529,7 +491,7 @@
       "createdAt": "2026-05-26"
     },
     {
-      "id": 127,
+      "id": 401,
       "name": "Nude Glossy",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -545,7 +507,7 @@
       "createdAt": "2026-05-25"
     },
     {
-      "id": 126,
+      "id": 109,
       "name": "Lilac Sketch Opal",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -561,7 +523,7 @@
       "createdAt": "2026-05-24"
     },
     {
-      "id": 220,
+      "id": 210,
       "name": "White Gold-Leaf Stiletto",
       "price": "€60",
       "category": "3D Designs",
@@ -577,7 +539,7 @@
       "createdAt": "2026-05-23"
     },
     {
-      "id": 219,
+      "id": 402,
       "name": "Silver Chrome",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -589,12 +551,19 @@
       "images": [
         "images/nails/nails-monochrome/silver_chrome_1.webp",
         "images/nails/nails-monochrome/silver_chrome_2.webp",
-        "images/nails/nails-monochrome/silver_chrome_3.webp"
+        "images/nails/nails-monochrome/silver_chrome_3.webp",
+        "images/nails/nails-monochrome/silver_chrome_4.webp",
+        "images/nails/nails-monochrome/silver_chrome_5.webp",
+        "images/nails/nails-monochrome/silver_chrome_6.webp",
+        "images/nails/nails-monochrome/silver_chrome_7.webp",
+        "images/nails/nails-monochrome/silver_chrome_8.webp",
+        "images/nails/nails-monochrome/silver_chrome_9.webp",
+        "images/nails/nails-monochrome/silver_chrome_10.webp"
       ],
       "createdAt": "2026-05-22"
     },
     {
-      "id": 218,
+      "id": 209,
       "name": "Navy Gold Fleck",
       "price": "€60",
       "category": "3D Designs",
@@ -610,7 +579,7 @@
       "createdAt": "2026-05-21"
     },
     {
-      "id": 217,
+      "id": 120,
       "name": "White Marble",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -627,7 +596,7 @@
       "createdAt": "2026-05-20"
     },
     {
-      "id": 216,
+      "id": 208,
       "name": "Gold Baroque Sculptural",
       "price": "€60",
       "category": "3D Designs",
@@ -645,7 +614,7 @@
       "createdAt": "2026-05-19"
     },
     {
-      "id": 215,
+      "id": 301,
       "name": "Clear Jelly",
       "price": "€50",
       "category": "Korean-Inspired Trends",
@@ -660,7 +629,7 @@
       "createdAt": "2026-05-18"
     },
     {
-      "id": 213,
+      "id": 119,
       "name": "Beige Stone Marble",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -675,7 +644,7 @@
       "createdAt": "2026-05-17"
     },
     {
-      "id": 212,
+      "id": 118,
       "name": "Multicolor Marble Stone",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -690,7 +659,7 @@
       "createdAt": "2026-05-16"
     },
     {
-      "id": 422,
+      "id": 128,
       "name": "Black White Mix",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -732,7 +701,7 @@
       "createdAt": "2026-05-15"
     },
     {
-      "id": 309,
+      "id": 302,
       "name": "Mixed Jelly Capsule",
       "price": "€50",
       "category": "Korean-Inspired Trends",
@@ -763,46 +732,7 @@
       "createdAt": "2026-05-14"
     },
     {
-      "id": 124,
-      "name": "Blue Mixed Art",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "Blue"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/blue_mixed_art_1.webp",
-        "images/nails/nails-art/blue_mixed_art_2.webp",
-        "images/nails/nails-art/blue_mixed_art_3.webp",
-        "images/nails/nails-art/blue_mixed_art_4.webp"
-      ],
-      "createdAt": "2026-05-13"
-    },
-    {
-      "id": 418,
-      "name": "White Chrome Drip",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "White"
-      ],
-      "length": "Short",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/white_chrome_drip_1.webp",
-        "images/nails/nails-art/white_chrome_drip_2.webp",
-        "images/nails/nails-art/white_chrome_drip_3.webp",
-        "images/nails/nails-art/white_chrome_drip_4.webp",
-        "images/nails/nails-art/white_chrome_drip_5.webp",
-        "images/nails/nails-art/white_chrome_drip_6.webp",
-        "images/nails/nails-art/white_chrome_drip_7.webp"
-      ],
-      "createdAt": "2026-05-11"
-    },
-    {
-      "id": 416,
+      "id": 126,
       "name": "Silver Pearl Foil",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -825,7 +755,7 @@
       "createdAt": "2026-05-10"
     },
     {
-      "id": 414,
+      "id": 408,
       "name": "Wine Red Almond",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -847,7 +777,7 @@
       "createdAt": "2026-05-08"
     },
     {
-      "id": 412,
+      "id": 407,
       "name": "Red Glossy",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -869,7 +799,7 @@
       "createdAt": "2026-05-07"
     },
     {
-      "id": 409,
+      "id": 125,
       "name": "Orange Black Glossy",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -888,7 +818,7 @@
       "createdAt": "2026-05-06"
     },
     {
-      "id": 407,
+      "id": 406,
       "name": "Nude Glossy 2",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -915,7 +845,7 @@
       "createdAt": "2026-05-05"
     },
     {
-      "id": 406,
+      "id": 124,
       "name": "Orange Abstract",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -931,7 +861,7 @@
       "createdAt": "2026-05-04"
     },
     {
-      "id": 404,
+      "id": 405,
       "name": "Navy Blue Glossy",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -950,7 +880,7 @@
       "createdAt": "2026-05-02"
     },
     {
-      "id": 402,
+      "id": 404,
       "name": "Black Glossy Coffin",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -966,7 +896,7 @@
       "createdAt": "2026-05-01"
     },
     {
-      "id": 401,
+      "id": 403,
       "name": "Black Glossy",
       "price": "€30",
       "category": "Monochrome Elegance",
@@ -983,7 +913,7 @@
       "createdAt": "2026-04-30"
     },
     {
-      "id": 302,
+      "id": 122,
       "name": "Multicolor Glitter Dots",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -999,7 +929,7 @@
       "createdAt": "2026-04-27"
     },
     {
-      "id": 301,
+      "id": 121,
       "name": "Blue Crushed Glass",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -1023,7 +953,7 @@
       "createdAt": "2026-04-26"
     },
     {
-      "id": 209,
+      "id": 207,
       "name": "White Floral Relief",
       "price": "€60",
       "category": "3D Designs",
@@ -1059,7 +989,7 @@
       "createdAt": "2026-04-24"
     },
     {
-      "id": 208,
+      "id": 206,
       "name": "Silver Crumpled Foil",
       "price": "€60",
       "category": "3D Designs",
@@ -1088,7 +1018,7 @@
       "createdAt": "2026-04-23"
     },
     {
-      "id": 207,
+      "id": 205,
       "name": "Pink Floral Sculptural",
       "price": "€60",
       "category": "3D Designs",
@@ -1111,7 +1041,7 @@
       "createdAt": "2026-04-22"
     },
     {
-      "id": 203,
+      "id": 204,
       "name": "Gold Sculptural Gem",
       "price": "€60",
       "category": "3D Designs",
@@ -1129,7 +1059,7 @@
       "createdAt": "2026-04-19"
     },
     {
-      "id": 201,
+      "id": 203,
       "name": "Gold Sculptural Beetle",
       "price": "€60",
       "category": "3D Designs",
@@ -1154,7 +1084,7 @@
       "createdAt": "2026-04-17"
     },
     {
-      "id": 123,
+      "id": 107,
       "name": "White & Black Polka Dot",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -1175,31 +1105,7 @@
       "createdAt": "2026-04-16"
     },
     {
-      "id": 122,
-      "name": "White Multicolor Abstract",
-      "price": "€80",
-      "category": "Art Press-Ons",
-      "colors": [
-        "White"
-      ],
-      "length": "Medium",
-      "handcraftedOnDemand": true,
-      "images": [
-        "images/nails/nails-art/white_multicolor_abstract_1.webp",
-        "images/nails/nails-art/white_multicolor_abstract_2.webp",
-        "images/nails/nails-art/white_multicolor_abstract_3.webp",
-        "images/nails/nails-art/white_multicolor_abstract_4.webp",
-        "images/nails/nails-art/white_multicolor_abstract_5.webp",
-        "images/nails/nails-art/white_multicolor_abstract_6.webp",
-        "images/nails/nails-art/white_multicolor_abstract_7.webp",
-        "images/nails/nails-art/white_multicolor_abstract_8.webp",
-        "images/nails/nails-art/white_multicolor_abstract_9.webp",
-        "images/nails/nails-art/white_multicolor_abstract_10.webp"
-      ],
-      "createdAt": "2026-04-15"
-    },
-    {
-      "id": 121,
+      "id": 105,
       "name": "White & Red Abstract Swirl",
       "price": "€80",
       "category": "Art Press-Ons",
@@ -1230,7 +1136,7 @@
       "createdAt": "2026-04-14"
     },
     {
-      "id": 114,
+      "id": 202,
       "name": "Nude Gold Leaf",
       "price": "€60",
       "category": "3D Designs",
@@ -1250,7 +1156,7 @@
       "createdAt": "2026-04-11"
     },
     {
-      "id": 106,
+      "id": 201,
       "name": "Multicolor Confetti Tips",
       "price": "€60",
       "category": "3D Designs",
@@ -1274,12 +1180,22 @@
         "images/nails/nails-3d/multicolor_confetti_tips_12.webp",
         "images/nails/nails-3d/multicolor_confetti_tips_13.webp",
         "images/nails/nails-3d/multicolor_confetti_tips_14.webp",
-        "images/nails/nails-3d/multicolor_confetti_tips_15.webp"
+        "images/nails/nails-3d/multicolor_confetti_tips_15.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_16.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_17.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_18.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_19.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_20.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_21.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_22.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_23.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_24.webp",
+        "images/nails/nails-3d/multicolor_confetti_tips_25.webp"
       ],
       "createdAt": "2026-04-10"
     },
     {
-      "id": 105,
+      "id": 104,
       "name": "Green Floral Millefiori",
       "price": "€80",
       "category": "Art Press-Ons",
