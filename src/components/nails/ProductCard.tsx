@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Eye } from "lucide-react";
 import type { NailProduct } from "@/types/catalog";
@@ -9,6 +9,8 @@ type Props = {
 };
 
 const ProductCard = ({ product, badgeLabel }: Props) => {
+  const location = useLocation();
+
   const coverImage = product.images?.[0]
     ? `${import.meta.env.BASE_URL}${product.images[0]}`
     : `${import.meta.env.BASE_URL}placeholder.svg`;
@@ -16,6 +18,7 @@ const ProductCard = ({ product, badgeLabel }: Props) => {
   return (
     <Link
       to={`/product/${product.id}`}
+      state={{ catalogSearch: location.search }}
       aria-label={`View ${product.name}`}
       className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
     >

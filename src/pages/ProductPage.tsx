@@ -169,11 +169,12 @@ const ProductPage = () => {
         <div className="max-w-7xl mx-auto">
           <Button
             variant="ghost"
-            onClick={() =>
-              location.key !== "default"
-                ? navigate(-1)
-                : navigate("/solo#catalog")
-            }
+            onClick={() => {
+              const catalogSearch =
+                (location.state as { catalogSearch?: string } | null)
+                  ?.catalogSearch ?? "";
+              navigate(`/solo${catalogSearch}#catalog`);
+            }}
             className="mb-5 sm:mb-6 text-neutral-600 hover:text-neutral-900"
             type="button"
           >
