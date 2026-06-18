@@ -1,4 +1,5 @@
 import { assetUrl } from "@/lib/utils";
+import CornerBadge from "@/components/CornerBadge";
 
 type Props = {
   content: {
@@ -51,13 +52,12 @@ const Biography = ({ content }: Props) => {
               />
             </div>
 
-            <div className="absolute right-2 bottom-2 sm:-right-5 sm:-bottom-5 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-neutral-900 rounded-lg flex items-center justify-center">
-              <span className="text-white font-light text-xs sm:text-sm text-center leading-snug">
-                {content?.badge?.line1}
-                <br />
-                {content?.badge?.line2}
-              </span>
-            </div>
+            <CornerBadge
+              line1={content?.badge?.line1}
+              line2={content?.badge?.line2}
+              side="right"
+              tone="solid"
+            />
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { assetUrl } from "@/lib/utils";
+import SectionHeading from "@/components/SectionHeading";
 
 type Props = {
   content: {
@@ -39,15 +40,12 @@ const CelebrityWorks = ({ content }: Props) => {
       className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 bg-neutral-900 text-white"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 sm:mb-12 md:mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4 sm:mb-5 tracking-tight">
-            {content?.title}
-          </h2>
-          <div className="w-16 sm:w-20 md:w-24 h-px bg-neutral-600 mx-auto mb-5 sm:mb-6" />
-          <p className="text-base sm:text-lg text-neutral-300 font-light max-w-2xl mx-auto">
-            {content?.subtitle}
-          </p>
-        </div>
+        <SectionHeading
+          title={content?.title ?? ""}
+          subtitle={content?.subtitle}
+          tone="dark"
+          subtitleClassName="text-base sm:text-lg text-neutral-300 font-light max-w-2xl mx-auto"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-14 items-start">
           <div className="relative">

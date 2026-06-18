@@ -1,4 +1,6 @@
 import { assetUrl } from "@/lib/utils";
+import SectionHeading from "@/components/SectionHeading";
+import CornerBadge from "@/components/CornerBadge";
 
 type Props = {
   content: {
@@ -20,15 +22,12 @@ const PackagingVisual = ({ content }: Props) => {
       className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 bg-neutral-900 text-white"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 sm:mb-12 md:mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-4 sm:mb-5 tracking-tight">
-            {content.title}
-          </h2>
-          <div className="w-16 sm:w-20 md:w-24 h-px bg-neutral-600 mx-auto mb-5 sm:mb-6" />
-          <p className="text-base sm:text-lg text-neutral-300 font-light max-w-2xl mx-auto">
-            {content.subtitle}
-          </p>
-        </div>
+        <SectionHeading
+          title={content.title}
+          subtitle={content.subtitle}
+          tone="dark"
+          subtitleClassName="text-base sm:text-lg text-neutral-300 font-light max-w-2xl mx-auto"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-14 lg:gap-16 items-start">
           <div>
@@ -62,13 +61,12 @@ const PackagingVisual = ({ content }: Props) => {
               />
             </div>
 
-            <div className="absolute right-2 bottom-2 sm:-right-5 sm:-bottom-5 w-20 h-20 sm:w-24 sm:h-24 bg-neutral-700/60 backdrop-blur-sm rounded-lg flex items-center justify-center">
-              <span className="text-white font-light text-[10px] sm:text-xs text-center leading-snug">
-                {content.badge.line1}
-                <br />
-                {content.badge.line2}
-              </span>
-            </div>
+            <CornerBadge
+              line1={content.badge.line1}
+              line2={content.badge.line2}
+              side="right"
+              tone="glass"
+            />
           </div>
         </div>
       </div>

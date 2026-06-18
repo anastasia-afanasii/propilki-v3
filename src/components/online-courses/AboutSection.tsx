@@ -1,6 +1,7 @@
 import { Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { assetUrl } from "@/lib/utils";
+import CornerBadge from "@/components/CornerBadge";
 
 type Props = {
   about: {
@@ -46,13 +47,14 @@ const AboutSection = ({ about }: Props) => {
 
             {/* Badge — left position */}
             {about.badge && (
-              <div className="absolute left-2 bottom-2 sm:-left-5 sm:-bottom-5 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-neutral-900 rounded-lg flex items-center justify-center elegant-shadow">
-                <span className="text-white font-light text-xs sm:text-sm text-center leading-snug px-2">
-                  {about.badge.line1}
-                  <br />
-                  {about.badge.line2}
-                </span>
-              </div>
+              <CornerBadge
+                line1={about.badge.line1}
+                line2={about.badge.line2}
+                side="left"
+                tone="solid"
+                className="elegant-shadow"
+                textClassName="px-2"
+              />
             )}
           </div>
 

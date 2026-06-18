@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { useSwipeable } from "react-swipeable";
+import useSwipe from "@/hooks/useSwipe";
 import useDocumentTitle from "@/hooks/useDocumentTitle";
 import useMetaDescription from "@/hooks/useMetaDescription";
 import useOpenGraph from "@/hooks/useOpenGraph";
@@ -73,11 +73,7 @@ const ProductPage = () => {
     );
   }, [hasGallery, gallery.length]);
 
-  const swipeHandlers = useSwipeable({
-    onSwipedLeft: handleNextImage,
-    onSwipedRight: handlePreviousImage,
-    trackMouse: true,
-  });
+  const swipeHandlers = useSwipe(handleNextImage, handlePreviousImage);
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {

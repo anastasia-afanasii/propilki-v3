@@ -1,5 +1,6 @@
 import { Sparkles } from "lucide-react";
 import { assetUrl } from "@/lib/utils";
+import SectionHeading from "@/components/SectionHeading";
 
 type Props = {
   content: {
@@ -21,15 +22,11 @@ const Competitions = ({ content }: Props) => {
       className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 bg-neutral-50"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 sm:mb-12 md:mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-neutral-900 mb-4 sm:mb-5 tracking-tight">
-            {content.sectionTitle}
-          </h2>
-          <div className="w-16 sm:w-20 md:w-24 h-px bg-neutral-300 mx-auto mb-5 sm:mb-6" />
-          <p className="text-base sm:text-lg text-neutral-600 font-light max-w-2xl mx-auto">
-            {content.sectionSubtitle}
-          </p>
-        </div>
+        <SectionHeading
+          title={content.sectionTitle}
+          subtitle={content.sectionSubtitle}
+          subtitleClassName="text-base sm:text-lg text-neutral-600 font-light max-w-2xl mx-auto"
+        />
 
         <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">

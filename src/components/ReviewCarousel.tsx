@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import useSwipe from "@/hooks/useSwipe";
 
 type Props = {
   id?: string;
@@ -57,26 +58,14 @@ const ReviewCarousel = ({
     return () => window.removeEventListener("keydown", onKey);
   }, [hasMany, prev, next]);
 
-  const onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!hasMany) return;
-    const t = e.touches?.[0];
-    if (!t) return;
-    e.currentTarget.dataset.x = String(t.clientX);
-    e.currentTarget.dataset.y = String(t.clientY);
-  };
-
-  const onTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!hasMany) return;
-    const x0 = Number(e.currentTarget.dataset.x || 0);
-    const y0 = Number(e.currentTarget.dataset.y || 0);
-    const t = e.changedTouches?.[0];
-    if (!t) return;
-    const dx = t.clientX - x0;
-    const dy = t.clientY - y0;
-    if (Math.abs(dy) > Math.abs(dx)) return;
-    if (dx > 40) prev();
-    if (dx < -40) next();
-  };
+  const { onTouchStart, onTouchEnd } = useSwipe(
+    () => {
+      if (hasMany) next();
+    },
+    () => {
+      if (hasMany) prev();
+    }
+  );
 
   const text = items[index] ?? "";
 
