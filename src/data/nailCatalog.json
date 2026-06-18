@@ -24,8 +24,8 @@
             ],
             "length": "Medium",
             "images": [
-                "images/nails/nails-art/art-2-1.webp",
-                "images/nails/nails-art/art-2-2.webp"
+                "images/nails/nails-art/art-2-1.jpg",
+                "images/nails/nails-art/art-2-2.jpg"
             ]
         },
         {
@@ -38,9 +38,9 @@
             ],
             "length": "Long",
             "images": [
-                "images/nails/nails-art/art-3-1.webp",
-                "images/nails/nails-art/art-3-2.webp",
-                "images/nails/nails-art/art-3-3.webp",
+                "images/nails/nails-art/art-3-1.jpg",
+                "images/nails/nails-art/art-3-2.jpg",
+                "images/nails/nails-art/art-3-3.jpg",
                 "images/nails/nails-art/art-3-4.webp"
             ]
         },
@@ -54,8 +54,8 @@
             ],
             "length": "Medium",
             "images": [
-                "images/nails/nails-art/art-4-1.webp",
-                "images/nails/nails-art/art-4-2.webp"
+                "images/nails/nails-art/art-4-1.jpg",
+                "images/nails/nails-art/art-4-2.jpg"
             ]
         },
         {
@@ -68,8 +68,8 @@
             ],
             "length": "Short",
             "images": [
-                "images/nails/nails-art/art-5-1.webp",
-                "images/nails/nails-art/art-5-2.webp"
+                "images/nails/nails-art/art-5-1.jpg",
+                "images/nails/nails-art/art-5-2.jpg"
             ]
         },
         {
@@ -82,8 +82,8 @@
             ],
             "length": "Medium",
             "images": [
-                "images/nails/nails-art/art-6-1.webp",
-                "images/nails/nails-art/art-6-2.webp"
+                "images/nails/nails-art/art-6-1.jpg",
+                "images/nails/nails-art/art-6-2.jpg"
             ]
         },
         {
@@ -110,8 +110,8 @@
             ],
             "length": "Long",
             "images": [
-                "images/nails/nails-3d/3d-design-1-1.webp",
-                "images/nails/nails-3d/3d-design-1-2.webp"
+                "images/nails/nails-3d/3d-design-1-1.jpg",
+                "images/nails/nails-3d/3d-design-1-2.jpg"
             ]
         },
         {
@@ -124,11 +124,11 @@
             ],
             "length": "Long",
             "images": [
-                "images/nails/nails-3d/3d-design-3-1.webp",
-                "images/nails/nails-3d/3d-design-3-2.webp",
-                "images/nails/nails-3d/3d-design-3-3.webp",
-                "images/nails/nails-3d/3d-design-3-4.webp",
-                "images/nails/nails-3d/3d-design-3-5.webp"
+                "images/nails/nails-3d/3d-design-3-1.jpg",
+                "images/nails/nails-3d/3d-design-3-2.jpg",
+                "images/nails/nails-3d/3d-design-3-3.jpg",
+                "images/nails/nails-3d/3d-design-3-4.jpg",
+                "images/nails/nails-3d/3d-design-3-5.jpg"
             ]
         },
         {
@@ -141,8 +141,8 @@
             ],
             "length": "Medium",
             "images": [
-                "images/nails/nails-3d/3d-design-4-1.webp",
-                "images/nails/nails-3d/3d-design-4-2.webp"
+                "images/nails/nails-3d/3d-design-4-1.jpg",
+                "images/nails/nails-3d/3d-design-4-2.jpg"
             ]
         },
         {
@@ -187,7 +187,7 @@
             "length": "Long",
             "images": [
                 "images/nails/nails-3d/3d-design-7-1.webp",
-                "images/nails/nails-3d/3d-design-7-2.webp",
+                "images/nails/nails-3d/3d-design-7-2.jpg",
                 "images/nails/nails-3d/3d-design-7-3.webp"
             ]
         },
@@ -362,8 +362,8 @@
             ],
             "length": "Medium",
             "images": [
-                "images/nails/nails-monochrome/monochrome-4-1.webp",
-                "images/nails/nails-monochrome/monochrome-4-2.webp"
+                "images/nails/nails-monochrome/monochrome-4-1.jpg",
+                "images/nails/nails-monochrome/monochrome-4-2.jpg"
             ]
         },
         {
