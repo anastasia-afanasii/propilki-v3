@@ -650,7 +650,8 @@
       "length": "Medium",
       "images": [
         "images/nails/nails-monochrome/monochrome-8-1.jpg",
-        "images/nails/nails-monochrome/monochrome-8-2.jpg"
+        "images/nails/nails-monochrome/monochrome-8-2.jpg",
+        "images/nails/nails-monochrome/monochrome-8-3.jpg"
       ]
     },
     {
@@ -692,19 +693,6 @@
       "length": "Medium",
       "images": [
         "images/nails/nails-monochrome/monochrome-12-1.jpg"
-      ]
-    },
-    {
-      "id": 413,
-      "name": "Monochrome Elegance 13",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Red"
-      ],
-      "length": "Medium",
-      "images": [
-        "images/nails/nails-monochrome/monochrome-13-1.jpg"
       ]
     },
     {
