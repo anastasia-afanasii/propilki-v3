@@ -1,8 +1,11 @@
+import SectionHeading from "@/components/SectionHeading";
 import { assetUrl } from "@/lib/utils";
 
 type Props = {
   content: {
     title: string;
+    subtitle: string;
+    steps: { number: string; title: string; description: string }[];
     guideImages: string[];
     helpCard: {
       title: string;
@@ -20,11 +23,27 @@ const HowItWorks = ({ content }: Props) => {
       className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 bg-neutral-900 text-white"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 sm:mb-12 md:mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight">
-            {content.title}
-          </h2>
-          <div className="w-16 sm:w-20 md:w-24 h-px bg-neutral-600 mx-auto mt-4 sm:mt-5" />
+        <SectionHeading
+          title={content.title}
+          subtitle={content.subtitle}
+          tone="dark"
+          subtitleClassName="text-base sm:text-lg text-neutral-300 font-light max-w-2xl mx-auto"
+        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10 sm:mb-12">
+          {content.steps.map((step) => (
+            <div key={step.number}>
+              <div className="text-4xl sm:text-5xl font-light text-neutral-600 mb-3 sm:mb-4">
+                {step.number}
+              </div>
+              <h3 className="text-lg sm:text-xl font-medium mb-2 tracking-wide">
+                {step.title}
+              </h3>
+              <p className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed">
+                {step.description}
+              </p>
+            </div>
+          ))}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12">
