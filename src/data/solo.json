@@ -141,7 +141,35 @@
     },
     "header": {
         "logoText": "SOLO",
-        "mobileAriaLabel": "Toggle menu"
+        "mobileAriaLabel": "Toggle menu",
+        "logoTo": "/solo",
+        "links": [
+            {
+                "to": "/solo#catalog",
+                "label": "Catalog"
+            },
+            {
+                "to": "/solo#how-it-works",
+                "label": "How it works"
+            },
+            {
+                "to": "/solo#packaging",
+                "label": "Packaging"
+            },
+            {
+                "to": "/solo#testimonials",
+                "label": "Reviews"
+            },
+            {
+                "to": "/solo#faq",
+                "label": "FAQ"
+            },
+            {
+                "to": "/",
+                "label": "Online courses",
+                "highlight": true
+            }
+        ]
     },
     "heroCarousel": {
         "autoPlayMs": 4000,
@@ -245,7 +273,39 @@
     "footer": {
         "brandTitle": "SOLO",
         "brandDescription": "Premium press-on nails, crafted with precision and designed to elevate your elegance. Enjoy salon-quality results - effortlessly, anytime, anywhere.",
-        "copyright": "© 2026 SOLO. All rights reserved."
+        "copyright": "© 2026 SOLO. All rights reserved.",
+        "navHeading": "Navigation",
+        "nav": [
+            {
+                "to": "/solo#catalog",
+                "label": "Catalog"
+            },
+            {
+                "to": "/solo#how-it-works",
+                "label": "How it works"
+            },
+            {
+                "to": "/solo#packaging",
+                "label": "Packaging"
+            },
+            {
+                "to": "/solo#testimonials",
+                "label": "Reviews"
+            },
+            {
+                "to": "/solo#faq",
+                "label": "FAQ"
+            },
+            {
+                "to": "/",
+                "label": "Online courses",
+                "highlight": true
+            }
+        ],
+        "socials": {
+            "instagram": "https://www.instagram.com/solo.lo_nails/",
+            "email": "propilki@gmail.com"
+        }
     },
     "testimonials": {
         "title": "What Our Customers Say",

@@ -1,23 +1,22 @@
 import SiteHeader from "@/components/SiteHeader";
 
+type NavLink = { to: string; label: string; highlight?: boolean };
+
 type Props = {
-  content?: {
+  content: {
+    logoText: string;
+    logoTo: string;
     mobileAriaLabel?: string;
+    links: NavLink[];
   };
 };
 
 const Header = ({ content }: Props) => (
   <SiteHeader
-    logoText="PROPILKI"
-    logoTo="/"
-    mobileAriaLabel={content?.mobileAriaLabel ?? "Open menu"}
-    links={[
-      { to: "/#about", label: "About" },
-      { to: "/#courses", label: "Courses" },
-      { to: "/#reviews", label: "Reviews" },
-      { to: "/#faq", label: "FAQ" },
-      { to: "/solo", label: "Press-on Nails", highlight: true },
-    ]}
+    logoText={content.logoText}
+    logoTo={content.logoTo}
+    mobileAriaLabel={content.mobileAriaLabel}
+    links={content.links}
   />
 );
 

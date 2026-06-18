@@ -55,7 +55,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <Header content={propilki.header} />
       <main>
         <HeroSection hero={propilki.hero} stats={propilki.stats} />
         <AboutSection about={propilki.about} />
@@ -66,7 +66,7 @@ const Index = () => {
         <ReviewsSection reviews={propilki.reviews} />
         <FAQSection faq={propilki.faq} />
       </main>
-      <Footer />
+      <Footer content={propilki.footer} />
     </div>
   );
 };

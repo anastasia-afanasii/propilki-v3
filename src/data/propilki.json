@@ -1,6 +1,31 @@
 {
   "header": {
-    "mobileAriaLabel": "Open menu"
+    "mobileAriaLabel": "Open menu",
+    "logoText": "PROPILKI",
+    "logoTo": "/",
+    "links": [
+      {
+        "to": "/#about",
+        "label": "About"
+      },
+      {
+        "to": "/#courses",
+        "label": "Courses"
+      },
+      {
+        "to": "/#reviews",
+        "label": "Reviews"
+      },
+      {
+        "to": "/#faq",
+        "label": "FAQ"
+      },
+      {
+        "to": "/solo",
+        "label": "Press-on Nails",
+        "highlight": true
+      }
+    ]
   },
   "hero": {
     "pill": "Professional Nail Care Training",
@@ -99,7 +124,7 @@
       "type": "offline",
       "duration": "1-2 days",
       "students": 350,
-      "rating": 5.0,
+      "rating": 5,
       "image": "images/offline_file.webp",
       "badge": "Certification",
       "gradient": "from-blue-500 to-purple-500",
@@ -164,5 +189,38 @@
         "answer": "To enroll in the course, go to the “Let's get to know each other!” section on our website, click the “Contact” button, and you will be redirected to Instagram, where you can leave me a message."
       }
     ]
+  },
+  "footer": {
+    "brandTitle": "PROPILKI",
+    "brandDescription": "PROPILKI online courses — structured, premium education for nail artists who want precision, confidence, and real results.",
+    "navHeading": "Navigation",
+    "nav": [
+      {
+        "to": "/#about",
+        "label": "About"
+      },
+      {
+        "to": "/#courses",
+        "label": "Courses"
+      },
+      {
+        "to": "/#reviews",
+        "label": "Reviews"
+      },
+      {
+        "to": "/#faq",
+        "label": "FAQ"
+      },
+      {
+        "to": "/solo",
+        "label": "Press-on Nails",
+        "highlight": true
+      }
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/propilki.moldova/",
+      "email": "propilki@gmail.com"
+    },
+    "copyright": "© 2026 PROPILKI. All rights reserved."
   }
 }
