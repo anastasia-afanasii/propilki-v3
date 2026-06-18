@@ -491,33 +491,9 @@
       ],
       "length": "Short",
       "images": [
-        "images/nails/nails-korean/korean-design-1.webp"
-      ]
-    },
-    {
-      "id": 302,
-      "name": "Korean-Inspired 02",
-      "price": "€50",
-      "category": "Korean-Inspired Trends",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Short",
-      "images": [
-        "images/nails/nails-korean/korean-design-2.webp"
-      ]
-    },
-    {
-      "id": 303,
-      "name": "Korean-Inspired 03",
-      "price": "€50",
-      "category": "Korean-Inspired Trends",
-      "colors": [
-        "Mixed"
-      ],
-      "length": "Medium",
-      "images": [
-        "images/nails/nails-korean/korean-design-3.webp"
+        "images/nails/nails-korean/korean-design-1-1.webp",
+        "images/nails/nails-korean/korean-design-1-2.webp",
+        "images/nails/nails-korean/korean-design-1-3.webp"
       ]
     },
     {
