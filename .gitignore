@@ -26,3 +26,4 @@ dist-ssr
 # local working folders (non-catalog images, review montages)
 _backlog/
 _review/
+.debug-shots/
