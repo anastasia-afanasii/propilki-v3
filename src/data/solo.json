@@ -1,30 +1,4 @@
 {
-    "benefits": {
-        "title": "Why Choose Us",
-        "subtitle": "Experience the perfect blend of convenience, quality, and style",
-        "items": [
-            {
-                "icon": "Clock",
-                "title": "Quick Application",
-                "description": "Professional results in just 5 minutes. No salon appointments needed."
-            },
-            {
-                "icon": "Shield",
-                "title": "Long-Lasting",
-                "description": "Up to 2 weeks of perfect wear with proper application and care."
-            },
-            {
-                "icon": "Sparkles",
-                "title": "Salon Quality",
-                "description": "Hand-crafted designs with premium materials for flawless finish."
-            },
-            {
-                "icon": "Truck",
-                "title": "Free Shipping",
-                "description": "Complimentary shipping on all orders over $25. Fast delivery worldwide."
-            }
-        ]
-    },
     "biography": {
         "id": "biography",
         "title": "Meet the Artist",
@@ -234,9 +208,13 @@
             },
             "secondaryCta": {
                 "label": "Download Guide",
-                "href": "#"
+                "href": "images/press_on_nails_guide.pdf"
             }
-        }
+        },
+        "guideImages": [
+            "images/press_on_nails_guide1.webp",
+            "images/press_on_nails_guide2.webp"
+        ]
     },
     "catalog": {
         "title": "Shop All",

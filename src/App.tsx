@@ -1,14 +1,15 @@
+import { lazy, Suspense } from "react";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import OnlineCourses from "./pages/Index";
-import Solo from "./pages/Solo";
-import ProductPage from "./pages/ProductPage";
-import NotFound from "./pages/NotFound";
-
-import ScrollToHash from "@/components/nails/ScrollToHash";
+import ScrollToHash from "@/components/ScrollToHash";
 import FaviconSwitcher from "@/components/FaviconSwitcher";
 import useCanonical from "@/hooks/useCanonical";
+
+const OnlineCourses = lazy(() => import("./pages/Index"));
+const Solo = lazy(() => import("./pages/Solo"));
+const ProductPage = lazy(() => import("./pages/ProductPage"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 (() => {
   const params = new URLSearchParams(window.location.search);
@@ -36,12 +37,14 @@ const App = () => (
       <CanonicalUpdater />
       <FaviconSwitcher />
       <ScrollToHash />
-      <Routes>
-        <Route path="/" element={<OnlineCourses />} />
-        <Route path="/solo" element={<Solo />} />
-        <Route path="/product/:id" element={<ProductPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<OnlineCourses />} />
+          <Route path="/solo" element={<Solo />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   </TooltipProvider>
 );

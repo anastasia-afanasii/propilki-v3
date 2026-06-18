@@ -1,11 +1,14 @@
+import { assetUrl } from "@/lib/utils";
+
 type Props = {
   content: {
     title: string;
+    guideImages: string[];
     helpCard: {
       title: string;
       subtitle: string;
       primaryCta: { label: string; href: string };
-      secondaryCta: { label: string };
+      secondaryCta: { label: string; href: string };
     };
   };
 };
@@ -25,23 +28,19 @@ const HowItWorks = ({ content }: Props) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12">
-          <div className="aspect-4/3 bg-neutral-800 rounded-lg overflow-hidden">
-            <img
-              src={`${import.meta.env.BASE_URL}images/press_on_nails_guide1.webp`}
-              alt="Press-on nails guide step 1"
-              className="w-full h-full object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="aspect-4/3 bg-neutral-800 rounded-lg overflow-hidden">
-            <img
-              src={`${import.meta.env.BASE_URL}images/press_on_nails_guide2.webp`}
-              alt="Press-on nails guide step 2"
-              className="w-full h-full object-contain"
-              loading="lazy"
-            />
-          </div>
+          {content.guideImages.map((src, i) => (
+            <div
+              key={i}
+              className="aspect-4/3 bg-neutral-800 rounded-lg overflow-hidden"
+            >
+              <img
+                src={assetUrl(src)}
+                alt={`Press-on nails guide step ${i + 1}`}
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
 
         <div className="text-center">
@@ -65,7 +64,7 @@ const HowItWorks = ({ content }: Props) => {
               </a>
 
               <a
-                href={`${import.meta.env.BASE_URL}images/press_on_nails_guide.pdf`}
+                href={assetUrl(content.helpCard.secondaryCta.href)}
                 download
                 className="border border-neutral-600 text-white px-6 py-3 font-medium tracking-wide hover:bg-neutral-700 transition-colors"
               >
