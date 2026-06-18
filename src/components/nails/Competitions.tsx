@@ -36,7 +36,7 @@ const Competitions = ({ content }: Props) => {
               {content.images.map((img, i) => (
                 <div
                   key={i}
-                  className="aspect-[3/4] rounded-lg overflow-hidden bg-neutral-100"
+                  className="aspect-3/4 rounded-lg overflow-hidden bg-neutral-100"
                 >
                   <img
                     src={`${import.meta.env.BASE_URL}${img}`}

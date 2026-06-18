@@ -42,7 +42,7 @@ const Championships = ({ content }: Props) => {
           </p>
         </div>
 
-        <div className="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12">
+        <div className="bg-linear-to-r from-amber-50 to-yellow-50 rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
             <div>
               <div className="flex items-center gap-4 mb-5 sm:mb-6">
@@ -69,7 +69,7 @@ const Championships = ({ content }: Props) => {
               </ul>
             </div>
 
-            <div className="relative aspect-[4/3] bg-amber-100 rounded-lg overflow-hidden">
+            <div className="relative aspect-4/3 bg-amber-100 rounded-lg overflow-hidden">
               <img
                 src={imgSrc}
                 alt={award?.imageAlt ?? "Award ceremony"}

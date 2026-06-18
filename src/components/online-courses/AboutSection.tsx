@@ -34,7 +34,7 @@ const AboutSection = ({ about }: Props) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-14 items-center">
           {/* IMAGE + BADGE */}
           <div className="relative">
-            <div className="relative aspect-[4/5] bg-muted rounded-lg overflow-hidden elegant-shadow">
+            <div className="relative aspect-4/5 bg-muted rounded-lg overflow-hidden elegant-shadow">
               <img
                 src={imgSrc}
                 alt={about.imageAlt}

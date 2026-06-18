@@ -20,7 +20,7 @@ const ProductCard = ({ product, badgeLabel }: Props) => {
       to={`/product/${product.id}`}
       state={{ catalogSearch: location.search }}
       aria-label={`View ${product.name}`}
-      className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
+      className="block focus:outline-hidden focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
     >
       <Card className="group overflow-hidden border-0 shadow-none hover:shadow-xl transition-all duration-500 bg-white rounded-none cursor-pointer">
         <div className="relative overflow-hidden">

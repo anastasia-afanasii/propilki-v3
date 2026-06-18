@@ -36,7 +36,7 @@ const Hero = ({ content }: Props) => {
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
             {content.slides.map((slide, index) => (
-              <div key={slide.id} className="w-full flex-shrink-0 h-full">
+              <div key={slide.id} className="w-full shrink-0 h-full">
                 <div className="relative h-full">
                   <img
                     src={
@@ -50,7 +50,7 @@ const Hero = ({ content }: Props) => {
                     fetchPriority={index === 0 ? "high" : "auto"}
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
 
                   {/* Text */}
                   <div className="absolute bottom-16 sm:bottom-20 left-4 sm:left-8 right-4 sm:right-8 text-white">

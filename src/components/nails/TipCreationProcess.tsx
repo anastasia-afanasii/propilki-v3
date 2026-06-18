@@ -98,7 +98,7 @@ const TipCreationProcess = ({ content }: Props) => {
               </div>
             </div>
 
-            <div className="aspect-[4/3] bg-neutral-100 rounded-lg overflow-hidden">
+            <div className="aspect-4/3 bg-neutral-100 rounded-lg overflow-hidden">
               <img
                 src={imgSrc}
                 alt={content.highlight.image.alt}
