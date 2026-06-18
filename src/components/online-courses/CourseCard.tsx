@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import CourseFeatures from "./CourseFeatures";
 import AdditionalLectures from "./AdditionalLectures";
+import { assetUrl } from "@/lib/utils";
 
 type Course = {
   id: number | string;
@@ -21,7 +22,7 @@ type Props = {
 };
 
 const CourseCard = ({ course, reverse }: Props) => {
-  const imageSrc = `${import.meta.env.BASE_URL}${course.image}`;
+  const imageSrc = assetUrl(course.image);
 
   const handleClick = () => {
     if (course.link) window.open(course.link, "_blank");

@@ -1,3 +1,5 @@
+import { assetUrl } from "@/lib/utils";
+
 type Props = {
   content: {
     title: string;
@@ -9,12 +11,8 @@ type Props = {
   };
 };
 
-const isAbsoluteUrl = (v: string) => /^https?:\/\//i.test(v);
-
 const PackagingVisual = ({ content }: Props) => {
-  const imgSrc = isAbsoluteUrl(content.image.src)
-    ? content.image.src
-    : `${import.meta.env.BASE_URL}${content.image.src}`;
+  const imgSrc = assetUrl(content.image.src);
 
   return (
     <section

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { assetUrl } from "@/lib/utils";
 
 type Props = {
   content: {
@@ -15,16 +16,12 @@ type Props = {
   };
 };
 
-const isAbsoluteUrl = (v: string) => /^https?:\/\//i.test(v);
-
 const CelebrityWorks = ({ content }: Props) => {
   const [index, setIndex] = useState(0);
 
   const images = useMemo(() => {
     const raw = content?.images ?? [];
-    return raw.map((p) =>
-      !p ? p : isAbsoluteUrl(p) ? p : `${import.meta.env.BASE_URL}${p}`
-    );
+    return raw.map((p) => assetUrl(p));
   }, [content]);
 
   const total = images.length || 1;
@@ -32,7 +29,7 @@ const CelebrityWorks = ({ content }: Props) => {
   const next = () => setIndex((i) => (i + 1) % total);
   const prev = () => setIndex((i) => (i - 1 + total) % total);
 
-  const active = images[index] ?? `${import.meta.env.BASE_URL}placeholder.svg`;
+  const active = images[index] ?? assetUrl("placeholder.svg");
 
   const bullets = content?.bullets ?? [];
 

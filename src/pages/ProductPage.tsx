@@ -16,6 +16,7 @@ import Footer from "@/components/nails/Footer";
 import content from "@/data/solo.json";
 import catalog from "@/data/nailCatalog.json";
 import type { NailProduct } from "@/types/catalog";
+import { assetUrl } from "@/lib/utils";
 
 const products = catalog.products as NailProduct[];
 
@@ -53,7 +54,7 @@ const ProductPage = () => {
 
   const gallery = useMemo(() => {
     const imgs = product?.images ?? [];
-    return imgs.map((p) => `${import.meta.env.BASE_URL}${p}`);
+    return imgs.map((p) => assetUrl(p));
   }, [product]);
 
   const hasGallery = gallery.length > 1;
@@ -143,7 +144,7 @@ const ProductPage = () => {
   }
 
   const activeImage =
-    gallery[selectedImageIndex] ?? `${import.meta.env.BASE_URL}placeholder.svg`;
+    gallery[selectedImageIndex] ?? assetUrl("placeholder.svg");
 
   const availability =
     product.inStock === false

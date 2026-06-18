@@ -1,4 +1,5 @@
 import { Sparkles } from "lucide-react";
+import { assetUrl } from "@/lib/utils";
 
 type Props = {
   content: {
@@ -39,7 +40,7 @@ const Competitions = ({ content }: Props) => {
                   className="aspect-3/4 rounded-lg overflow-hidden bg-neutral-100"
                 >
                   <img
-                    src={`${import.meta.env.BASE_URL}${img}`}
+                    src={assetUrl(img)}
                     alt={`Competition image ${i + 1}`}
                     className="w-full h-full object-cover"
                     loading="lazy"

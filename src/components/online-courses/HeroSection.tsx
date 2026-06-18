@@ -2,6 +2,7 @@ import { Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import StatsGrid from "./StatsGrid";
 import { Link } from "react-router-dom";
+import { assetUrl } from "@/lib/utils";
 
 type Props = {
   hero: {
@@ -22,9 +23,7 @@ type Props = {
 };
 
 const HeroSection = ({ hero, stats }: Props) => {
-  const imageSrc = `${import.meta.env.BASE_URL}${
-    hero.image.startsWith("/") ? hero.image.slice(1) : hero.image
-  }`;
+  const imageSrc = assetUrl(hero.image);
 
   return (
     <section className="pt-24 sm:pt-24 md:pt-28 pb-12 sm:pb-14 md:pb-16 px-4 sm:px-6 bg-white">

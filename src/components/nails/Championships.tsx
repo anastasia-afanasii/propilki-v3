@@ -1,4 +1,5 @@
 import { Trophy } from "lucide-react";
+import { assetUrl } from "@/lib/utils";
 
 type Props = {
   content: {
@@ -20,11 +21,7 @@ const Championships = ({ content }: Props) => {
   const award = content?.award ?? {};
   const items = award?.items ?? [];
 
-  const imgSrc = award?.image
-    ? award.image.startsWith("http")
-      ? award.image
-      : `${import.meta.env.BASE_URL}${award.image}`
-    : `${import.meta.env.BASE_URL}placeholder.svg`;
+  const imgSrc = award?.image ? assetUrl(award.image) : assetUrl("placeholder.svg");
 
   return (
     <section

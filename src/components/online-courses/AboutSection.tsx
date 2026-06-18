@@ -1,5 +1,6 @@
 import { Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { assetUrl } from "@/lib/utils";
 
 type Props = {
   about: {
@@ -21,9 +22,7 @@ type Props = {
 };
 
 const AboutSection = ({ about }: Props) => {
-  const imgSrc = `${import.meta.env.BASE_URL}${
-    about.image.startsWith("/") ? about.image.slice(1) : about.image
-  }`;
+  const imgSrc = assetUrl(about.image);
 
   return (
     <section

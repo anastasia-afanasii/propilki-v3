@@ -1,5 +1,6 @@
 import React from "react";
 import { Palette, Sparkles, Target, CheckCircle } from "lucide-react";
+import { assetUrl } from "@/lib/utils";
 
 type IconKey = "palette" | "sparkles" | "target" | "checkCircle";
 
@@ -29,9 +30,7 @@ const ICONS: Record<IconKey, React.ElementType> = {
 };
 
 const TipCreationProcess = ({ content }: Props) => {
-  const imgSrc = content.highlight.image.src.startsWith("http")
-    ? content.highlight.image.src
-    : `${import.meta.env.BASE_URL}${content.highlight.image.src}`;
+  const imgSrc = assetUrl(content.highlight.image.src);
 
   return (
     <section

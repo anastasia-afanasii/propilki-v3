@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Eye } from "lucide-react";
 import type { NailProduct } from "@/types/catalog";
+import { assetUrl } from "@/lib/utils";
 
 type Props = {
   product: NailProduct;
@@ -12,8 +13,8 @@ const ProductCard = ({ product, badgeLabel }: Props) => {
   const location = useLocation();
 
   const coverImage = product.images?.[0]
-    ? `${import.meta.env.BASE_URL}${product.images[0]}`
-    : `${import.meta.env.BASE_URL}placeholder.svg`;
+    ? assetUrl(product.images[0])
+    : assetUrl("placeholder.svg");
 
   return (
     <Link

@@ -1,3 +1,5 @@
+import { assetUrl } from "@/lib/utils";
+
 type Props = {
   content: {
     id?: string;
@@ -10,15 +12,11 @@ type Props = {
   };
 };
 
-const normalize = (src: string) => (src.startsWith("/") ? src.slice(1) : src);
-
 const Biography = ({ content }: Props) => {
   const id = content?.id ?? "biography";
   const paragraphs = content?.paragraphs ?? [];
 
-  const imgSrc = `${import.meta.env.BASE_URL}${normalize(
-    content?.image ?? ""
-  )}`;
+  const imgSrc = assetUrl(content?.image);
 
   return (
     <section id={id} className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
