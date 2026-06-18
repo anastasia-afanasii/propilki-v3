@@ -7,9 +7,10 @@ import { assetUrl } from "@/lib/utils";
 type Props = {
   product: NailProduct;
   badgeLabel: string;
+  priority?: boolean;
 };
 
-const ProductCard = ({ product, badgeLabel }: Props) => {
+const ProductCard = ({ product, badgeLabel, priority = false }: Props) => {
   const location = useLocation();
 
   const coverImage = product.images?.[0]
@@ -31,7 +32,8 @@ const ProductCard = ({ product, badgeLabel }: Props) => {
             className="w-full h-56 sm:h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700"
             width={800}
             height={800}
-            loading="lazy"
+            loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : undefined}
           />
 
           <span className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white/90 text-neutral-700 text-[10px] sm:text-xs font-medium px-2 py-1 tracking-wider uppercase">

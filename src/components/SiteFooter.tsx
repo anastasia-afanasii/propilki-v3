@@ -65,7 +65,7 @@ const SiteFooter = ({
 
           <ul className="grid grid-cols-2 gap-x-6 gap-y-2">
             {nav.map((l) => (
-              <li key={l.label}>
+              <li key={l.to}>
                 <Link to={l.to} className={`${linkBase} ${l.highlight ? underline : ""}`}>
                   {l.label}
                 </Link>

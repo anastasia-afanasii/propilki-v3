@@ -6,8 +6,6 @@ export type NailProduct = {
   images: string[];
   colors: string[];
   length: string;
-  handcraftedOnDemand?: boolean;
-  createdAt?: string;
   description?: string;
   badge?: string;
   originalPrice?: string;

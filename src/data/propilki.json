@@ -71,7 +71,7 @@
     ],
     "quote": "“I believe that beauty should be as effortless as it is extraordinary. Through press-on technology, I deliver salon-perfected results that seamlessly complement any lifestyle - wherever in the world you may be.”",
     "button": "Contact",
-    "buttonHref": "https://www.instagram.com/lo.lo_nails/",
+    "buttonHref": "https://www.instagram.com/solo.lo_nails/",
     "socialProof": "2,000+ happy students",
     "badge": {
       "line1": "10+ Years",
@@ -86,7 +86,6 @@
     {
       "id": 1,
       "title": "Online course \"Dry File Manicure: Australian Style No Cuts Eco-Friendly\"",
-      "subtitle": "Master the Art of Safe Manicures",
       "description": "Transform your nail care routine with our comprehensive online course. Learn the revolutionary dry file technique that's taking the industry by storm.",
       "features": [
         "Basic course on dry file manicure",
@@ -99,20 +98,13 @@
         "French Manicure",
         "From Reels"
       ],
-      "type": "online",
-      "duration": "6 weeks",
-      "students": 1250,
-      "rating": 4.9,
       "image": "images/online_course.webp",
-      "badge": "Most Popular",
-      "gradient": "from-rose-500 to-pink-500",
       "cta": "Buy",
       "link": "https://www.udemy.com/course/file-manicure/?referralCode=2604702EB7F839613C5D%2F"
     },
     {
       "id": 2,
       "title": "Offline course \"Nail Filing\"",
-      "subtitle": "Hands-On Professional Training",
       "description": "Get personalized instruction and practice on real models in our intensive offline course.",
       "features": [
         "Individual instruction with personal feedback",
@@ -121,20 +113,13 @@
         "Techniques for attracting more clients and reducing work time"
       ],
       "price": "one day - €220, two days - €260.",
-      "type": "offline",
-      "duration": "1-2 days",
-      "students": 350,
-      "rating": 5,
       "image": "images/offline_file.webp",
-      "badge": "Certification",
-      "gradient": "from-blue-500 to-purple-500",
       "cta": "Enroll",
       "link": "https://www.instagram.com/propilki.moldova/"
     },
     {
       "id": 3,
       "title": "Offline course \"How to become your own nail tech\"",
-      "subtitle": "Personal Nail Care Mastery",
       "description": "Perfect for busy individuals who want salon-quality results at home in just 15 minutes.",
       "features": [
         "Learn how to do a perfect manicure without pain or cuts using only files.",
@@ -144,13 +129,7 @@
         "If you don't have time for salons or want a manicure in 15 minutes, this course is for you. The file and interchangeable abrasive easily fit into a purse or pocket."
       ],
       "price": "€180",
-      "type": "offline",
-      "duration": "1 day",
-      "students": 420,
-      "rating": 4.8,
       "image": "images/offline_self_master.webp",
-      "badge": "Quick Results",
-      "gradient": "from-emerald-500 to-teal-500",
       "cta": "Enroll",
       "link": "https://www.instagram.com/propilki.moldova/"
     }

@@ -11,13 +11,13 @@ const SectionHeading = ({
   tone = "light",
   subtitleClassName,
 }: Props) => {
-  const headingColor = tone === "light" ? "text-neutral-900 " : "";
+  const headingColor = tone === "light" ? "text-neutral-900" : "text-white";
   const dividerTone = tone === "light" ? "bg-neutral-300" : "bg-neutral-600";
 
   return (
     <div className="text-center mb-10 sm:mb-12 md:mb-14">
       <h2
-        className={`text-3xl sm:text-4xl md:text-5xl font-light ${headingColor}mb-4 sm:mb-5 tracking-tight`}
+        className={`text-3xl sm:text-4xl md:text-5xl font-light ${headingColor} mb-4 sm:mb-5 tracking-tight`}
       >
         {title}
       </h2>

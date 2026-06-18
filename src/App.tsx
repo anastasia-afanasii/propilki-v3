@@ -1,5 +1,4 @@
 import { lazy, Suspense } from "react";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ScrollToHash from "@/components/ScrollToHash";
@@ -32,21 +31,19 @@ const CanonicalUpdater = () => {
 };
 
 const App = () => (
-  <TooltipProvider>
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <CanonicalUpdater />
-      <FaviconSwitcher />
-      <ScrollToHash />
-      <Suspense fallback={null}>
-        <Routes>
-          <Route path="/" element={<OnlineCourses />} />
-          <Route path="/solo" element={<Solo />} />
-          <Route path="/product/:id" element={<ProductPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
-  </TooltipProvider>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <CanonicalUpdater />
+    <FaviconSwitcher />
+    <ScrollToHash />
+    <Suspense fallback={null}>
+      <Routes>
+        <Route path="/" element={<OnlineCourses />} />
+        <Route path="/solo" element={<Solo />} />
+        <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Suspense>
+  </BrowserRouter>
 );
 
 export default App;

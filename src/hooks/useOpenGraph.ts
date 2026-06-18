@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-
-const SITE = "https://propilki.online";
+import { SITE } from "@/lib/site";
 
 type OG = {
   title?: string;

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { SITE } from "@/lib/site";
 
 const useCanonical = () => {
   const { pathname } = useLocation();
@@ -7,7 +8,7 @@ const useCanonical = () => {
   useEffect(() => {
     const link = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (link) {
-      link.href = `https://propilki.online${pathname === "/" ? "" : pathname}`;
+      link.href = `${SITE}${pathname === "/" ? "" : pathname}`;
     }
   }, [pathname]);
 };

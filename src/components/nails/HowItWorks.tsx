@@ -73,14 +73,16 @@ const HowItWorks = ({ content }: Props) => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <a
-                href={content.helpCard.primaryCta.href}
-                target="_blank"
-                rel="noreferrer"
-                className="bg-white text-neutral-900 px-6 py-3 font-medium tracking-wide hover:bg-neutral-100 transition-colors"
-              >
-                {content.helpCard.primaryCta.label}
-              </a>
+              {content.helpCard.primaryCta.href !== "#" && (
+                <a
+                  href={content.helpCard.primaryCta.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-white text-neutral-900 px-6 py-3 font-medium tracking-wide hover:bg-neutral-100 transition-colors"
+                >
+                  {content.helpCard.primaryCta.label}
+                </a>
+              )}
 
               <a
                 href={assetUrl(content.helpCard.secondaryCta.href)}

@@ -201,11 +201,12 @@ const NailCatalog = ({ content }: Props) => {
           </p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-            {pageItems.map((product) => (
+            {pageItems.map((product, i) => (
               <ProductCard
                 key={product.id}
                 product={product}
                 badgeLabel={content.badgeLabel}
+                priority={i < 4}
               />
             ))}
           </div>

@@ -4,6 +4,8 @@ import useSwipe from "@/hooks/useSwipe";
 import useDocumentTitle from "@/hooks/useDocumentTitle";
 import useMetaDescription from "@/hooks/useMetaDescription";
 import useOpenGraph from "@/hooks/useOpenGraph";
+import useJsonLd from "@/hooks/useJsonLd";
+import { SITE } from "@/lib/site";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -85,18 +87,16 @@ const ProductPage = () => {
   }, [handlePreviousImage, handleNextImage]);
 
   // JSON-LD Product structured data
-  useEffect(() => {
-    if (!product) return;
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
+  const jsonLd = useMemo(() => {
+    if (!product) return null;
     const priceValue = product.price.replace(/[^\d.]/g, "");
-    script.text = JSON.stringify({
+    return {
       "@context": "https://schema.org/",
       "@type": "Product",
       name: product.name,
       category: product.category,
       image: product.images.map(
-        (img) => `https://propilki.online/${img.replace(/^\//, "")}`
+        (img) => `${SITE}/${img.replace(/^\//, "")}`
       ),
       description:
         product.description ??
@@ -104,17 +104,14 @@ const ProductPage = () => {
       brand: { "@type": "Brand", name: "SOLO by PROPILKI" },
       offers: {
         "@type": "Offer",
-        url: `https://propilki.online/product/${product.id}`,
+        url: `${SITE}/product/${product.id}`,
         priceCurrency: "EUR",
         price: priceValue,
         availability: "https://schema.org/MadeToOrder",
       },
-    });
-    document.head.appendChild(script);
-    return () => {
-      document.head.removeChild(script);
     };
   }, [product]);
+  useJsonLd(jsonLd);
 
   if (!product) {
     return (
@@ -288,9 +285,9 @@ const ProductPage = () => {
                 <div className="space-y-4 sm:space-y-5">
                   {product.description && (
                     <div>
-                      <h2 className="text-base sm:text-lg font-medium text-neutral-900 mb-2">
+                      <h3 className="text-base sm:text-lg font-medium text-neutral-900 mb-2">
                         Description
-                      </h2>
+                      </h3>
                       <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
                         {product.description}
                       </p>
@@ -298,9 +295,9 @@ const ProductPage = () => {
                   )}
 
                   <div>
-                    <h2 className="text-base sm:text-lg font-medium text-neutral-900 mb-3">
+                    <h3 className="text-base sm:text-lg font-medium text-neutral-900 mb-3">
                       Details
-                    </h2>
+                    </h3>
 
                     <div className="space-y-2 text-sm sm:text-base">
                       <div className="flex justify-between gap-6">

@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useMemo } from "react";
 import useDocumentTitle from "@/hooks/useDocumentTitle";
 import useMetaDescription from "@/hooks/useMetaDescription";
 import useOpenGraph from "@/hooks/useOpenGraph";
+import useJsonLd from "@/hooks/useJsonLd";
+import { SITE } from "@/lib/site";
 
 import Header from "@/components/online-courses/Header";
 import Footer from "@/components/online-courses/Footer";
@@ -27,10 +29,8 @@ const Index = () => {
     image: "og-image.png",
   });
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(
+    () => ({
       "@context": "https://schema.org",
       "@type": "Course",
       name: "Dry File Manicure School",
@@ -39,19 +39,17 @@ const Index = () => {
       provider: {
         "@type": "Organization",
         name: "PROPILKI",
-        url: "https://propilki.online",
+        url: SITE,
       },
       offers: {
         "@type": "Offer",
         category: "Online and offline nail courses",
         availability: "https://schema.org/InStock",
       },
-    });
-    document.head.appendChild(script);
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
+    }),
+    []
+  );
+  useJsonLd(jsonLd);
 
   return (
     <div className="min-h-screen bg-white">

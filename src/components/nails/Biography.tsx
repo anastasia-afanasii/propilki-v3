@@ -17,7 +17,9 @@ const Biography = ({ content }: Props) => {
   const id = content?.id ?? "biography";
   const paragraphs = content?.paragraphs ?? [];
 
-  const imgSrc = assetUrl(content?.image);
+  const imgSrc = content?.image
+    ? assetUrl(content.image)
+    : assetUrl("placeholder.svg");
 
   return (
     <section id={id} className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
