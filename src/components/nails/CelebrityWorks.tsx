@@ -49,7 +49,7 @@ const CelebrityWorks = ({ content }: Props) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-14 items-start">
           <div className="relative">
-            <div className="w-full h-[300px] sm:h-[360px] lg:h-[460px] bg-neutral-800 rounded-xl overflow-hidden flex items-center justify-center">
+            <div className="w-full h-75 sm:h-90 lg:h-115 bg-neutral-800 rounded-xl overflow-hidden flex items-center justify-center">
               <img
                 src={active}
                 alt={`Catalina Cara nail art ${index + 1}`}
