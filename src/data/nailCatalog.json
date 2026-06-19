@@ -605,7 +605,9 @@
       ],
       "length": "Medium",
       "images": [
-        "images/nails/nails-monochrome/monochrome-5.webp"
+        "images/nails/nails-monochrome/monochrome-5-1.webp",
+        "images/nails/nails-monochrome/monochrome-5-2.jpg",
+        "images/nails/nails-monochrome/monochrome-5-3.jpg"
       ]
     },
     {
@@ -652,20 +654,6 @@
         "images/nails/nails-monochrome/monochrome-8-1.jpg",
         "images/nails/nails-monochrome/monochrome-8-2.jpg",
         "images/nails/nails-monochrome/monochrome-8-3.jpg"
-      ]
-    },
-    {
-      "id": 409,
-      "name": "Monochrome Elegance 09",
-      "price": "€30",
-      "category": "Monochrome Elegance",
-      "colors": [
-        "Black"
-      ],
-      "length": "Medium",
-      "images": [
-        "images/nails/nails-monochrome/monochrome-9-1.jpg",
-        "images/nails/nails-monochrome/monochrome-9-2.jpg"
       ]
     },
     {
