@@ -2,13 +2,17 @@
   "products": [
     {
       "id": 101,
-      "name": "Art Press-Ons 01",
+      "name": "Lilac Doodle Opal",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Mixed"
+        "Nude",
+        "Lilac",
+        "Purple",
+        "Black"
       ],
       "length": "Medium",
+      "description": "A dreamy mix of milky nude and lilac shimmer nails scattered with iridescent opal foil and delicate hand-drawn black line art — tiny stars, squiggles, and a single heart. Playful yet refined, this set feels like wearable doodle-pop art on short, rounded tips.",
       "images": [
         "images/nails/nails-art/art-1-1.webp",
         "images/nails/nails-art/art-1-2.webp"
@@ -16,13 +20,18 @@
     },
     {
       "id": 102,
-      "name": "Art Press-Ons 02",
+      "name": "Confetti Color Blobs",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Mixed"
+        "White",
+        "Red",
+        "Yellow",
+        "Green",
+        "Navy"
       ],
       "length": "Medium",
+      "description": "A playful matte white canvas scattered with hand-painted bursts of red, yellow, green, and deep navy in soft abstract shapes. Each oval nail feels like a tiny piece of modern art, bold yet effortlessly wearable.",
       "images": [
         "images/nails/nails-art/art-2-1.jpg",
         "images/nails/nails-art/art-2-2.jpg"
@@ -30,13 +39,16 @@
     },
     {
       "id": 103,
-      "name": "Art Press-Ons 03",
+      "name": "Red Marble Swirl",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Mixed"
+        "Red",
+        "White",
+        "Lavender"
       ],
       "length": "Long",
+      "description": "Bold crimson nails swirled with creamy white and soft lavender for a hand-mixed marble effect, each tip uniquely veined under a high-gloss finish. A striking, painterly look that feels both artful and effortlessly elegant.",
       "images": [
         "images/nails/nails-art/art-3-1.jpg",
         "images/nails/nails-art/art-3-2.jpg",
@@ -46,13 +58,16 @@
     },
     {
       "id": 104,
-      "name": "Art Press-Ons 04",
+      "name": "Red Poppy Folk Art",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Mixed"
+        "Red",
+        "Black",
+        "Cream"
       ],
       "length": "Medium",
+      "description": "A playful mixed set blending vivid red poppy blooms, black folk-style florals, and delicate snowflake accents over soft cream bases. Each nail carries its own hand-painted motif for an artful, one-of-a-kind statement.",
       "images": [
         "images/nails/nails-art/art-4-1.jpg",
         "images/nails/nails-art/art-4-2.jpg"
@@ -60,13 +75,17 @@
     },
     {
       "id": 105,
-      "name": "Art Press-Ons 05",
+      "name": "Abstract Picasso Faces",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Mixed"
+        "Blue",
+        "Orange",
+        "Yellow",
+        "White"
       ],
       "length": "Short",
+      "description": "A bold, artful set of short square nails where each finger tells its own story — hand-painted line-art faces in the spirit of Picasso, swirls of blue marble, a delicate white botanical leaf, and a vivid solid orange tip. Playful color blocking in yellow, navy, and coral makes this a true wearable-art statement.",
       "images": [
         "images/nails/nails-art/art-5-1.jpg",
         "images/nails/nails-art/art-5-2.jpg"
@@ -74,13 +93,18 @@
     },
     {
       "id": 106,
-      "name": "Art Press-Ons 06",
+      "name": "Terracotta Folk Floral",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Mixed"
+        "Terracotta",
+        "Brown",
+        "Cream",
+        "Red",
+        "Blue"
       ],
       "length": "Medium",
+      "description": "Each nail is hand-painted in warm terracotta, rust, and cream tones with intricate folk-art florals and ornamental line work in red, blue, and gold accents. A glossy finish and short squared shape give this artisanal set a cozy, storybook elegance, with every nail a unique miniature painting.",
       "images": [
         "images/nails/nails-art/art-6-1.jpg",
         "images/nails/nails-art/art-6-2.jpg"
@@ -88,13 +112,16 @@
     },
     {
       "id": 107,
-      "name": "Art Press-Ons 07",
+      "name": "Nude Glaze Pop-Art",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Mixed"
+        "Nude",
+        "Peach",
+        "Multicolor"
       ],
       "length": "Medium",
+      "description": "A warm peachy-nude set with a high-gloss glaze finish on short squoval tips, accented by two hand-painted pop-art nails in playful abstract color. Effortlessly everyday with a bold, artistic twist.",
       "images": [
         "images/nails/nails-art/art-7-1.webp",
         "images/nails/nails-art/art-7-2.webp"
@@ -102,14 +129,15 @@
     },
     {
       "id": 108,
-      "name": "Art Press-Ons 08",
+      "name": "Black Polka Dot",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Black",
-        "Nude"
+        "White",
+        "Black"
       ],
       "length": "Medium",
+      "description": "Creamy milk-white nails scattered with hand-painted black dots in varying sizes for a playful yet refined polka-dot effect. The soft semi-sheer base and glossy finish keep this monochrome design clean, elegant, and effortlessly chic.",
       "images": [
         "images/nails/nails-art/art-8-1.jpg",
         "images/nails/nails-art/art-8-2.jpg",
@@ -119,13 +147,17 @@
     },
     {
       "id": 109,
-      "name": "Art Press-Ons 09",
+      "name": "Earth & Sky Abstract",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Multicolor"
+        "Blue",
+        "Brown",
+        "Cream",
+        "Gold"
       ],
       "length": "Medium",
+      "description": "Short rounded press-ons hand-painted with a freeform abstract design, blending sky blue, terracotta rust, cream, and golden-amber swirls like a sunlit desert landscape. The glossy finish lends each wearable miniature canvas a soft, painterly glow.",
       "images": [
         "images/nails/nails-art/art-9-1.jpg",
         "images/nails/nails-art/art-9-2.jpg",
@@ -136,13 +168,15 @@
     },
     {
       "id": 111,
-      "name": "Art Press-Ons 11",
+      "name": "Blue Shimmer Red Web",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Multicolor"
+        "Blue",
+        "Red"
       ],
       "length": "Medium",
+      "description": "Shimmering sky-blue tips are hand-painted with bold abstract red lines that web across each nail for a striking, gallery-worthy contrast. Short and square, this art set pairs playful color with a glossy, polished finish.",
       "images": [
         "images/nails/nails-art/art-11-1.jpg",
         "images/nails/nails-art/art-11-2.jpg"
@@ -150,53 +184,68 @@
     },
     {
       "id": 112,
-      "name": "Art Press-Ons 12",
+      "name": "Sunset Orange Abstract",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Orange"
+        "Orange",
+        "Navy",
+        "Red"
       ],
       "length": "Medium",
+      "description": "A bold orange press-on with a high-gloss finish, accented by an abstract corner of navy, red, and burgundy brushstrokes. The short squoval shape and vivid color play make this a striking, art-forward statement.",
       "images": [
         "images/nails/nails-art/art-12-1.jpg"
       ]
     },
     {
       "id": 113,
-      "name": "Art Press-Ons 13",
+      "name": "Green Marble Confetti",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Green"
+        "Green",
+        "White",
+        "Silver"
       ],
       "length": "Medium",
+      "description": "A glossy green marbled base swirls with creamy white, accented by hand-painted silver wave lines and tiny multicolored confetti dots. Playful yet refined, this short square set brings artful texture to an everyday look.",
       "images": [
         "images/nails/nails-art/art-13-1.jpg"
       ]
     },
     {
       "id": 114,
-      "name": "Art Press-Ons 14",
+      "name": "Glossy Jewel-Tone Square",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Multicolor"
+        "Green",
+        "Lavender",
+        "Orange",
+        "Red",
+        "Navy",
+        "Cream",
+        "Black"
       ],
       "length": "Medium",
+      "description": "A glossy multi-color set spanning sage green, lavender, terracotta, deep red, navy, cream, and black for a playful yet refined look. The clean square tips and high-shine finish make this jewel-toned palette feel modern and effortlessly chic.",
       "images": [
         "images/nails/nails-art/art-14-1.jpg"
       ]
     },
     {
       "id": 115,
-      "name": "Art Press-Ons 15",
+      "name": "Teal Coral Abstract",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
+        "Teal",
         "Red",
-        "Teal"
+        "Peach"
       ],
       "length": "Medium",
+      "description": "A hand-painted set where swirls of turquoise, coral red, and soft peach blend into a free-form abstract canvas across every nail. Glossy and artful, it reads like wearable watercolor for those who want their tips to be the statement.",
       "images": [
         "images/nails/nails-art/art-15-1.jpg",
         "images/nails/nails-art/art-15-2.jpg"
@@ -204,14 +253,16 @@
     },
     {
       "id": 116,
-      "name": "Art Press-Ons 16",
+      "name": "Black Abalone Swirl",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
         "Black",
+        "Silver",
         "Iridescent"
       ],
       "length": "Medium",
+      "description": "Glossy jet-black nails come alive with iridescent abalone shell inlays and delicate silver-white brushstroke swirls. A dramatic, gallery-worthy design where every nail catches the light in shifting shades of pearl, blue and violet.",
       "images": [
         "images/nails/nails-art/art-16-1.jpg",
         "images/nails/nails-art/art-16-2.jpg",
@@ -222,13 +273,18 @@
     },
     {
       "id": 117,
-      "name": "Art Press-Ons 17",
+      "name": "Painted Porcelain Botanicals",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Multicolor"
+        "Blue",
+        "Yellow",
+        "Green",
+        "Purple",
+        "White"
       ],
       "length": "Medium",
+      "description": "A whimsical mismatched set where each nail tells its own story, from cobalt blue-and-white porcelain brushwork to dried-flower accents pressed into soft yellow and sage tones. Hand-painted skies, speckled lilac, and delicate linework make this an artful, one-of-a-kind statement.",
       "images": [
         "images/nails/nails-art/art-17-1.jpg",
         "images/nails/nails-art/art-17-2.jpg",
@@ -239,13 +295,19 @@
     },
     {
       "id": 118,
-      "name": "Art Press-Ons 18",
+      "name": "Jelly Rainbow Gloss",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "Multicolor"
+        "Black",
+        "Burgundy",
+        "Lilac",
+        "Green",
+        "Orange",
+        "Nude"
       ],
       "length": "Medium",
+      "description": "A playful set of long press-ons in a glossy jelly finish, each tip a different translucent hue — from inky black and deep burgundy to lilac, sage, orange, and lime. The candy-like shine and rainbow palette make this set a bold, joyful statement.",
       "images": [
         "images/nails/nails-art/art-18-1.jpg",
         "images/nails/nails-art/art-18-2.jpg",
@@ -256,14 +318,15 @@
     },
     {
       "id": 119,
-      "name": "Art Press-Ons 19",
+      "name": "Red Cat & House",
       "price": "€80",
       "category": "Art Press-Ons",
       "colors": [
-        "White",
-        "Red"
+        "Red",
+        "White"
       ],
       "length": "Medium",
+      "description": "A playful red-and-white set hand-painted with whimsical motifs — a curled cat, a tiny house, swirls, and bold polka dots. Glossy and charming, it pairs storybook illustration with a clean graphic palette for a design that feels both cozy and bold.",
       "images": [
         "images/nails/nails-art/art-19-1.jpg",
         "images/nails/nails-art/art-19-2.jpg",
@@ -274,13 +337,15 @@
     },
     {
       "id": 201,
-      "name": "3D Designs 01",
+      "name": "Black & White Abstract",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "Black",
+        "White"
       ],
       "length": "Long",
+      "description": "A graphic black-and-white set pairing glossy jet-black tips with creamy milk-white nails and hand-painted abstract swirls and lines. The high-shine finish and bold monochrome contrast make it a striking, modern statement.",
       "images": [
         "images/nails/nails-3d/3d-design-1-1.jpg",
         "images/nails/nails-3d/3d-design-1-2.jpg"
@@ -288,13 +353,16 @@
     },
     {
       "id": 203,
-      "name": "3D Designs 03",
+      "name": "Nude 3D Gold Accent",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "Nude",
+        "Gold",
+        "Blue"
       ],
       "length": "Long",
+      "description": "Soft nude press-on nails in a short square shape with a smooth glossy finish, accented by sculpted 3D embellishments featuring a deep blue gemstone and molten gold detailing. An understated, elegant base elevated by an artful touch of texture and shine.",
       "images": [
         "images/nails/nails-3d/3d-design-3-1.jpg",
         "images/nails/nails-3d/3d-design-3-2.jpg",
@@ -305,13 +373,15 @@
     },
     {
       "id": 204,
-      "name": "3D Designs 04",
+      "name": "Liquid Silver Drip",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "White",
+        "Silver"
       ],
       "length": "Medium",
+      "description": "Glossy milky-white almond nails accented with hand-placed liquid silver chrome that melts down from the cuticle for a sculptural, molten finish. A minimalist 3D design where cool metallic droplets meet a soft pearl base for understated, modern edge.",
       "images": [
         "images/nails/nails-3d/3d-design-4-1.jpg",
         "images/nails/nails-3d/3d-design-4-2.jpg"
@@ -319,13 +389,14 @@
     },
     {
       "id": 205,
-      "name": "3D Designs 05",
+      "name": "Molten Gold Baroque",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "Gold"
       ],
       "length": "Long",
+      "description": "Sculpted nails draped in glossy molten gold foil and set with glinting crystal gems for an opulent, jewelry-inspired finish. A bold baroque statement that turns each fingertip into a wearable piece of art.",
       "images": [
         "images/nails/nails-3d/3d-design-5-1.webp",
         "images/nails/nails-3d/3d-design-5-2.webp",
@@ -335,13 +406,14 @@
     },
     {
       "id": 206,
-      "name": "3D Designs 06",
+      "name": "Milky White 3D Floral",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "White"
       ],
       "length": "Medium",
+      "description": "Soft milky white press-ons in a short square shape with a glossy finish, accented by a delicate 3D sculpted flower and a scatter of clear crystals near the cuticle. A quietly elegant, bridal-leaning set that pairs minimalist nudes with refined hand-built detail.",
       "images": [
         "images/nails/nails-3d/3d-design-6-1.webp",
         "images/nails/nails-3d/3d-design-6-2.webp",
@@ -350,13 +422,15 @@
     },
     {
       "id": 207,
-      "name": "3D Designs 07",
+      "name": "Black Gold-Leaf 3D",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "Black",
+        "Gold"
       ],
       "length": "Long",
+      "description": "Deep glossy black nails hand-finished with shimmering gold-leaf accents, anchored by a sculptural 3D statement nail layered in gilded textured detail. A dramatic, couture-inspired set that pairs midnight darkness with the warmth of gold for an unmistakably bold look.",
       "images": [
         "images/nails/nails-3d/3d-design-7-1.webp",
         "images/nails/nails-3d/3d-design-7-2.jpg",
@@ -365,13 +439,14 @@
     },
     {
       "id": 208,
-      "name": "3D Designs 08",
+      "name": "Silver Chrome Foil",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "Silver"
       ],
       "length": "Medium",
+      "description": "High-shine silver mirror chrome nails paired with sculptural accent tips of crumpled metallic foil and polished ball studs. A bold, futuristic 3D set that catches the light from every angle.",
       "images": [
         "images/nails/nails-3d/3d-design-8-1.webp",
         "images/nails/nails-3d/3d-design-8-2.webp",
@@ -380,13 +455,17 @@
     },
     {
       "id": 209,
-      "name": "3D Designs 09",
+      "name": "Gilded Stone Gemstone",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "Gray",
+        "Gold",
+        "White",
+        "Teal"
       ],
       "length": "Medium",
+      "description": "Long stiletto nails in a smoky gray stone-marble finish, each framed with raised gold-leaf borders and set with embedded gemstone and pearl accents. A sculptural, ornate design that feels like wearable jewelry.",
       "images": [
         "images/nails/nails-3d/3d-design-9-1.webp",
         "images/nails/nails-3d/3d-design-9-2.webp"
@@ -394,40 +473,49 @@
     },
     {
       "id": 210,
-      "name": "3D Designs 10",
+      "name": "Red Bloom Chrome Mix",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "Red",
+        "Green",
+        "Copper",
+        "Teal"
       ],
       "length": "Medium",
+      "description": "A playful 3D set blending red floral accents, glossy emerald and teal swirls, and warm copper chrome shimmer for a bold, eclectic statement. Sculpted textures and a glistening rhinestone detail give each nail its own handcrafted character.",
       "images": [
         "images/nails/nails-3d/3d-design-10.webp"
       ]
     },
     {
       "id": 211,
-      "name": "3D Designs 11",
+      "name": "Milky Sage 3D Floral",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Mixed"
+        "White",
+        "Sage",
+        "Gold"
       ],
       "length": "Medium",
+      "description": "Milky white and soft sage almond nails sculpted with dimensional 3D petals, scattered gold-foil flecks, and a pearlescent abalone-shell accent. Delicate iridescent dots add a quiet shimmer to this glossy, garden-inspired set.",
       "images": [
         "images/nails/nails-3d/3d-design-11.webp"
       ]
     },
     {
       "id": 212,
-      "name": "3D Designs 12",
+      "name": "Gold-Leaf Milky Stone",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
+        "Clear",
         "White",
         "Gold"
       ],
       "length": "Medium",
+      "description": "A clear stiletto nail crowned with a raised milky-white centerpiece, framed in delicate hand-applied gold leaf for a sculptural, jewel-like finish. This 3D design feels artisanal and elegant, like a tiny pebble of opal set in gold.",
       "images": [
         "images/nails/nails-3d/3d-design-12-1.jpg",
         "images/nails/nails-3d/3d-design-12-2.jpg",
@@ -436,7 +524,7 @@
     },
     {
       "id": 213,
-      "name": "3D Designs 13",
+      "name": "Sapphire Orb Gold",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
@@ -444,6 +532,7 @@
         "Gold"
       ],
       "length": "Medium",
+      "description": "A sculptural 3D press-on featuring a translucent sapphire-blue orb cradled by hand-molded gold metallic accents that twist around the stone like liquid metal. A bold, jewelry-inspired statement piece for those who want their nails to feel like wearable art.",
       "images": [
         "images/nails/nails-3d/3d-design-13-1.jpg",
         "images/nails/nails-3d/3d-design-13-2.jpg"
@@ -451,13 +540,15 @@
     },
     {
       "id": 214,
-      "name": "3D Designs 14",
+      "name": "Sapphire 3D Frame",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Blue"
+        "Blue",
+        "Clear"
       ],
       "length": "Medium",
+      "description": "A bold sapphire-blue core shimmers at the heart of each nail, framed by a raised, glass-clear gel border that lends the design a sculptural, three-dimensional depth. The metallic shimmer catches the light for a jewel-like, statement finish.",
       "images": [
         "images/nails/nails-3d/3d-design-14-1.jpg",
         "images/nails/nails-3d/3d-design-14-2.jpg"
@@ -465,14 +556,15 @@
     },
     {
       "id": 215,
-      "name": "3D Designs 15",
+      "name": "Silver Foil Bloom",
       "price": "€60",
       "category": "3D Designs",
       "colors": [
-        "Silver",
-        "Grey"
+        "Gray",
+        "Silver"
       ],
       "length": "Medium",
+      "description": "Glossy dove-gray nails crowned with hand-sculpted silver foil blossoms that ripple like crushed metal petals. A sculptural 3D statement that pairs soft neutral polish with bold, light-catching texture.",
       "images": [
         "images/nails/nails-3d/3d-design-15-1.jpg",
         "images/nails/nails-3d/3d-design-15-2.jpg",
@@ -483,13 +575,18 @@
     },
     {
       "id": 301,
-      "name": "Korean-Inspired 01",
+      "name": "Gemstone Mix Stones",
       "price": "€50",
       "category": "Korean-Inspired Trends",
       "colors": [
-        "Mixed"
+        "Navy",
+        "Silver",
+        "Cream",
+        "Magenta",
+        "Amber"
       ],
       "length": "Short",
+      "description": "A playful mismatched set where every nail becomes its own polished gemstone, from deep navy marble and milky cream to silver foil, magenta jelly, and sparkling amber. Each tip carries a glossy, rounded stone-like finish for an eclectic, collector's-treasure feel.",
       "images": [
         "images/nails/nails-korean/korean-design-1-1.webp",
         "images/nails/nails-korean/korean-design-1-2.webp",
@@ -498,13 +595,14 @@
     },
     {
       "id": 304,
-      "name": "Korean-Inspired 04",
+      "name": "Gold Charm Glitter",
       "price": "€50",
       "category": "Korean-Inspired Trends",
       "colors": [
-        "Mixed"
+        "Gold"
       ],
       "length": "Medium",
+      "description": "Long sculpted nails drenched in warm gold glitter and flake, crowned with ornate metallic charms and coin-like jewels for a maximalist, opulent statement. Bold and luxurious, this set turns every gesture into a glint of gold.",
       "images": [
         "images/nails/nails-korean/korean-design-4-1.webp",
         "images/nails/nails-korean/korean-design-4-2.webp"
@@ -512,13 +610,17 @@
     },
     {
       "id": 305,
-      "name": "Korean-Inspired 05",
+      "name": "Red Gothic Charm",
       "price": "€50",
       "category": "Korean-Inspired Trends",
       "colors": [
-        "Mixed"
+        "Red",
+        "Black",
+        "White",
+        "Silver"
       ],
       "length": "Medium",
+      "description": "Glossy crimson and smoky-white nails dressed in dark metallic charms, spider-web motifs, and edgy gothic embellishments. A daring, statement-making set that fuses Korean-inspired drama with rebellious 3D detailing.",
       "images": [
         "images/nails/nails-korean/korean-design-5-1.webp",
         "images/nails/nails-korean/korean-design-5-2.webp"
@@ -526,14 +628,14 @@
     },
     {
       "id": 306,
-      "name": "Korean-Inspired Trends 06",
+      "name": "Milky Pink Square",
       "price": "€50",
       "category": "Korean-Inspired Trends",
       "colors": [
-        "Pink",
-        "Nude"
+        "Pink"
       ],
       "length": "Medium",
+      "description": "A soft milky-pink jelly finish in a short square shape, with a glossy translucent glow that mimics a fresh, healthy natural manicure. Understated and clean, this Korean-inspired set delivers a polished everyday look with a delicate rosy tint.",
       "images": [
         "images/nails/nails-korean/korean-design-6-1.jpg",
         "images/nails/nails-korean/korean-design-6-2.jpg",
@@ -544,52 +646,58 @@
     },
     {
       "id": 401,
-      "name": "Monochrome 01",
+      "name": "Glossy Cherry Squoval",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Monochrome"
+        "Red"
       ],
       "length": "Short",
+      "description": "A deep cherry-red set with a high-gloss finish that catches the light for a polished, lacquered look. The short squoval shape keeps it understated and elegant, perfect for everyday wear with a touch of bold color.",
       "images": [
         "images/nails/nails-monochrome/monochrome-1.webp"
       ]
     },
     {
       "id": 402,
-      "name": "Monochrome 02",
+      "name": "Dark Cherry Coffin",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Monochrome"
+        "Burgundy",
+        "Black"
       ],
       "length": "Medium",
+      "description": "A deep, glossy cherry-black shade that shifts to warm burgundy in the light, set on a sleek coffin silhouette. The mirror-bright finish lends these press-ons a rich, vampy elegance for a bold yet refined look.",
       "images": [
         "images/nails/nails-monochrome/monochrome-2.webp"
       ]
     },
     {
       "id": 403,
-      "name": "Monochrome 03",
+      "name": "Slate Blue Gloss",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Monochrome"
+        "Blue",
+        "Gray"
       ],
       "length": "Medium",
+      "description": "A set of press-on nails in a muted dusty blue-gray with a smooth glossy finish. The understated slate tone feels calm and refined, perfect for a polished everyday look.",
       "images": [
         "images/nails/nails-monochrome/monochrome-3.webp"
       ]
     },
     {
       "id": 404,
-      "name": "Monochrome 04",
+      "name": "Silver Chrome Mirror",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Monochrome"
+        "Silver"
       ],
       "length": "Medium",
+      "description": "A sleek set of silver chrome press-ons with a liquid-metal mirror finish that catches the light from every angle. The short squared shape keeps the look polished and modern, perfect for an effortlessly futuristic statement.",
       "images": [
         "images/nails/nails-monochrome/monochrome-4-1.jpg",
         "images/nails/nails-monochrome/monochrome-4-2.jpg"
@@ -597,13 +705,14 @@
     },
     {
       "id": 405,
-      "name": "Monochrome 05",
+      "name": "Glossy Black Squoval",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Monochrome"
+        "Black"
       ],
       "length": "Medium",
+      "description": "A timeless set of deep jet-black press-ons finished with a mirror-bright gloss that catches the light from every angle. The short squoval shape keeps the look clean and effortlessly polished for everyday elegance.",
       "images": [
         "images/nails/nails-monochrome/monochrome-5-1.webp",
         "images/nails/nails-monochrome/monochrome-5-2.jpg",
@@ -612,27 +721,30 @@
     },
     {
       "id": 406,
-      "name": "Monochrome 06",
+      "name": "Classic White French",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Monochrome"
+        "Nude",
+        "White"
       ],
       "length": "Medium",
+      "description": "A timeless French manicure with a soft peachy-nude base and crisp white tips, finished in a high-gloss shine. The clean, understated look pairs effortlessly with any occasion for an elegant everyday wear.",
       "images": [
         "images/nails/nails-monochrome/monochrome-6.webp"
       ]
     },
     {
       "id": 407,
-      "name": "Monochrome Elegance 07",
+      "name": "Glossy Orange & Black Coffin",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Black",
-        "Orange"
+        "Orange",
+        "Black"
       ],
       "length": "Medium",
+      "description": "A bold two-tone set pairing vivid glossy orange with deep jet-black nails in a sleek tapered coffin silhouette. The high-shine finish keeps each color clean and striking for a confident, statement-making look.",
       "images": [
         "images/nails/nails-monochrome/monochrome-7-1.jpg",
         "images/nails/nails-monochrome/monochrome-7-2.jpg",
@@ -643,13 +755,14 @@
     },
     {
       "id": 408,
-      "name": "Monochrome Elegance 08",
+      "name": "Glossy Red Squoval",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
         "Red"
       ],
       "length": "Medium",
+      "description": "A bold set of press-on nails in vivid scarlet red with a high-gloss finish and a clean squoval shape. Classic and confident, this timeless red elevates any look from everyday polish to statement-making elegance.",
       "images": [
         "images/nails/nails-monochrome/monochrome-8-1.jpg",
         "images/nails/nails-monochrome/monochrome-8-2.jpg",
@@ -658,53 +771,57 @@
     },
     {
       "id": 410,
-      "name": "Monochrome Elegance 10",
+      "name": "Pearl White Square",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Silver"
+        "White",
+        "Pearl"
       ],
       "length": "Medium",
+      "description": "Short squared press-ons wrapped in a luminous pearl-white finish that shimmers with a soft opalescent glow. A clean, understated set that pairs everyday wearability with a quietly elegant sheen.",
       "images": [
         "images/nails/nails-monochrome/monochrome-10-1.jpg"
       ]
     },
     {
       "id": 412,
-      "name": "Monochrome Elegance 12",
+      "name": "Glossy Deep Navy",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Blue",
         "Navy"
       ],
       "length": "Medium",
+      "description": "A rich, deep navy nail finished with a high-gloss shine that catches the light for an understated, sophisticated look. The clean squared silhouette keeps the design effortlessly elegant and versatile for any occasion.",
       "images": [
         "images/nails/nails-monochrome/monochrome-12-1.jpg"
       ]
     },
     {
       "id": 414,
-      "name": "Monochrome Elegance 14",
+      "name": "Glossy Coral-Red Square",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
         "Red"
       ],
       "length": "Medium",
+      "description": "A vivid coral-red set in a clean square shape with a high-gloss, glassy finish. The bold solid color and short length make it a punchy yet polished everyday statement.",
       "images": [
         "images/nails/nails-monochrome/monochrome-14-1.jpg"
       ]
     },
     {
       "id": 415,
-      "name": "Monochrome Elegance 15",
+      "name": "Glossy Wine Almond",
       "price": "€30",
       "category": "Monochrome Elegance",
       "colors": [
-        "Red"
+        "Dark Red"
       ],
       "length": "Medium",
+      "description": "Long almond nails drenched in a deep wine-red gloss that catches the light with mirror-like shine. A rich, sultry shade that feels both timeless and effortlessly bold.",
       "images": [
         "images/nails/nails-monochrome/monochrome-15-1.jpg",
         "images/nails/nails-monochrome/monochrome-15-2.jpg",
