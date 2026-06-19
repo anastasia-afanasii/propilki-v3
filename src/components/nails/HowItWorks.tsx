@@ -1,4 +1,6 @@
+import { useState } from "react";
 import SectionHeading from "@/components/SectionHeading";
+import VideoModal from "@/components/VideoModal";
 import { assetUrl } from "@/lib/utils";
 
 type Props = {
@@ -17,6 +19,10 @@ type Props = {
 };
 
 const HowItWorks = ({ content }: Props) => {
+  const [videoOpen, setVideoOpen] = useState(false);
+  const primary = content.helpCard.primaryCta;
+  const isVideo = /\.(mp4|webm|mov)$/i.test(primary.href);
+
   return (
     <section
       id="how-it-works"
@@ -73,15 +79,25 @@ const HowItWorks = ({ content }: Props) => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <a
-                href={content.helpCard.primaryCta.href}
-                {...(content.helpCard.primaryCta.href.startsWith("http")
-                  ? { target: "_blank", rel: "noreferrer" }
-                  : {})}
-                className="bg-white text-neutral-900 px-6 py-3 font-medium tracking-wide hover:bg-neutral-100 transition-colors"
-              >
-                {content.helpCard.primaryCta.label}
-              </a>
+              {isVideo ? (
+                <button
+                  type="button"
+                  onClick={() => setVideoOpen(true)}
+                  className="bg-white text-neutral-900 px-6 py-3 font-medium tracking-wide hover:bg-neutral-100 transition-colors"
+                >
+                  {primary.label}
+                </button>
+              ) : (
+                <a
+                  href={primary.href}
+                  {...(primary.href.startsWith("http")
+                    ? { target: "_blank", rel: "noreferrer" }
+                    : {})}
+                  className="bg-white text-neutral-900 px-6 py-3 font-medium tracking-wide hover:bg-neutral-100 transition-colors"
+                >
+                  {primary.label}
+                </a>
+              )}
 
               <a
                 href={assetUrl(content.helpCard.secondaryCta.href)}
@@ -94,6 +110,15 @@ const HowItWorks = ({ content }: Props) => {
           </div>
         </div>
       </div>
+
+      {isVideo && (
+        <VideoModal
+          src={assetUrl(primary.href)}
+          open={videoOpen}
+          onClose={() => setVideoOpen(false)}
+          title={primary.label}
+        />
+      )}
     </section>
   );
 };

@@ -204,7 +204,7 @@
             "subtitle": "Watch our detailed application tutorial or download our step-by-step guide",
             "primaryCta": {
                 "label": "Watch Tutorial",
-                "href": "https://www.youtube.com/watch?v=gqR1MXRnw4c"
+                "href": "videos/tutorial.mp4"
             },
             "secondaryCta": {
                 "label": "Download Guide",
