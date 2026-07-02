@@ -16,3 +16,14 @@ export function assetUrl(path?: string): string {
   const clean = path.startsWith("/") ? path.slice(1) : path;
   return `${import.meta.env.BASE_URL}${clean}`;
 }
+
+/**
+ * Build a responsive `srcset` for a resolved .webp URL, pairing the 640px
+ * variant (`foo-640.webp`, generated at build-prep time) with the full image.
+ * Returns undefined for non-webp (e.g. placeholder.svg) so callers can spread it.
+ */
+export function imgSrcSet(url?: string): string | undefined {
+  if (!url || !/\.webp$/i.test(url)) return undefined;
+  const sm = url.replace(/\.webp$/i, "-640.webp");
+  return `${sm} 640w, ${url} 1600w`;
+}

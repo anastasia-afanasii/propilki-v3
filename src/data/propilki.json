@@ -33,7 +33,7 @@
     "titleBottom": "",
     "description": "Master the dry manicure technique with me! Safe methods, fast and effective results - suitable for both professionals and beginners.",
     "button": "Discover more",
-    "image": "images/hero.jpeg",
+    "image": "images/hero.webp",
     "imageAlt": "Professional dry file manicure by PROPILKI"
   },
   "stats": [
@@ -62,7 +62,7 @@
     "pill": "Meet Your Instructor",
     "titleTop": "Let's get to know",
     "titleBottom": "each other!",
-    "image": "images/biography.jpg",
+    "image": "images/biography.webp",
     "imageAlt": "PROPILKI nail design instructor",
     "paragraphs": [
       "With over a decade of expertise in the nail art industry, I have devoted my career to elevating the craft of press-on nail design and application into a true art form.",
@@ -98,7 +98,7 @@
         "French Manicure",
         "From Reels"
       ],
-      "image": "images/online_course.jpg",
+      "image": "images/online_course.webp",
       "cta": "Buy",
       "link": "https://www.udemy.com/course/file-manicure/?referralCode=2604702EB7F839613C5D%2F"
     },
@@ -113,7 +113,7 @@
         "Techniques for attracting more clients and reducing work time"
       ],
       "price": "one day - €220, two days - €260.",
-      "image": "images/offline_file.jpg",
+      "image": "images/offline_file.webp",
       "cta": "Enroll",
       "link": "https://www.instagram.com/propilki.moldova/"
     },
@@ -129,7 +129,7 @@
         "If you don't have time for salons or want a manicure in 15 minutes, this course is for you. The file and interchangeable abrasive easily fit into a purse or pocket."
       ],
       "price": "€180",
-      "image": "images/offline_self_master.jpg",
+      "image": "images/offline_self_master.webp",
       "cta": "Enroll",
       "link": "https://www.instagram.com/propilki.moldova/"
     }

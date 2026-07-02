@@ -18,7 +18,7 @@ import Footer from "@/components/nails/Footer";
 import content from "@/data/solo.json";
 import catalog from "@/data/nailCatalog.json";
 import type { NailProduct } from "@/types/catalog";
-import { assetUrl } from "@/lib/utils";
+import { assetUrl, imgSrcSet } from "@/lib/utils";
 
 const products = catalog.products as NailProduct[];
 
@@ -183,6 +183,8 @@ const ProductPage = () => {
                 <div className="aspect-square overflow-hidden rounded-lg bg-white flex items-center justify-center">
                   <img
                     src={activeImage}
+                    srcSet={imgSrcSet(activeImage)}
+                    sizes="(max-width: 1024px) 90vw, 600px"
                     alt={product.name}
                     fetchPriority="high"
                     className="w-full h-full object-cover transition-all duration-500"
@@ -246,6 +248,8 @@ const ProductPage = () => {
                     >
                       <img
                         src={image}
+                        srcSet={imgSrcSet(image)}
+                        sizes="120px"
                         alt={`${product.name} view ${index + 1}`}
                         className="w-full h-full object-cover"
                         loading="lazy"

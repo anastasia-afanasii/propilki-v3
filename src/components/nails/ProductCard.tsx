@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Eye } from "lucide-react";
 import type { NailProduct } from "@/types/catalog";
-import { assetUrl } from "@/lib/utils";
+import { assetUrl, imgSrcSet } from "@/lib/utils";
 
 type Props = {
   product: NailProduct;
@@ -28,6 +28,8 @@ const ProductCard = ({ product, badgeLabel, priority = false }: Props) => {
         <div className="relative overflow-hidden">
           <img
             src={coverImage}
+            srcSet={imgSrcSet(coverImage)}
+            sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
             alt={product.name}
             className="w-full h-56 sm:h-64 md:h-72 object-cover group-hover:scale-105 transition-transform duration-700"
             width={800}
