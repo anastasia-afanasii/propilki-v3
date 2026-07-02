@@ -29,9 +29,11 @@ src/
 public/images/        # All product and content images
 docs/                 # ARCHITECTURE.md, CHANGELOG.md
 .claude/
-  agents/             # reviewer, deployer, designer, architect, optimizer, seo, docs
-  skills/             # /orchestrate (coordinator), /review, /build, /dev, /deploy-check, /optimize, /seo, /docs, etc.
-  settings.local.json # Hooks and permissions (gitignored)
+  agents/             # 7 specialists: reviewer, deployer, designer, architect, optimizer, seo, docs
+  skills/             # /orchestrate (runs the agents), /validate, /build, /dev, /deps, /status, /log-session, /recall
+  commands/           # /housekeeping
+  settings.json        # Tracked perms (deny guardrails) + hooks
+  settings.local.json  # Local perm overrides (gitignored)
 ```
 
 ## Routes

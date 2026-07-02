@@ -23,7 +23,7 @@ Whole-project scope. Run the independent ones concurrently, then synthesize:
 Group findings by severity and dedupe overlaps (e.g. reviewer + optimizer both flagging an image).
 
 ### `design` — design-system pass
-- **designer** + the `palette` skill. Enforce the locked system: **black/white/gray only, single Inter font, minimal/sharp corners**. Flag any off-palette colour rather than proposing new ones.
+- **designer** agent (covers palette/redesign/layout). Enforce the locked system: **black/white/gray only, single Inter font, minimal/sharp corners**. Flag any off-palette colour rather than proposing new ones.
 
 ### custom
 If the argument names agents (e.g. `orchestrate reviewer seo`), run exactly those and synthesize.
