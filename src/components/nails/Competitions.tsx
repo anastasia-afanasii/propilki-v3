@@ -48,14 +48,14 @@ const Competitions = ({ content }: Props) => {
 
             <div>
               <div className="flex items-center gap-4 mb-5 sm:mb-6">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-purple-100 rounded-full flex items-center justify-center">
-                  <Sparkles className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-neutral-100 rounded-full flex items-center justify-center">
+                  <Sparkles className="h-7 w-7 sm:h-8 sm:w-8 text-neutral-700" />
                 </div>
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-light text-neutral-900 mb-1">
                     {content.eventTitle}
                   </h3>
-                  <p className="text-purple-600 font-medium">
+                  <p className="text-neutral-700 font-medium">
                     {content.eventDate}
                   </p>
                 </div>

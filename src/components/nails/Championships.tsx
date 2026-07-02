@@ -36,25 +36,25 @@ const Championships = ({ content }: Props) => {
           subtitleClassName="text-base sm:text-lg text-neutral-600 font-light max-w-2xl mx-auto"
         />
 
-        <div className="bg-linear-to-r from-amber-50 to-yellow-50 rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12">
+        <div className="bg-linear-to-r from-neutral-50 to-neutral-100 rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
             <div>
               <div className="flex items-center gap-4 mb-5 sm:mb-6">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-amber-100 rounded-full flex items-center justify-center">
-                  <Trophy className="h-7 w-7 sm:h-8 sm:w-8 text-amber-600" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-neutral-100 rounded-full flex items-center justify-center">
+                  <Trophy className="h-7 w-7 sm:h-8 sm:w-8 text-neutral-700" />
                 </div>
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-light text-neutral-900 mb-1">
                     {award?.name}
                   </h3>
-                  <p className="text-amber-600 font-medium">{award?.label}</p>
+                  <p className="text-neutral-700 font-medium">{award?.label}</p>
                 </div>
               </div>
 
               <ul className="space-y-3">
                 {items.map((t, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-amber-500 rounded-full mt-2" />
+                    <span className="w-2 h-2 bg-neutral-900 rounded-full mt-2" />
                     <span className="text-neutral-600 font-light text-sm sm:text-base">
                       {t}
                     </span>
@@ -63,7 +63,7 @@ const Championships = ({ content }: Props) => {
               </ul>
             </div>
 
-            <div className="relative aspect-4/3 bg-amber-100 rounded-lg overflow-hidden">
+            <div className="relative aspect-4/3 bg-neutral-100 rounded-lg overflow-hidden">
               <img
                 src={imgSrc}
                 alt={award?.imageAlt ?? "Award ceremony"}

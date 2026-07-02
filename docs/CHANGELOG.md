@@ -1,5 +1,35 @@
 # Changelog
 
+## 2026-06-20 — Catalog Expansion, Image Optimization & Repo Hygiene
+
+### Catalog
+- **28 → 48 products** — curated new sets from the raw image library via a
+  multi-stage vision pipeline (classify → face-free filter → dedup → group
+  same-set photos into products, ≤5 angles each); merged duplicate sets;
+  enriched existing products with extra same-set angles.
+- **Descriptive names + descriptions + accurate colors** for all products
+  (replaced the generic "Art Press-Ons 01" scheme).
+
+### Images
+- **~425MB → ~17MB** — every referenced catalog + branding image converted to
+  WebP (≤1600px, q74) with a `-640.webp` companion; added `imgSrcSet()` and
+  wired responsive `srcset`/`sizes` on ProductCard + ProductPage.
+- **Self-hosted tutorial video** — "Watch Tutorial" opens a `VideoModal` playing
+  a transcoded `public/videos/tutorial.mp4` (was a YouTube link).
+
+### Tooling & guardrails
+- **Tracked `.claude/settings.json`** — `permissions.deny` (rm -rf, git reset
+  --hard, force-push, `.env`/keys) + curated allow + hooks. Removed the
+  build-on-every-Bash hook; dropped git push/commit from auto-allow.
+- **.claude consolidation** — removed 10 skills that duplicated the 7 agents;
+  kept orchestrate/validate + build/dev/deps/status; added `/log-session`,
+  `/recall`, and `/housekeeping`.
+
+### Repo hygiene
+- Rewrote the truncated README (dropped phantom TanStack Query); fixed
+  `components.json` (no TW4 config); added `.nvmrc` (20); deleted orphan backlog
+  images; neutralized off-palette accent colours; deduped CSS; refreshed docs.
+
 ## 2026-04-08 — Major Cleanup, Optimization & Modernization
 
 ### Removed

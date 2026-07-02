@@ -10,8 +10,6 @@
 | Styling | Tailwind CSS | 4.2 |
 | UI Library | shadcn/ui (Radix primitives) | — |
 | Routing | react-router-dom | 6.30 |
-| State | @tanstack/react-query | 5.96 |
-| Toast | Sonner | 1.7 |
 | Deploy | GitHub Pages + GitHub Actions | — |
 | Domain | propilki.online | — |
 
@@ -29,7 +27,6 @@
 ```
 App.tsx
 ├── TooltipProvider
-├── Toaster (Sonner)
 ├── BrowserRouter (basename = import.meta.env.BASE_URL)
 │   ├── FaviconSwitcher (swaps favicon per route)
 │   ├── ScrollToHash (scroll-to-anchor on navigation)
@@ -91,7 +88,7 @@ src/data/nailCatalog.json → NailCatalog.tsx, ProductPage.tsx → product listi
 - Hero images: `loading="eager"` (LCP optimization)
 - Below-fold images: `loading="lazy"`
 - Images stored in `public/images/`
-- JSON data references relative paths (e.g., `"images/hero.jpeg"`)
+- JSON data references relative paths (e.g., `"images/hero.webp"`)
 
 ## Deployment
 

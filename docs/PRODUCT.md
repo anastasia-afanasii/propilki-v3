@@ -73,14 +73,14 @@ Individual product page with image gallery, details, and order button.
 
 ## Product Catalog
 
-**26 products** across 4 categories:
+**48 products** across 4 categories:
 
 | Category | Count | Price | Lengths |
 |----------|-------|-------|---------|
-| Art Press-Ons | 7 | €80 | Short, Medium, Long |
-| 3D Designs | 11 | €60 | Short, Medium, Long |
-| Korean-Inspired Trends | 5 | €50 | Short, Medium |
-| Monochrome Elegance | 6 | €30 | Short, Medium |
+| Art Press-Ons | 18 | €80 | Short, Medium, Long |
+| 3D Designs | 14 | €60 | Short, Medium, Long |
+| Korean-Inspired Trends | 4 | €50 | Short, Medium |
+| Monochrome Elegance | 12 | €30 | Short, Medium |
 
 **Catalog features:**
 - Category filter tabs

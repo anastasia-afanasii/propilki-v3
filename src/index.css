@@ -153,15 +153,4 @@
   body {
     @apply bg-background text-foreground;
   }
-
-  button,
-  [role="button"],
-  a,
-  summary,
-  select,
-  [type="button"],
-  [type="submit"],
-  [type="reset"] {
-    cursor: pointer;
-  }
 }
