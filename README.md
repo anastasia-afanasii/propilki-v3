@@ -3,44 +3,50 @@
 PROPILKI is a React + Vite single-page application with two main sections:
 
 - Online Courses (main landing page)
-- SOLO Press-On Nails (product-focused experience)
+- SOLO Press-On Nails (product-focused catalog)
 
-The project is fully JSON-driven and deployed on GitHub Pages as an SPA.
+The project is fully JSON-driven and deployed on GitHub Pages as an SPA at
+[propilki.online](https://propilki.online).
 
 ## Tech Stack
 
-- React
-- TypeScript
-- Vite
-- React Router
-- Tailwind CSS
-- TanStack Query
+- React 19 + TypeScript
+- Vite 6 (SWC + Tailwind v4 plugins)
+- React Router v6 (BrowserRouter)
+- Tailwind CSS v4 (CSS-based config in `src/index.css`, no `tailwind.config.ts`)
+- shadcn/ui (accordion, badge, button, card)
 - Lucide Icons
 
 ## Pages & Routes
 
 - `/` – Online Courses
-- `/solo` – SOLO press-on nails
+- `/solo` – SOLO press-on nails catalog
 - `/product/:id` – Product detail page
+- `*` – 404 fallback
 
 ## Architecture
 
-- Content stored in `src/data` (JSON only)
-- No hardcoded images in components
-- Local assets only
-- Separate component systems:
-  - `components/nails`
-  - `components/online-courses`
+- Content stored in `src/data/*.json` (no backend, no API)
+- No hardcoded images in components; paths resolved via `assetUrl()` +
+  `import.meta.env.BASE_URL`
+- Images are WebP with responsive `srcset` (`foo.webp` + `foo-640.webp`)
+- Separate component systems: `components/nails`, `components/online-courses`,
+  plus shared components (`SiteHeader`, `SiteFooter`, `ReviewCarousel`, …)
 
 ## Routing & Hosting
 
 - BrowserRouter with `basename`
-- Custom `404.html` for GitHub Pages SPA deep links
+- `base: "/"` in `vite.config.ts` for the custom domain
+- Custom `404.html` for GitHub Pages SPA deep links (`?p=` redirect)
 - Hash-based scrolling handled via `ScrollToHash`
+- Auto-deploy on push to `main` (`.github/workflows/deploy.yml`)
 
 ## Development
 
-Install dependencies:
-
 ```bash
-npm install
+npm install      # install dependencies
+npm run dev      # dev server on http://localhost:8080
+npm run build    # production build to dist/
+npm run preview  # preview the production build
+npm run lint     # ESLint
+```
