@@ -43,7 +43,7 @@ Report the drift before writing anything:
 ## Docs Update — [file(s)]
 
 ### Drift found
-- [file:section] — [what's stale] → [correct value]
+- <file> / <section> — [what's stale] → [correct value]
 
 ### Proposed edits
 [per-file: before/after, or the replacement block]

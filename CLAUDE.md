@@ -97,7 +97,7 @@ Single source of truth — agents/skills must enforce this, not restate their ow
 - **Backlinks** — external SEO, not code.
 - **Images:** strict **WebP** (no AVIF), ≤1600px, with a `-640.webp` srcset companion.
 
-**Now fixable on Vercel (no longer constraints):** CDN, HSTS / security headers, and custom response headers ARE supported — configure via `vercel.json` `headers` (SEO/perf agents may recommend them). A **Vite/ecosystem major upgrade** is no longer blocked either — the Node-20 CI pin retired with the old deploy workflow, and Vercel controls the build Node version (Project Settings → default recent).
+**Now fixable on Vercel (no longer constraints):** CDN, HSTS / security headers, and custom response headers ARE supported — configure via `vercel.json` `headers` (SEO/perf agents may recommend them). A **Vite/ecosystem major upgrade** is no longer blocked either — the build Node version now lives in `.nvmrc` (22), which Vercel reads; treat a major upgrade as a normal, deliberate task.
 
 ## External Systems & Write Policy
 **None — git is the single source of truth.** No external platform (DB / CMS / API / edge functions) to pull from or write to, so there is no pull layer. Write-policy: standard — every write is a local repo file. (If a backend/CMS is ever added, declare its write-policy class + a `propilki-pull-*` layer here.)
