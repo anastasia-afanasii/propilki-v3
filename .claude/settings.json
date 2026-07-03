@@ -29,6 +29,19 @@
     ]
   },
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/nastea/Desktop/propilki-v3/.claude/hooks/validate-preedit-secrets.sh",
+            "timeout": 10,
+            "statusMessage": "Scanning for secrets..."
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "Write|Edit",

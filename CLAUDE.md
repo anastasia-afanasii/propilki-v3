@@ -75,6 +75,7 @@ docs/                 # ARCHITECTURE, CHANGELOG, COMPONENTS, DEPLOYMENT, PRODUCT
 - **JSON schema changes** must match component Props types
 - **Tailwind 4** — no tailwind.config.ts, config lives in index.css `@theme` block
 - **cursor: pointer** must be set explicitly (Tailwind 4 removed the default)
+- **Client photos** — never crop/edit the pixels; move non-fitting images to `public/images/unused/` (don't delete)
 
 ## Locked Design System
 Single source of truth — agents/skills must enforce this, not restate their own copy.
@@ -96,9 +97,12 @@ Single source of truth — agents/skills must enforce this, not restate their ow
 | When | Run |
 |------|-----|
 | Before every push / deploy | `/orchestrate` (pre-deploy GO/NO-GO gate) |
+| Monthly / before a milestone | `/deep-audit` (deep audit, verified findings → `docs/TODO.md`) |
 | Weekly / after a big batch | `/housekeeping` (structure + hygiene) |
 | After catalog / JSON edits | `/validate` |
+| After changing counts / deps / routes | `/update-docs` (reconcile docs to code) |
 | End of a substantive session | `/log-session` (persist findings to memory) |
 
-- **`/orchestrate`** owns code / SEO / deploy review (invokes the 7 agents). **`/housekeeping`** owns structure, `.claude` currency, docs, orphans/weight. They do not overlap. Diff-level bug review → `/orchestrate reviewer`.
+- **`/orchestrate`** = fast code/SEO/deploy **gate** (invokes the 7 agents). **`/deep-audit`** = periodic deep audit with adversarial verification, findings land in `docs/TODO.md`. **`/housekeeping`** = structure / `.claude` currency / orphans-weight. **`/update-docs`** = doc content currency (the `docs` agent's verb). No overlap; diff-level bug review → `/orchestrate reviewer`.
 - **Report-only by default.** Agents that can edit (`seo`, `optimizer`, `designer`, `docs`) apply fixes only when explicitly asked — never silently during a gate. Persist surviving findings via `/log-session`.
+- **Security audit — consciously SKIPPED (decision, not omission).** Static site, no backend / server / DB / auth. The real surface is covered by `seo` + `reviewer`, the `validate-preedit-secrets` hook, and `permissions.deny` (secrets/keys). Add a `/audit-security` command only if a backend, API, or auth is ever introduced.

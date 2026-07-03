@@ -1,8 +1,8 @@
 ---
 name: orchestrate
-description: Coordinate the specialist agents end-to-end — pre-deploy gate, full audit, or a custom chain — and synthesize one prioritized report
+description: Coordinate the specialist agents for a pre-deploy GO/NO-GO gate (or a design pass / custom chain) and synthesize one prioritized report
 user-invocable: true
-argument-hint: "[pre-deploy | full-audit | design | <agent names>] (default: pre-deploy)"
+argument-hint: "[pre-deploy | design | <agent names>] (default: pre-deploy)"
 ---
 
 Run a coordinated multi-agent flow over the PROPILKI project, then merge the results into ONE report. The argument picks the flow; default is `pre-deploy`.
@@ -20,10 +20,7 @@ Scope each agent to the **current branch diff / changed files**. Run in this ord
 3. **deployer** — `npm run build` passes, `base: "/"`, `basename={import.meta.env.BASE_URL}`, `404.html` base-sync, `.github/workflows/deploy.yml` intact.
 End with a clear **GO** (safe to push) or **NO-GO** with blocking issues listed first.
 
-### `full-audit` — comprehensive health check (no deploy)
-Whole-project scope. Run the independent ones concurrently, then synthesize:
-- **architect** (structure / deps / bundle), **optimizer** (perf / images), **seo**, **reviewer**.
-Group findings by severity and dedupe overlaps (e.g. reviewer + optimizer both flagging an image).
+> **Full/deep audit moved out.** A comprehensive whole-project audit — with adversarial verification and findings that land in `docs/TODO.md` — is now **`/deep-audit`**. This skill stays the fast pre-deploy gate.
 
 ### `design` — design-system pass
 - **designer** agent (covers palette / redesign / layout). Enforce `CLAUDE.md → Locked Design System`. Flag any off-palette colour rather than proposing new ones.
