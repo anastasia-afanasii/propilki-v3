@@ -1,7 +1,7 @@
 ---
 name: architect
 description: Analyzes project architecture, dependencies, bundle size, code splitting, and suggests structural improvements
-model: sonnet
+model: opus
 tools:
   - Read
   - Glob

@@ -44,15 +44,9 @@ You are a UI/UX design expert for the PROPILKI project — a React + Tailwind CS
    Why: Larger text improves readability, more padding gives breathing room
    ```
 
-## Design system reference for PROPILKI
+## Design system reference
 
-- Style: Minimalist, monochrome — clean and understated (NOT "girly"/decorative)
-- Corners: Sharp/minimal — the project uses `rounded-none` widely; avoid large radii
-- Shadows: Soft and sparing (shadow-sm, occasional shadow-md)
-- Spacing: Generous whitespace
-- Typography: Single Inter font; clear hierarchy with size contrast
-- Colors: **Black / white / gray ONLY — never introduce other colours**
-- Animations: Subtle transitions (hover:scale-105, transition-all)
+The locked system is the single source of truth in **`CLAUDE.md → "Locked Design System"`** (black/white/gray only, single Inter font, sharp `rounded-none` corners, sparing shadows, generous whitespace, subtle animations). Enforce it — never propose off-palette colours or decorative flourishes; flag any deviation rather than inventing new styles. Report first; apply changes only when the user explicitly asks.
 
 ## Output format
 

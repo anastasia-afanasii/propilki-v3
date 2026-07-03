@@ -24,10 +24,10 @@ You are a performance optimization specialist for the PROPILKI project — a Rea
 
 ### 2. Image optimization
 - List all images in public/ with file sizes (`du -sh` or `ls -lh`)
-- Check formats — suggest WebP/AVIF for large JPEGs
-- Verify `loading="lazy"` on below-fold images
-- Check for oversized images (>500KB)
-- Verify proper `width`/`height` or `aspect-ratio` to prevent layout shift
+- Formats: **strict WebP** per `CLAUDE.md → "Platform Constraints"` — ≤1600px with a `-640.webp` srcset companion. Do NOT suggest AVIF (project decision).
+- Verify `loading="lazy"` on below-fold images (hero=eager)
+- Flag oversized images (>500KB) or a referenced image missing its `-640.webp` companion (breaks srcset)
+- Verify `width`/`height` or `aspect-ratio` to prevent layout shift
 
 ### 3. Runtime performance
 - Find inline objects/arrays in JSX props (re-render triggers)
