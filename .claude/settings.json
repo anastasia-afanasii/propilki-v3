@@ -60,7 +60,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd /Users/nastea/Desktop/propilki-v3 && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreCompact\",\"additionalContext\":\"PRESERVE: PROPILKI v3 (React 19 + Vite 6 + TS SPA). Custom domain propilki.online, GitHub Pages deploy. base:\\\"/\\\" in vite.config.ts. Images resolved via import.meta.env.BASE_URL, now WebP + responsive srcset (foo.webp + foo-640.webp). JSON-driven content in src/data/. Routes: / (courses), /solo (nails catalog), /product/:id. See CLAUDE.md.\"}}'",
+            "command": "cd /Users/nastea/Desktop/propilki-v3 && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreCompact\",\"additionalContext\":\"PRESERVE: PROPILKI v3 (React 19 + Vite 6 + TS SPA). Custom domain propilki.online, deployed on Vercel (native Git integration, SPA rewrite in vercel.json). base:\\\"/\\\" in vite.config.ts. Images resolved via import.meta.env.BASE_URL, now WebP + responsive srcset (foo.webp + foo-640.webp). JSON-driven content in src/data/. Routes: / (courses), /solo (nails catalog), /product/:id. See CLAUDE.md.\"}}'",
             "timeout": 5,
             "statusMessage": "Preserving project context..."
           }

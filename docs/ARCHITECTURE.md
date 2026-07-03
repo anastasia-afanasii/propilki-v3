@@ -10,7 +10,7 @@
 | Styling | Tailwind CSS | 4.2 |
 | UI Library | shadcn/ui (Radix primitives) | — |
 | Routing | react-router-dom | 6.30 |
-| Deploy | GitHub Pages + GitHub Actions | — |
+| Deploy | Vercel (native Git integration) | — |
 | Domain | propilki.online | — |
 
 ## Route Map
@@ -92,11 +92,12 @@ src/data/nailCatalog.json → NailCatalog.tsx, ProductPage.tsx → product listi
 
 ## Deployment
 
-1. Push to `main` branch
-2. GitHub Actions workflow (`.github/workflows/deploy.yml`) triggers
-3. `npm ci` → `npm run build` → upload `dist/` to GitHub Pages
-4. Custom domain: propilki.online (base: "/")
-5. SPA routing: `public/404.html` redirects to `/?p=<encoded-path>`
+Hosted on **Vercel** via native Git integration (no workflow file in the repo).
+
+1. Push to `main` → Vercel auto-builds (`npm run build`) and deploys production
+2. Branches / PRs get **preview deployments**
+3. Custom domain: propilki.online (base: "/")
+4. SPA routing: `vercel.json` rewrite serves `index.html` for any path (`/(.*)` → `/index.html`); React Router handles the rest — no legacy SPA-redirect hack
 
 ## Directory Structure
 

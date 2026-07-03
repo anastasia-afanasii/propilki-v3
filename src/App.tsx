@@ -10,21 +10,6 @@ const Solo = lazy(() => import("./pages/Solo"));
 const ProductPage = lazy(() => import("./pages/ProductPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-(() => {
-  const params = new URLSearchParams(window.location.search);
-  const p = params.get("p");
-  const h = params.get("h") || "";
-  if (!p) return;
-
-  const base = import.meta.env.BASE_URL;
-  const cleaned = p.startsWith("/") ? p.slice(1) : p;
-  window.history.replaceState(
-    null,
-    "",
-    `${base}${cleaned}${decodeURIComponent(h)}`
-  );
-})();
-
 const CanonicalUpdater = () => {
   useCanonical();
   return null;

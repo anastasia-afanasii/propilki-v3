@@ -17,7 +17,7 @@ Specialists available (in `.claude/agents/`): `reviewer`, `seo`, `deployer`, `ar
 Scope each agent to the **current branch diff / changed files**. Run in this order:
 1. **reviewer** — quality, patterns, mobile responsiveness, deploy safety (per CLAUDE.md Code Review Checklist).
 2. **seo** — meta/title/description, Open Graph, JSON-LD, semantic HTML, image `alt` + `loading`.
-3. **deployer** — `npm run build` passes, `base: "/"`, `basename={import.meta.env.BASE_URL}`, `404.html` base-sync, `.github/workflows/deploy.yml` intact.
+3. **deployer** — `npm run build` passes, `base: "/"`, `basename={import.meta.env.BASE_URL}`, `vercel.json` SPA rewrite present, no leftover legacy deploy artifacts.
 End with a clear **GO** (safe to push) or **NO-GO** with blocking issues listed first.
 
 > **Full/deep audit moved out.** A comprehensive whole-project audit — with adversarial verification and findings that land in `docs/TODO.md` — is now **`/propilki-deep-audit`**. This skill stays the fast pre-deploy gate.
@@ -37,6 +37,6 @@ If the argument names agents (e.g. `orchestrate reviewer seo`), run exactly thos
 ## Rules
 - **Never auto-push or auto-deploy.** Output a GO/NO-GO; the user decides and explicitly approves the deploy.
 - **Surface, don't silently fix.** Report issues; the fix-capable agents (seo/optimizer/designer/docs) apply changes only when the user explicitly asks — never during this gate.
-- Respect `CLAUDE.md → Platform Constraints` (GitHub Pages limits, image policy, the Node/Vite cap).
+- Respect `CLAUDE.md → Platform Constraints` (image policy, the Node/Vite note).
 - If a specialist finds nothing, say so — don't pad the report.
 - After the run, offer to persist surviving findings via `/propilki-log-session`.

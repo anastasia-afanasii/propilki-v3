@@ -28,7 +28,7 @@ Use `general-purpose`/`Explore` agents for the structural lanes (file-level hygi
 - Catalog integrity: every `src/data/*.json` image ref exists; shapes match `src/types/catalog.ts`; duplicate products (same set twice) and thin galleries (single-image vs the ≤5-angle norm) → flag for content.
 
 **Lane D — ops & deploy:**
-- `npm run build` clean; `dist/` first-load JS not ballooning; `gh run list` latest deploy green; `base:"/"` in vite.config.ts and `404.html` base-sync; unpushed-commit count/age (flag > ~15 or > 3 days); OG meta in index.html points at propilki.online.
+- `npm run build` clean; `dist/` first-load JS not ballooning; `vercel.json` SPA rewrite present + `base:"/"` in vite.config.ts; latest Vercel deploy green (Vercel dashboard — deploys run there, not in CI); no leftover legacy deploy artifacts (an old static redirect page or CI deploy workflow); unpushed-commit count/age (flag > ~15 or > 3 days); OG meta in index.html points at propilki.online.
 
 **Docs (Lane A tail, or `focus: docs`):** if `docs/*.md` have drifted (wrong counts, removed deps, stale skill/route lists), spawn the **`docs` agent** to propose a refresh (report-first). This is the one specialist housekeeping invokes — docs maintenance is its domain, and `/propilki-orchestrate` never runs `docs`.
 

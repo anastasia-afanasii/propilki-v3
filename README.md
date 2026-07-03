@@ -5,7 +5,7 @@ PROPILKI is a React + Vite single-page application with two main sections:
 - Online Courses (main landing page)
 - SOLO Press-On Nails (product-focused catalog)
 
-The project is fully JSON-driven and deployed on GitHub Pages as an SPA at
+The project is fully JSON-driven and deployed on Vercel as an SPA at
 [propilki.online](https://propilki.online).
 
 ## Tech Stack
@@ -37,9 +37,9 @@ The project is fully JSON-driven and deployed on GitHub Pages as an SPA at
 
 - BrowserRouter with `basename`
 - `base: "/"` in `vite.config.ts` for the custom domain
-- Custom `404.html` for GitHub Pages SPA deep links (`?p=` redirect)
+- SPA deep links handled by Vercel's `vercel.json` rewrite (`/(.*)` → `/index.html`)
 - Hash-based scrolling handled via `ScrollToHash`
-- Auto-deploy on push to `main` (`.github/workflows/deploy.yml`)
+- Deployed on Vercel via native Git integration — push to `main` auto-deploys production; branches/PRs get preview deployments
 
 ## Development
 

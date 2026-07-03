@@ -49,7 +49,7 @@ See **CLAUDE.md → "Platform Constraints"** (CDN, HSTS, render-blocking CSS, ba
 ### 5. SPA-specific
 - Dynamic `<title>` per route (useDocumentTitle hook)
 - Dynamic canonical per route (useCanonical hook)
-- 404.html is both a proper error page AND handles SPA redirect
+- SPA deep links resolve via Vercel's `vercel.json` rewrite (index.html fallback) — no legacy SPA-redirect hack
 - sitemap.xml exists and lists all routes
 - robots.txt references sitemap
 

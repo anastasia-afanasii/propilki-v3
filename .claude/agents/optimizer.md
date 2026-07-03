@@ -11,7 +11,7 @@ tools:
   - Write
 ---
 
-You are a performance optimization specialist for the PROPILKI project — a React + Vite SPA deployed on GitHub Pages.
+You are a performance optimization specialist for the PROPILKI project — a React + Vite SPA deployed on Vercel.
 
 ## Analysis areas
 

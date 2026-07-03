@@ -2,93 +2,68 @@
 
 ## Overview
 
-PROPILKI is deployed as a static SPA on GitHub Pages with a custom domain.
+PROPILKI is deployed as a static Vite SPA on **Vercel** with a custom domain, via Vercel's **native Git integration** (no workflow file in the repo).
 
 | Item | Value |
 |------|-------|
-| Repository | TiredGarfield/propilki-v3 |
 | Domain | propilki.online |
-| Hosting | GitHub Pages |
-| CI/CD | GitHub Actions |
-| Branch | main |
+| Hosting | Vercel |
+| CI/CD | Vercel Git integration (no GitHub Actions) |
+| Production branch | main |
 
 ## How Deployment Works
 
-1. Push commit to `main` branch
-2. GitHub Actions workflow triggers (`.github/workflows/deploy.yml`)
-3. Workflow steps:
-   - Checkout code
-   - Setup Node.js 20
-   - `npm ci` (install dependencies)
-   - `npm run build` (Vite production build → `dist/`)
-   - Upload `dist/` as GitHub Pages artifact
-   - Deploy to GitHub Pages
+1. Push a commit to `main` → Vercel auto-builds and deploys **production**.
+2. Push to any other branch / open a PR → Vercel creates a **preview deployment** (unique URL).
+3. Build: Vercel runs `npm install` + `npm run build` (Vite → `dist/`) and serves it on its edge CDN.
+
+No secrets or workflow live in the repo — deploy config is in the Vercel project (Settings → Git, Build & Output, Domains, Node version).
 
 ## Local Development
 
 ```bash
-# Install dependencies (first time only)
-npm install
-
-# Start dev server
-npm run dev
-# → http://localhost:8080/
-
-# Production build
-npm run build
-
-# Preview production build locally
-npm run preview
+npm install       # first time
+npm run dev       # → http://localhost:8080/
+npm run build     # production build → dist/
+npm run preview   # preview the build locally
 ```
 
-## Build Output
+## SPA Routing on Vercel
 
+Vercel serves static files directly; client-side routes need a rewrite:
+
+```json
+// vercel.json
+{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
 ```
-dist/
-├── index.html          # Entry point
-├── 404.html            # SPA routing fallback
-├── assets/
-│   ├── index-*.css     # ~55 KB (9 KB gzip)
-│   └── index-*.js      # ~450 KB (137 KB gzip)
-├── images/             # All product/content images
-├── propilki_favicon.svg
-├── solo_favicon.svg
-├── propilki_logo.svg
-├── solo_logo.svg
-├── placeholder.svg
-└── robots.txt
-```
+
+Any path (`/solo`, `/product/123`) is rewritten to `index.html` and React Router takes over. The old static-host SPA-redirect workaround was removed — unnecessary on Vercel.
 
 ## Environment
 
 | Setting | Location | Value |
 |---------|----------|-------|
-| `base` | vite.config.ts | `"/"` (root — required for custom domain) |
-| `BASE_URL` | `import.meta.env.BASE_URL` | Injected by Vite at build time |
-| Port | vite.config.ts | 8080 |
+| `base` | vite.config.ts | `"/"` (root — custom domain) |
+| `BASE_URL` | `import.meta.env.BASE_URL` | injected by Vite at build time |
+| Node version | Vercel Project Settings | default (recent LTS) — bump there if needed |
+| Dev port | vite.config.ts | 8080 |
 
-## SPA Routing on GitHub Pages
+## Custom Domain
 
-GitHub Pages doesn't support client-side routing natively. The workaround:
+- `propilki.online` is attached in the Vercel project → Settings → Domains.
+- DNS points at Vercel (per Vercel's records). Vercel provisions TLS + HSTS automatically.
+- `base: "/"` in vite.config.ts (root domain).
 
-1. `public/404.html` catches all unknown routes
-2. Redirects to `/?p=<encoded-path>&h=<hash>`
-3. `App.tsx` IIFE decodes the `?p=` param and restores the URL via `history.replaceState`
+## Custom Headers / CDN (available on Vercel)
 
-**Important:** If you change the `base` URL, update `public/404.html` to match.
-
-## Custom Domain Setup
-
-1. In GitHub repo → Settings → Pages → Custom domain: `propilki.online`
-2. DNS records point to GitHub Pages IPs
-3. `base: "/"` in vite.config.ts (not `/propilki-v3/`)
+Vercel supports a global CDN, HSTS, and custom response headers (the previous static host did not) — add them via `vercel.json` `headers` if an audit recommends security/cache headers.
 
 ## Troubleshooting
 
 | Issue | Solution |
 |-------|---------|
-| Images 404 on deploy | Check `base` in vite.config.ts matches deployment |
-| Routes show 404 | Verify `public/404.html` redirect logic matches `base` |
-| Stale content | Clear browser cache or hard refresh (Cmd+Shift+R) |
-| Build fails | Run `npm run build` locally first to debug |
-| Dev server port busy | Kill existing: `pkill -f vite` |
+| Images 404 | Check `base` in vite.config.ts is `"/"`; verify the file exists in `public/` |
+| Routes 404 | Confirm the `vercel.json` rewrite is present (`/(.*)` → `/index.html`) |
+| Stale content | Redeploy, or hard refresh (Cmd+Shift+R) |
+| Build fails | Run `npm run build` locally first; check the Vercel build log |
+| Dev port busy | `pkill -f vite` |

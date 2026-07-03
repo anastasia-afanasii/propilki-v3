@@ -1,7 +1,7 @@
 # PROPILKI v3
 
 ## Project Overview
-React + Vite + TypeScript SPA for a nail design business (PROPILKI). Online courses landing page and SOLO nail catalog with product detail pages. Deployed on GitHub Pages at propilki.online.
+React + Vite + TypeScript SPA for a nail design business (PROPILKI). Online courses landing page and SOLO nail catalog with product detail pages. Deployed on Vercel at propilki.online.
 
 ## Tech Stack
 - **Framework:** React 19 + TypeScript 6
@@ -53,14 +53,14 @@ docs/                 # ARCHITECTURE, CHANGELOG, COMPONENTS, DEPLOYMENT, PRODUCT
 - **JSON-driven content** — all data in `src/data/*.json`, no API
 - **Image paths** use `${import.meta.env.BASE_URL}` prefix everywhere
 - **Shared components** — SiteHeader, FAQAccordion, ReviewCarousel eliminate duplication
-- **SPA routing on GitHub Pages** — 404.html redirect + `?p=` query param
+- **SPA routing** — Vercel serves `index.html` for any path (`vercel.json` rewrite); React Router handles it client-side
 - **`base: "/"`** in vite.config.ts for custom domain
 - **Tailwind 4** — CSS-based config in index.css, Vite plugin (no PostCSS)
 - **Path alias** `@/` maps to `src/`
 
 ## Code Review Checklist
 - [ ] Image paths use `${import.meta.env.BASE_URL}` prefix (via `assetUrl()`)
-- [ ] New routes added to `App.tsx` only — `public/404.html` is a generic `?p=` catch-all, no per-route edit needed
+- [ ] New routes added to `App.tsx` only — Vercel's `vercel.json` rewrite serves `index.html` for any path
 - [ ] JSON data changes match component Props types / `src/types/catalog.ts`
 - [ ] No hardcoded URLs (except OG meta tags)
 - [ ] Mobile responsive (sm:, md:, lg: prefixes)
@@ -70,8 +70,8 @@ docs/                 # ARCHITECTURE, CHANGELOG, COMPONENTS, DEPLOYMENT, PRODUCT
 - [ ] New shared logic → shared component, not duplication
 
 ## Common Pitfalls
-- **`base` in vite.config.ts** affects all image paths, routing, 404 redirect
-- **404.html** is a generic `?p=` catch-all — keep in sync with `base` URL only, not per-route
+- **`base` in vite.config.ts** affects all image paths and routing
+- **SPA deep links** — handled by Vercel's `vercel.json` rewrite (`/(.*)` → `/index.html`); no legacy SPA-redirect hack
 - **OG meta tags** in index.html hardcoded to propilki.online
 - **JSON schema changes** must match component Props types
 - **Tailwind 4** — no tailwind.config.ts, config lives in index.css `@theme` block
@@ -88,11 +88,11 @@ Single source of truth — agents/skills must enforce this, not restate their ow
 - **Style:** minimalist/understated, not decorative.
 
 ## Platform Constraints (not code-fixable — don't flag as bugs)
-- **CDN / HSTS / custom headers** — GitHub Pages doesn't allow them.
 - **Render-blocking CSS** — inherent to a Vite SPA; CSS is tiny (~10KB gz).
 - **Backlinks** — external SEO, not code.
-- **Vite major upgrade** — local Node is v22 (upgrade possible), but `.github/workflows/deploy.yml` pins Node 20, so the Vite 6 cap holds for CI/deploy until that Node is bumped. Not an "easy win".
 - **Images:** strict **WebP** (no AVIF), ≤1600px, with a `-640.webp` srcset companion.
+
+**Now fixable on Vercel (no longer constraints):** CDN, HSTS / security headers, and custom response headers ARE supported — configure via `vercel.json` `headers` (SEO/perf agents may recommend them). A **Vite/ecosystem major upgrade** is no longer blocked either — the Node-20 CI pin retired with the old deploy workflow, and Vercel controls the build Node version (Project Settings → default recent).
 
 ## External Systems & Write Policy
 **None — git is the single source of truth.** No external platform (DB / CMS / API / edge functions) to pull from or write to, so there is no pull layer. Write-policy: standard — every write is a local repo file. (If a backend/CMS is ever added, declare its write-policy class + a `propilki-pull-*` layer here.)
