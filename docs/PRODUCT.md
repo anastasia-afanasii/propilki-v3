@@ -30,8 +30,8 @@ The courses landing page showcases nail education offerings.
 
 **Courses offered (3):**
 1. Online course (Udemy link) — Dry file manicure technique
-2. Offline course — Filing mastery (€200)
-3. Offline course — Self-master training (€400)
+2. Offline course "Nail Filing" — one day €220 / two days €260
+3. Offline course "How to become your own nail tech" — €180
 
 **Stats displayed:** 2,000+ students, 4.9★ rating, 95% success rate, 24/7 support
 
@@ -53,6 +53,7 @@ The press-on nails showcase and product catalog.
 | Championships | Championships | `solo.json → championships` |
 | Competitions | Competitions | `solo.json → competitions` |
 | Celebrity Works | CelebrityWorks | `solo.json → celebrityWorks` |
+| Biography | Biography | `solo.json → biography` |
 | Testimonials | Testimonials → ReviewCarousel | `solo.json → testimonials` (9 reviews, 5s auto-play) |
 | FAQ | FAQ → FAQAccordion | `solo.json → faq` (6 Q&As) |
 | Footer | Footer | `solo.json → footer` |
@@ -152,9 +153,9 @@ Product database.
 
 | Tag | Value |
 |-----|-------|
-| Title | PROPILKI |
-| Description | Professional nail design, press-on nails and nail education by PROPILKI. |
-| OG Image | https://propilki.online/propilki_logo.svg |
+| Title | `PROPILKI - Nail Design, Press-On Nails & Manicure Courses` (static default in index.html; overridden per-route via `useDocumentTitle`) |
+| Description | Studio description in index.html; overridden per-route via `useMetaDescription`/`useOpenGraph` |
+| OG Image | https://propilki.online/og-image.png |
 | OG URL | https://propilki.online |
 | Twitter Card | summary_large_image |
 | Favicon | Swaps between propilki/solo based on route |

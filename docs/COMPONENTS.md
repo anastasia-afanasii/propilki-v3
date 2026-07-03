@@ -75,6 +75,46 @@ Swipeable testimonial/review carousel with keyboard, touch, and auto-play.
 
 ---
 
+### SiteFooter
+Shared footer used by both `nails/Footer.tsx` and `online-courses/Footer.tsx`.
+
+| Prop | Type | Description |
+|------|------|-------------|
+| `brandTitle` | string | Footer heading |
+| `brandDescription` | string | Footer body text |
+| `nav` | { label, to, highlight? }[] | Footer nav links |
+| `copyright` | string | Copyright line |
+| `navHeading` | string? | Nav column heading (default "Navigation") |
+| `socials` | { instagram?, email? }? | Social links |
+
+---
+
+### SectionHeading
+Centered section heading + divider, used across 7 nails sections.
+
+| Prop | Type | Description |
+|------|------|-------------|
+| `title` | string | Heading text (renders `<h2>`) |
+| `subtitle` | string? | Optional subheading |
+| `tone` | "light" \| "dark" | Colour scheme (default "light") |
+| `subtitleClassName` | string? | Classes for the subtitle |
+
+---
+
+### CornerBadge
+Absolute-positioned corner label badge (e.g. "10+ Years / Experience").
+
+| Prop | Type | Description |
+|------|------|-------------|
+| `line1` | string? | Top line |
+| `line2` | string? | Bottom line |
+| `side` | "left" \| "right" | Corner anchor (default "right") |
+| `tone` | "solid" \| "glass" | Opaque dark vs translucent (default "solid") |
+| `className` | string? | Extra container classes |
+| `textClassName` | string? | Extra text classes |
+
+---
+
 ## Page Components
 
 ### Index (Online Courses)
@@ -83,7 +123,7 @@ Loads `propilki.json` and distributes sections to child components.
 
 ### Solo (SOLO Nails)
 Route: `/solo` | File: `src/pages/Solo.tsx`
-Loads `solo.json` and renders 12 section components.
+Loads `solo.json` and renders 11 content sections (Hero, NailCatalog, TipCreationProcess, HowItWorks, PackagingVisual, Championships, Competitions, CelebrityWorks, Biography, Testimonials, FAQ) plus Header/Footer.
 
 ### ProductPage
 Route: `/product/:id` | File: `src/pages/ProductPage.tsx`
@@ -104,7 +144,8 @@ Route: `*` | File: `src/pages/NotFound.tsx`
 | NailCatalog | `solo.json → catalog` + `nailCatalog.json` | 251 | Filtered grid + pagination |
 | ProductCard | NailProduct + badgeLabel | 86 | Product card with hover overlay |
 | TipCreationProcess | `solo.json → tipCreationProcess` | 112 | 4-step process + highlight image |
-| HowItWorks | `solo.json → howItWorks` | 109 | Application guide with PDF link |
+| HowItWorks | `solo.json → howItWorks` | 109 | Application guide + PDF link + Watch-Tutorial video |
+| VideoModal | `src`, `open`, `onClose`, `title?` | 52 | Modal player for the self-hosted tutorial mp4 (in `components/`) |
 | PackagingVisual | `solo.json → packaging` | 85 | Package contents + image |
 | Championships | `solo.json → championships` | 79 | Award showcase |
 | Competitions | `solo.json → competitions` | 74 | Competition gallery |
@@ -142,5 +183,3 @@ Route: `*` | File: `src/pages/NotFound.tsx`
 | Button | ui/button.tsx | class-variance-authority |
 | Badge | ui/badge.tsx | class-variance-authority |
 | Card | ui/card.tsx | div with cn() |
-| Tooltip | ui/tooltip.tsx | @radix-ui/react-tooltip |
-| Sonner (Toaster) | ui/sonner.tsx | sonner |

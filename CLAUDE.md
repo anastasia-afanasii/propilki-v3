@@ -17,15 +17,20 @@ src/
   pages/              # Index (courses), Solo (nails), ProductPage, NotFound
   components/
     SiteHeader.tsx    # Shared responsive nav (configurable links)
+    SiteFooter.tsx    # Shared footer (brand/nav/social)
     FAQAccordion.tsx  # Shared FAQ component (neutral/themed variants)
     ReviewCarousel.tsx # Shared carousel (auto-play, swipe, keyboard)
+    SectionHeading.tsx # Shared heading + divider (light/dark tone)
+    CornerBadge.tsx   # Shared corner label badge
+    VideoModal.tsx    # Tutorial video modal (self-hosted mp4)
     FaviconSwitcher.tsx
     ScrollToHash.tsx
     nails/            # SOLO section: Header, Hero, NailCatalog, ProductCard, etc.
     online-courses/   # Courses section: Header, HeroSection, CourseCard, etc.
     ui/               # shadcn/ui: accordion, badge, button, card
+  hooks/              # useDocumentTitle, useMetaDescription, useOpenGraph, useJsonLd, useCanonical, useSwipe
   data/               # propilki.json, solo.json, nailCatalog.json
-  lib/utils.ts        # cn() helper
+  lib/utils.ts        # cn() helper (+ lib/site.ts = SITE base URL)
 public/images/        # All product and content images
 docs/                 # ARCHITECTURE, CHANGELOG, COMPONENTS, DEPLOYMENT, PRODUCT
 .claude/

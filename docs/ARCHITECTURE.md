@@ -26,7 +26,6 @@
 
 ```
 App.tsx
-├── TooltipProvider
 ├── BrowserRouter (basename = import.meta.env.BASE_URL)
 │   ├── FaviconSwitcher (swaps favicon per route)
 │   ├── ScrollToHash (scroll-to-anchor on navigation)
@@ -55,6 +54,7 @@ App.tsx
 │   │   ├── Championships
 │   │   ├── Competitions
 │   │   ├── CelebrityWorks
+│   │   ├── Biography
 │   │   ├── Testimonials → ReviewCarousel (shared)
 │   │   ├── FAQ → FAQAccordion (shared)
 │   │   └── Footer
@@ -81,6 +81,9 @@ src/data/nailCatalog.json → NailCatalog.tsx, ProductPage.tsx → product listi
 | `SiteHeader` | nails/Header, online-courses/Header | Responsive nav with configurable links |
 | `FAQAccordion` | nails/FAQ, online-courses/FAQSection | Accordion with neutral/themed variants |
 | `ReviewCarousel` | nails/Testimonials, online-courses/ReviewsSection | Swipeable carousel with auto-play |
+| `SiteFooter` | nails/Footer, online-courses/Footer | Brand / nav / social footer |
+| `CornerBadge` | nails/PackagingVisual, nails/Biography, online-courses/AboutSection | Absolute-positioned corner label badge |
+| `SectionHeading` | 7 nails sections (NailCatalog, HowItWorks, Championships, …) | Centered heading + divider (`light`/`dark` tone) |
 
 ## Image Strategy
 
@@ -107,15 +110,21 @@ src/
 ├── main.tsx                   # React DOM entry point
 ├── index.css                  # Tailwind v4 theme, CSS variables, utilities
 ├── lib/utils.ts               # cn() helper (tailwind-merge + clsx)
+├── lib/site.ts                # SITE constant (canonical / OG base URL)
+├── hooks/                     # useDocumentTitle, useMetaDescription, useOpenGraph, useJsonLd, useCanonical, useSwipe
 ├── pages/                     # Route page components
 ├── components/
 │   ├── SiteHeader.tsx         # Shared responsive header
+│   ├── SiteFooter.tsx         # Shared footer (brand / nav / social)
 │   ├── FAQAccordion.tsx       # Shared FAQ accordion
 │   ├── ReviewCarousel.tsx     # Shared review/testimonial carousel
+│   ├── SectionHeading.tsx     # Shared centered heading + divider
+│   ├── CornerBadge.tsx        # Shared corner label badge
+│   ├── VideoModal.tsx         # Tutorial video modal (self-hosted mp4)
 │   ├── FaviconSwitcher.tsx    # Route-based favicon swap
 │   ├── ScrollToHash.tsx       # Hash anchor scrolling
 │   ├── nails/                 # SOLO section components
 │   ├── online-courses/        # Courses section components
-│   └── ui/                    # shadcn/ui primitives (accordion, button, badge, card, tooltip, sonner)
+│   └── ui/                    # shadcn/ui primitives (accordion, button, badge, card)
 └── data/                      # JSON content files
 ```
