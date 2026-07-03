@@ -1,5 +1,5 @@
 ---
-name: validate
+name: propilki-validate
 description: Validate JSON data files — check schema, image references, required fields match component expectations
 user-invocable: true
 ---

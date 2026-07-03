@@ -50,5 +50,5 @@ Report the drift before writing anything:
 ```
 
 ## When applying
-- **During `/orchestrate` or `/deep-audit`: report the drift only — do NOT write.** `/update-docs` (or the user asking directly) applies the edits.
+- **During `/propilki-orchestrate` or `/propilki-deep-audit`: report the drift only — do NOT write.** `/propilki-update-docs` (or the user asking directly) applies the edits.
 - **Verify every claim against the code/data before writing** (product counts, file lists, dep names, route lists). Docs that lie are worse than no docs — this project has been bitten by stale counts before.

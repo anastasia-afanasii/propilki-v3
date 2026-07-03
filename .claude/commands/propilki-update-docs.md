@@ -19,5 +19,5 @@ This is the verb for the `docs` agent (which otherwise has no command).
 3. It reports drift + proposed edits per its output-format contract — **report-first, no silent writes**.
 4. Present the diff; on approval, apply. Commit as `docs: refresh` — **hold push**.
 
-**Boundary:** doc *content currency* only. Structure/hygiene is `/housekeeping`; code review is `/orchestrate`. All rules live in `CLAUDE.md` — reconcile docs *to* it, don't restate it elsewhere.
-**Cadence:** after a batch that changes counts/deps/routes, or when `/housekeeping` flags doc drift.
+**Boundary:** doc *content currency* only. Structure/hygiene is `/propilki-housekeeping`; code review is `/propilki-orchestrate`. All rules live in `CLAUDE.md` — reconcile docs *to* it, don't restate it elsewhere.
+**Cadence:** after a batch that changes counts/deps/routes, or when `/propilki-housekeeping` flags doc drift.

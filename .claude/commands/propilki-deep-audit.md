@@ -6,7 +6,7 @@ allowed-tools: Agent, Read, Bash, Glob, Grep, Edit, Write
 
 A thorough, whole-project health audit with adversarial verification and durable findings. Focus: $ARGUMENTS. **Report-only — never edit source; findings land as TODO items.**
 
-This is the heavy sibling of `/orchestrate` (the fast pre-deploy GATE). Use `/orchestrate` before a push; use `/deep-audit` periodically for depth.
+This is the heavy sibling of `/propilki-orchestrate` (the fast pre-deploy GATE). Use `/propilki-orchestrate` before a push; use `/propilki-deep-audit` periodically for depth.
 
 ## Phase 1 — find (parallel specialists, whole-project scope)
 Spawn concurrently (Task, `subagent_type` = agent name): **architect** (structure/deps/bundle), **optimizer** (perf/images), **seo** (meta/OG/semantics), **reviewer** (code quality/a11y). All report-only. Each returns findings with severity + `file:line`. Rules come from `CLAUDE.md` (single source of truth) — agents don't restate them.
@@ -18,8 +18,8 @@ For each material finding, spawn an INDEPENDENT verifier (Task, `subagent_type: 
 Append every CONFIRMED finding to **`docs/TODO.md`** (create if absent) under a dated `## Deep-audit YYYY-MM-DD` heading, each a checkbox: `- [ ] 🔴/🟡/🟢 [area] what — where — proposed fix`. Deduplicate against items already open in `docs/TODO.md`. Then present a tight summary (counts by severity + the blockers) and point at `docs/TODO.md` for the full list.
 
 ## Rules
-- **Report-only.** No source edits — findings become TODO items; fixing them is a separate approved pass (`/orchestrate`, `/update-docs`, or direct).
+- **Report-only.** No source edits — findings become TODO items; fixing them is a separate approved pass (`/propilki-orchestrate`, `/propilki-update-docs`, or direct).
 - Never auto-push or deploy.
-- **Boundary:** depth audit of code/perf/seo/structure. Diff-scoped pre-deploy GO/NO-GO is `/orchestrate`; docs currency is `/update-docs`; repo hygiene is `/housekeeping`.
+- **Boundary:** depth audit of code/perf/seo/structure. Diff-scoped pre-deploy GO/NO-GO is `/propilki-orchestrate`; docs currency is `/propilki-update-docs`; repo hygiene is `/propilki-housekeeping`.
 
 **Cadence:** monthly, or before a milestone (see `CLAUDE.md → Tooling Cadence`).

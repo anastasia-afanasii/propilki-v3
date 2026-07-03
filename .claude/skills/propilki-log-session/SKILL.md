@@ -1,5 +1,5 @@
 ---
-name: log-session
+name: propilki-log-session
 description: Log what was changed in the current session to persistent memory for cross-conversation tracking
 user-invocable: true
 argument-hint: "[summary] (optional — auto-generates if omitted)"

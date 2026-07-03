@@ -30,8 +30,9 @@ public/images/        # All product and content images
 docs/                 # ARCHITECTURE, CHANGELOG, COMPONENTS, DEPLOYMENT, PRODUCT
 .claude/
   agents/             # 7 specialists: reviewer, deployer, designer, architect, optimizer, seo, docs
-  skills/             # each as <name>/SKILL.md: orchestrate, validate, status, log-session, recall
-  commands/           # /housekeeping
+  skills/             # each <name>/SKILL.md: propilki-{orchestrate, validate, status, log-session, recall}
+  commands/           # propilki-{housekeeping, deep-audit, update-docs}
+  hooks/              # validate-preedit-secrets.sh (secrets scan)
   settings.json        # Tracked perms (deny guardrails) + hooks
   settings.local.json  # Local perm overrides (gitignored)
 ```
@@ -93,16 +94,19 @@ Single source of truth — agents/skills must enforce this, not restate their ow
 - **Vite major upgrade** — local Node is v22 (upgrade possible), but `.github/workflows/deploy.yml` pins Node 20, so the Vite 6 cap holds for CI/deploy until that Node is bumped. Not an "easy win".
 - **Images:** strict **WebP** (no AVIF), ≤1600px, with a `-640.webp` srcset companion.
 
+## External Systems & Write Policy
+**None — git is the single source of truth.** No external platform (DB / CMS / API / edge functions) to pull from or write to, so there is no pull layer. Write-policy: standard — every write is a local repo file. (If a backend/CMS is ever added, declare its write-policy class + a `propilki-pull-*` layer here.)
+
 ## Tooling Cadence (`.claude/`)
 | When | Run |
 |------|-----|
-| Before every push / deploy | `/orchestrate` (pre-deploy GO/NO-GO gate) |
-| Monthly / before a milestone | `/deep-audit` (deep audit, verified findings → `docs/TODO.md`) |
-| Weekly / after a big batch | `/housekeeping` (structure + hygiene) |
-| After catalog / JSON edits | `/validate` |
-| After changing counts / deps / routes | `/update-docs` (reconcile docs to code) |
-| End of a substantive session | `/log-session` (persist findings to memory) |
+| Before every push / deploy | `/propilki-orchestrate` (pre-deploy GO/NO-GO gate) |
+| Monthly / before a milestone | `/propilki-deep-audit` (deep audit, verified findings → `docs/TODO.md`) |
+| Weekly / after a big batch | `/propilki-housekeeping` (structure + hygiene) |
+| After catalog / JSON edits | `/propilki-validate` |
+| After changing counts / deps / routes | `/propilki-update-docs` (reconcile docs to code) |
+| End of a substantive session | `/propilki-log-session` (persist findings to memory) |
 
-- **`/orchestrate`** = fast code/SEO/deploy **gate** (invokes the 7 agents). **`/deep-audit`** = periodic deep audit with adversarial verification, findings land in `docs/TODO.md`. **`/housekeeping`** = structure / `.claude` currency / orphans-weight. **`/update-docs`** = doc content currency (the `docs` agent's verb). No overlap; diff-level bug review → `/orchestrate reviewer`.
-- **Report-only by default.** Agents that can edit (`seo`, `optimizer`, `designer`, `docs`) apply fixes only when explicitly asked — never silently during a gate. Persist surviving findings via `/log-session`.
+- **`/propilki-orchestrate`** = fast code/SEO/deploy **gate** (invokes the 7 agents). **`/propilki-deep-audit`** = periodic deep audit with adversarial verification, findings land in `docs/TODO.md`. **`/propilki-housekeeping`** = structure / `.claude` currency / orphans-weight. **`/propilki-update-docs`** = doc content currency (the `docs` agent's verb). No overlap; diff-level bug review → `/propilki-orchestrate reviewer`.
+- **Report-only by default.** Agents that can edit (`seo`, `optimizer`, `designer`, `docs`) apply fixes only when explicitly asked — never silently during a gate. Persist surviving findings via `/propilki-log-session`.
 - **Security audit — consciously SKIPPED (decision, not omission).** Static site, no backend / server / DB / auth. The real surface is covered by `seo` + `reviewer`, the `validate-preedit-secrets` hook, and `permissions.deny` (secrets/keys). Add a `/audit-security` command only if a backend, API, or auth is ever introduced.

@@ -1,5 +1,5 @@
 ---
-name: status
+name: propilki-status
 description: Quick project health check — git status, lint, build, and open issues in one shot
 user-invocable: true
 ---

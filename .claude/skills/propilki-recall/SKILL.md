@@ -1,5 +1,5 @@
 ---
-name: recall
+name: propilki-recall
 description: Recall past work, decisions, and context from memory — search across all session logs and memories
 user-invocable: true
 argument-hint: "[topic] (optional — shows all if omitted)"
@@ -35,6 +35,6 @@ Search and display saved memories from past conversations.
 
 - Sort session logs reverse-chronologically (newest first).
 - Flag any memories that look stale (old logs about completed work).
-- If no memories exist yet, say so and suggest running `/log-session`.
+- If no memories exist yet, say so and suggest running `/propilki-log-session`.
 - Verify before recommending: if a memory names a file, function, or flag,
   confirm it still exists in the repo first.

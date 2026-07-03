@@ -1,5 +1,5 @@
 ---
-name: orchestrate
+name: propilki-orchestrate
 description: Coordinate the specialist agents for a pre-deploy GO/NO-GO gate (or a design pass / custom chain) and synthesize one prioritized report
 user-invocable: true
 argument-hint: "[pre-deploy | design | <agent names>] (default: pre-deploy)"
@@ -9,7 +9,7 @@ Run a coordinated multi-agent flow over the PROPILKI project, then merge the res
 
 Specialists available (in `.claude/agents/`): `reviewer`, `seo`, `deployer`, `architect`, `optimizer`, `designer`, `docs`.
 
-**Scope:** this skill owns **code / SEO / deploy review**. Structure, `.claude` currency, docs and orphan/weight hygiene are `/housekeeping`'s job — don't duplicate them here. All rules come from `CLAUDE.md` (Code Review Checklist, Common Pitfalls, Locked Design System, Platform Constraints) — the single source of truth.
+**Scope:** this skill owns **code / SEO / deploy review**. Structure, `.claude` currency, docs and orphan/weight hygiene are `/propilki-housekeeping`'s job — don't duplicate them here. All rules come from `CLAUDE.md` (Code Review Checklist, Common Pitfalls, Locked Design System, Platform Constraints) — the single source of truth.
 
 ## Flows
 
@@ -20,7 +20,7 @@ Scope each agent to the **current branch diff / changed files**. Run in this ord
 3. **deployer** — `npm run build` passes, `base: "/"`, `basename={import.meta.env.BASE_URL}`, `404.html` base-sync, `.github/workflows/deploy.yml` intact.
 End with a clear **GO** (safe to push) or **NO-GO** with blocking issues listed first.
 
-> **Full/deep audit moved out.** A comprehensive whole-project audit — with adversarial verification and findings that land in `docs/TODO.md` — is now **`/deep-audit`**. This skill stays the fast pre-deploy gate.
+> **Full/deep audit moved out.** A comprehensive whole-project audit — with adversarial verification and findings that land in `docs/TODO.md` — is now **`/propilki-deep-audit`**. This skill stays the fast pre-deploy gate.
 
 ### `design` — design-system pass
 - **designer** agent (covers palette / redesign / layout). Enforce `CLAUDE.md → Locked Design System`. Flag any off-palette colour rather than proposing new ones.
@@ -39,4 +39,4 @@ If the argument names agents (e.g. `orchestrate reviewer seo`), run exactly thos
 - **Surface, don't silently fix.** Report issues; the fix-capable agents (seo/optimizer/designer/docs) apply changes only when the user explicitly asks — never during this gate.
 - Respect `CLAUDE.md → Platform Constraints` (GitHub Pages limits, image policy, the Node/Vite cap).
 - If a specialist finds nothing, say so — don't pad the report.
-- After the run, offer to persist surviving findings via `/log-session`.
+- After the run, offer to persist surviving findings via `/propilki-log-session`.
