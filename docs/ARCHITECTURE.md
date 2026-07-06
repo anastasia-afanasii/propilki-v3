@@ -11,6 +11,7 @@
 | UI Library | shadcn/ui (Radix primitives) | — |
 | Routing | react-router-dom | 6.30 |
 | Deploy | Vercel (native Git integration) | — |
+| Analytics | Vercel Web Analytics (`@vercel/analytics`) | 2.0 |
 | Domain | propilki.online | — |
 
 ## Route Map
@@ -29,6 +30,7 @@ App.tsx
 ├── BrowserRouter (basename = import.meta.env.BASE_URL)
 │   ├── FaviconSwitcher (swaps favicon per route)
 │   ├── ScrollToHash (scroll-to-anchor on navigation)
+│   ├── Analytics (Vercel Web Analytics)
 │   │
 │   ├── "/" → Index (Online Courses)
 │   │   ├── Header → SiteHeader (shared)

@@ -16,6 +16,7 @@ The project is fully JSON-driven and deployed on Vercel as an SPA at
 - Tailwind CSS v4 (CSS-based config in `src/index.css`, no `tailwind.config.ts`)
 - shadcn/ui (accordion, badge, button, card)
 - Lucide Icons
+- Vercel Web Analytics (`@vercel/analytics`)
 
 ## Pages & Routes
 
